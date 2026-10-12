@@ -26,7 +26,7 @@ export default function ModelsPage() {
       .catch((e) => {
         if (e instanceof ApiError && e.status === 404) {
           setError(
-            "No trained models yet. Run the Data Pipeline to download, clean, and train.",
+            "No official-data models yet. Run scripts/train_models.py manually after reviewing the new panel.",
           );
         } else {
           setError(e instanceof ApiError ? e.message : "Failed to load model metrics");
@@ -50,7 +50,7 @@ export default function ModelsPage() {
             <Brain className="mx-auto h-12 w-12 text-slate-300" />
             <p className="mt-4 font-medium text-navy-900">{error ?? "No data"}</p>
             <Link href="/pipeline" className="mt-6 inline-block">
-              <Button>Run Data Pipeline</Button>
+              <Button>View manual training steps</Button>
             </Link>
           </CardContent>
         </Card>
@@ -94,8 +94,8 @@ export default function ModelsPage() {
         <div>
           <p className="font-bold">Evaluation Methodology:</p>
           <p className="mt-0.5 text-blue-800 leading-relaxed">
-            We evaluate multiple regression models on the exact same held-out chronological test period.
-            No single algorithm is presumed superior a priori; selection is determined strictly by minimum test RMSE and maximum R².
+            We evaluate multiple regression models on the same held-out years.
+            The selected model has the lowest RMSE among these five on held-out financial years. The target is RBI/NSO crop GSVA, not GDP. MAE and RMSE are in ₹ crore; R² measures improvement against an overall-mean baseline, not percentage accuracy. Large differences in state size can make pooled R² high even when ₹ crore errors remain large. Compare with a simple state-mean baseline before claiming climate skill.
           </p>
         </div>
       </div>
@@ -112,8 +112,8 @@ export default function ModelsPage() {
               <thead className="bg-slate-50">
                 <tr className="text-slate-500">
                   <th className="px-4 py-3">Model</th>
-                  <th className="px-4 py-3">MAE (₹ Cr)</th>
-                  <th className="px-4 py-3">RMSE (₹ Cr)</th>
+                  <th className="px-4 py-3">MAE (₹ crore)</th>
+                  <th className="px-4 py-3">RMSE (₹ crore)</th>
                   <th className="px-4 py-3">R² Score</th>
                   <th className="px-4 py-3">MAPE (%)</th>
                   <th className="px-4 py-3">Training Time</th>
@@ -152,6 +152,11 @@ export default function ModelsPage() {
             Chronological Split: Training years {data.train_years.join(", ")} · Evaluation held-out test years:{" "}
             {data.test_years.join(", ")}
           </p>
+          <div className="mt-5 grid gap-3 text-xs sm:grid-cols-3">
+            <p className="rounded-xl border border-slate-100 bg-slate-50 p-4 text-slate-700"><strong className="block text-navy-900">MAE (₹ crore)</strong>Average size of a prediction error, ignoring whether it was above or below the actual value.</p>
+            <p className="rounded-xl border border-slate-100 bg-slate-50 p-4 text-slate-700"><strong className="block text-navy-900">RMSE (₹ crore)</strong>Also measures error, but gives especially large misses more weight.</p>
+            <p className="rounded-xl border border-slate-100 bg-slate-50 p-4 text-slate-700"><strong className="block text-navy-900">R² (unitless)</strong>Improvement over predicting the overall test-set mean. It is not a percentage accuracy score.</p>
+          </div>
         </CardContent>
       </Card>
 
@@ -188,6 +193,7 @@ export default function ModelsPage() {
                   <FeatureImportanceChart
                     model={name}
                     importance={m.feature_importance || {}}
+                    linearPermutation={data.linear_permutation}
                   />
                 </CardContent>
               </Card>

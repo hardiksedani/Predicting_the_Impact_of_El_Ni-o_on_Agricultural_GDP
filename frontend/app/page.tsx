@@ -33,11 +33,11 @@ export default function HomePage() {
 
   const stats = [
     { label: "States Covered", value: summary?.states_count ?? "—", icon: Globe2 },
-    { label: "Years of Data", value: yearRange, icon: BarChart3 },
+    { label: "FY Start Years", value: yearRange, icon: BarChart3 },
     { label: "ML Models", value: String(MODEL_NAMES.length), icon: Brain },
     {
       label: "Best Model",
-      value: summary?.best_model ? MODEL_LABELS[summary.best_model] : "Run pipeline",
+      value: summary?.best_model ? MODEL_LABELS[summary.best_model] : "Not trained yet",
       icon: Zap,
     },
   ];
@@ -45,14 +45,14 @@ export default function HomePage() {
   const features = [
     {
       icon: CloudRain,
-      title: "Live Data Ingestion",
-      desc: "Automatically downloads ONI, rainfall, temperature & GDP from trusted sources.",
+      title: "Official-data preparation",
+      desc: "Combines your IMD grids, NOAA ONI, and RBI crop GSVA into a reviewed financial-year panel.",
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: TrendingDown,
-      title: "Impact Prediction",
-      desc: "Three ML models predict state-wise Agricultural GDP under El Niño scenarios.",
+      title: "Crop GSVA Scenarios",
+      desc: "Compare model estimates under hypothetical ONI, rainfall, and temperature conditions.",
       color: "from-indigo-500 to-purple-500",
     },
     {
@@ -81,13 +81,13 @@ export default function HomePage() {
               K. J. Somaiya Institute of Technology · Dept. of AI &amp; Data Science
             </Badge>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
-              AI-Powered El Niño
-              <span className="mt-2 block gradient-text">Agri-Economic Intelligence</span>
+              El Niño &amp; Indian Crops
+              <span className="mt-2 block gradient-text">State Crop GSVA Explorer</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300 leading-relaxed">
-              An empirical policy-support platform evaluating 5 Machine Learning architectures
-              (Linear Regression, Random Forest, Gradient Boosting, XGBoost, Extra Trees)
-              to predict the impact of ENSO and monsoon anomalies on state-wise Agricultural GSVA/GDP.
+              Explore how ENSO and local weather relate to the value added by crop production in Indian states.
+              Five models estimate crop GSVA—not total GDP—using IMD rainfall and temperature, NOAA ONI, and state identity.
+              {summary?.best_model ? " Compare their hypothetical scenarios below." : " Predictions become available after you train them on the reviewed panel."}
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <Link href="/dashboard">
@@ -130,11 +130,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-4 pt-16 sm:px-6">
+        <Card className="border-blue-100 bg-blue-50/60">
+          <CardContent className="space-y-4 p-6 sm:p-8">
+            <h2 className="text-2xl font-bold text-navy-900">What does this project predict?</h2>
+            <p className="max-w-4xl text-sm leading-relaxed text-slate-700">
+              <strong>Crop GSVA</strong> (Gross State Value Added) is the value of crop production in one state
+              after subtracting purchased production inputs. It is measured here in ₹ crore for an April–March
+              financial year at constant 2011–12 prices. It is not farmer profit, a state&apos;s total GSDP, or India&apos;s GDP.
+            </p>
+            <div className="grid gap-3 text-sm sm:grid-cols-3">
+              <div className="rounded-xl border border-blue-100 bg-white p-4"><strong className="text-navy-900">Crop GSVA</strong><p className="mt-1 text-slate-600">Crops within one state—the model&apos;s target.</p></div>
+              <div className="rounded-xl border border-blue-100 bg-white p-4"><strong className="text-navy-900">GSDP</strong><p className="mt-1 text-slate-600">The whole state economy, across sectors and net product taxes.</p></div>
+              <div className="rounded-xl border border-blue-100 bg-white p-4"><strong className="text-navy-900">GDP</strong><p className="mt-1 text-slate-600">The whole country&apos;s economy, across sectors and net product taxes.</p></div>
+            </div>
+            <Link href="/methodology" className="inline-flex text-sm font-semibold text-indigo-700 hover:underline">
+              Read the definitions and data sources →
+            </Link>
+          </CardContent>
+        </Card>
+      </section>
+
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-navy-900">How It Works</h2>
           <p className="mt-2 text-slate-600">
-            From raw climate data to trained models — fully automated.
+            Prepare and review your official-data panel, then train the models yourself.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -165,11 +186,10 @@ export default function HomePage() {
       <section className="bg-white px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-center text-2xl font-bold text-navy-900">
-            Five Models, One Empirical Truth
+            Five Models, One Crop-GSVA Target
           </h2>
           <p className="mt-2 text-center text-xs text-slate-500 max-w-xl mx-auto">
-            No single model is assumed optimal. We train and benchmark all five on held-out test data
-            and select the operational model based strictly on minimum RMSE and maximum R².
+            The five models are compared on later held-out financial years. Lowest test RMSE selects the displayed model, but that score alone does not establish an El Niño effect.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {MODEL_NAMES.map((name) => (
@@ -202,8 +222,7 @@ export default function HomePage() {
             <div className="flex-1">
               <h2 className="text-2xl font-bold">Ready to analyze?</h2>
               <p className="mt-2 text-blue-100">
-                Run the automated pipeline to fetch, clean, and train — then explore
-                predictions on the dashboard.
+                Review the new raw-data panel and run the five-model training command manually. The previous sample-data pipeline is disabled.
               </p>
             </div>
             <Link href="/pipeline" className="mt-6 sm:mt-0 sm:ml-6">
@@ -211,7 +230,7 @@ export default function HomePage() {
                 size="lg"
                 className="bg-white text-indigo-700 hover:bg-blue-50 shadow-none"
               >
-                Launch Pipeline
+                View Manual Workflow
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>

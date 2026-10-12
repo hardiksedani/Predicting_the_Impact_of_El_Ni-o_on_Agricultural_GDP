@@ -14,38 +14,19 @@ import { Card, CardContent, CardHeader } from "@/components/ui/Card";
 import { api, ApiError, ModelComparison, PredictResponse, StateSummary } from "@/lib/api";
 import { MODEL_LABELS, MODEL_NAMES, ONI_PRESETS } from "@/lib/constants";
 
-function impactLabel(pct: number): string {
-  if (pct <= -20) return "severe negative";
-  if (pct <= -10) return "moderate negative";
-  if (pct < 0) return "mild negative";
-  if (pct <= 5) return "stable";
-  return "positive";
+function differenceLabel(pct: number): string {
+  if (pct <= -20) return "much lower";
+  if (pct <= -10) return "moderately lower";
+  if (pct < 0) return "slightly lower";
+  if (pct <= 5) return "near the historical mean";
+  return "higher";
 }
 
-function buildInterpretation(
-  result: PredictResponse,
-  metrics: ModelComparison | null,
-  rainfall: number,
-  temperature: number,
-  oni: number,
-): string {
-  const avgImpact =
+function buildInterpretation(result: PredictResponse): string {
+  const avgDifferencePct =
     result.predictions.reduce((s, p) => s + p.predicted_impact_pct, 0) /
     result.predictions.length;
-
-  let driver = "climate inputs";
-  if (metrics?.best_model) {
-    const fi = metrics.models[metrics.best_model].feature_importance;
-    const entries = [
-      { key: "rainfall", imp: fi.rainfall_mm, dev: rainfall },
-      { key: "temperature", imp: fi.avg_temperature_c, dev: temperature },
-      { key: "ONI index", imp: fi.oni_index, dev: oni },
-    ];
-    entries.sort((a, b) => b.imp * Math.abs(b.dev) - a.imp * Math.abs(a.dev));
-    driver = entries[0].key;
-  }
-
-  return `This represents a ${impactLabel(avgImpact)} impact on Agricultural GDP, driven primarily by ${driver} under the scenario you entered.`;
+  return `The mean model estimate is ${differenceLabel(avgDifferencePct)} (${avgDifferencePct.toFixed(1)}%) relative to this state's historical crop-GSVA mean. This comparison does not identify a causal driver.`;
 }
 
 export default function PredictPage() {
@@ -67,7 +48,7 @@ export default function PredictPage() {
     ])
       .then(([statesRes, metricsRes]) => {
         setStates(statesRes.states);
-        if (statesRes.states.length) setState(statesRes.states[0].state);
+        setState(statesRes.states.find((s) => s.prediction_available)?.state ?? "");
         setMetrics(metricsRes);
       })
       .catch((e) =>
@@ -93,7 +74,7 @@ export default function PredictPage() {
       setError(
         e instanceof ApiError
           ? e.message
-          : "Prediction failed. Run the Data Pipeline first to train models.",
+          : "Prediction failed. Review and sync the official panel, then train the five models manually.",
       );
     } finally {
       setLoading(false);
@@ -102,23 +83,32 @@ export default function PredictPage() {
 
   if (pageLoading) return <LoadingSpinner label="Loading prediction tool…" />;
 
+  const availableCount = states.filter((s) => s.prediction_available).length;
+
   return (
     <div className="mx-auto max-w-7xl space-y-8 px-4 py-8 sm:px-6">
       <PageHeader
         badge="Scenario Analysis"
-        title="Predict Agricultural GDP Impact"
-        description="Enter rainfall, temperature, and El Niño (ONI) conditions — compare predictions from all three ML models side by side."
+        title="Predict Crop GSVA under Climate Scenarios"
+        description="Enter financial-year rainfall, mean temperature, and ONI conditions to estimate state crop GSVA at constant 2011–12 prices. These are hypothetical model estimates, not GDP forecasts."
       />
 
-      {states.length === 0 && (
+      {states.length > 0 && (
+        <p className="text-sm text-slate-600">
+          Showing all {states.length} Indian states. Predictions are currently available for {availableCount};
+          the others await your manual five-model training run.
+        </p>
+      )}
+
+      {availableCount === 0 && (
         <Card className="border-amber-200 bg-amber-50">
           <CardContent className="py-8 text-center">
-            <p className="font-medium text-amber-900">No data available yet</p>
+            <p className="font-medium text-amber-900">No official-data predictions available yet</p>
             <p className="mt-1 text-sm text-amber-800">
-              Run the automated pipeline to download data and train models.
+              Prepare and sync the new raw-data panel, then train the five models manually.
             </p>
             <Link href="/pipeline" className="mt-4 inline-block">
-              <Button>Go to Data Pipeline</Button>
+              <Button>View manual steps</Button>
             </Link>
           </CardContent>
         </Card>
@@ -142,9 +132,10 @@ export default function PredictPage() {
                   className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
                   required
                 >
+                  <option value="" disabled>Select a state with trained data</option>
                   {states.map((s) => (
-                    <option key={s.state} value={s.state}>
-                      {s.state}
+                    <option key={s.state} value={s.state} disabled={!s.prediction_available}>
+                      {s.state}{s.prediction_available ? "" : " — data/training pending"}
                     </option>
                   ))}
                 </select>
@@ -218,7 +209,7 @@ export default function PredictPage() {
             </div>
 
             <Button type="submit" disabled={loading || !state} size="lg">
-              {loading ? "Predicting…" : "Predict Agricultural GDP"}
+              {loading ? "Estimating…" : "Estimate Crop GSVA"}
             </Button>
           </form>
         </CardContent>
@@ -237,8 +228,8 @@ export default function PredictPage() {
                 Results for {result.state}
               </h3>
               <p className="text-sm text-slate-600">
-                Historical average:{" "}
-                <strong>{result.historical_avg_gdp_cr.toFixed(1)} ₹ Cr</strong>
+                Historical crop GSVA mean:{" "}
+                <strong>₹{result.historical_avg_gdp_cr.toFixed(1)} crore</strong>
               </p>
             </CardHeader>
             <CardContent>
@@ -265,9 +256,9 @@ export default function PredictPage() {
                         )}
                       </div>
                       <p className="mt-3 text-3xl font-bold text-navy-900">
-                        {pred.predicted_gdp_cr.toFixed(1)}
+                        ₹{pred.predicted_gdp_cr.toFixed(1)}
                         <span className="ml-1 text-base font-normal text-slate-500">
-                          ₹ Cr
+                          crore crop GSVA
                         </span>
                       </p>
                       <p
@@ -278,7 +269,7 @@ export default function PredictPage() {
                         }`}
                       >
                         {pred.predicted_impact_pct > 0 ? "+" : ""}
-                        {pred.predicted_impact_pct.toFixed(1)}% vs. avg
+                        {pred.predicted_impact_pct.toFixed(1)}% vs historical mean
                       </p>
                     </div>
                   );
@@ -287,13 +278,13 @@ export default function PredictPage() {
 
               {result.ensemble_gdp_cr != null && (
                 <p className="mt-6 rounded-xl bg-indigo-50 px-4 py-3 text-sm text-indigo-900">
-                  Ensemble average across all models:{" "}
-                  <strong>{result.ensemble_gdp_cr.toFixed(1)} ₹ Cr</strong>
+                  Mean crop-GSVA estimate across all models:{" "}
+                  <strong>₹{result.ensemble_gdp_cr.toFixed(1)} crore</strong>
                 </p>
               )}
 
               <p className="mt-4 rounded-xl bg-slate-50 px-4 py-3 text-sm text-slate-700">
-                {buildInterpretation(result, metrics, rainfall, temperature, oniIndex)}
+                {buildInterpretation(result)}
               </p>
 
               <Disclaimer />

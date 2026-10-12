@@ -10,9 +10,9 @@ const geistSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "El Niño Agricultural GDP Prediction",
+  title: "El Niño and Crop GSVA | State Panel",
   description:
-    "Policy-support dashboard predicting the impact of El Niño on state-wise Agricultural GDP in India.",
+    "IMD, NOAA, and RBI state-panel analysis of climate conditions and crop GSVA in India. Model training is manual; scenarios are not causal forecasts.",
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import {
   ComposableMap,
   Geographies,
@@ -8,9 +8,39 @@ import {
   ZoomableGroup,
 } from "react-simple-maps";
 import { scaleLinear } from "d3-scale";
+import { states, type StateCollection } from "vardhan-maps/data";
+import type { Position } from "geojson";
 
-const GEO_URL =
-  "https://raw.githubusercontent.com/udit-001/india-maps-data/main/geojson/india_states.geojson";
+// react-simple-maps uses D3's spherical winding convention, opposite to the
+// mixed ring directions in the bundled GeoJSON. Orient each polygon separately
+// so multipart states fill their actual land instead of the area outside India.
+function orientPolygon(rings: Position[][]): Position[][] {
+  const outer = rings[0];
+  const signedArea = outer.reduce((sum, point, index) => {
+    const next = outer[(index + 1) % outer.length];
+    return sum + point[0] * next[1] - next[0] * point[1];
+  }, 0);
+  return signedArea > 0 ? rings.map((ring) => [...ring].reverse()) : rings;
+}
+
+const mapGeography: StateCollection = {
+  ...states,
+  features: states.features.map((feature) => ({
+    ...feature,
+    geometry:
+      feature.geometry.type === "Polygon"
+        ? {
+            ...feature.geometry,
+            coordinates: orientPolygon(feature.geometry.coordinates),
+          }
+        : {
+            ...feature.geometry,
+            coordinates: feature.geometry.coordinates.map((polygon) =>
+              orientPolygon(polygon),
+            ),
+          },
+  })),
+};
 
 /** Map GeoJSON state names to our dataset names where they differ. */
 const STATE_NAME_MAP: Record<string, string> = {
@@ -23,7 +53,7 @@ const STATE_NAME_MAP: Record<string, string> = {
 };
 
 interface Props {
-  /** state name → impact % (negative = risk) */
+  /** State name → latest crop-GSVA deviation from that state's historical mean (%). */
   impactByState: Record<string, number>;
   onStateClick?: (state: string) => void;
   selectedState?: string;
@@ -34,19 +64,6 @@ export default function IndiaChoropleth({
   onStateClick,
   selectedState,
 }: Props) {
-  const [geoData, setGeoData] = useState<object | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetch(GEO_URL)
-      .then((r) => {
-        if (!r.ok) throw new Error("Could not load map data");
-        return r.json();
-      })
-      .then(setGeoData)
-      .catch(() => setError("Map data unavailable. Check network connection."));
-  }, []);
-
   const values = Object.values(impactByState);
   const colorScale = useMemo(() => {
     const min = values.length ? Math.min(...values, -30) : -30;
@@ -55,22 +72,6 @@ export default function IndiaChoropleth({
       .domain([min, 0, max])
       .range(["#b91c1c", "#22c55e", "#15803d"]);
   }, [values]);
-
-  if (error) {
-    return (
-      <div className="flex h-96 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-sm text-slate-600">
-        {error}
-      </div>
-    );
-  }
-
-  if (!geoData) {
-    return (
-      <div className="flex h-96 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-sm text-slate-600">
-        Loading map…
-      </div>
-    );
-  }
 
   return (
     <div>
@@ -82,13 +83,13 @@ export default function IndiaChoropleth({
         className="mx-auto w-full max-w-3xl"
       >
         <ZoomableGroup center={[82, 23]} zoom={1}>
-          <Geographies geography={geoData}>
+          <Geographies geography={mapGeography}>
             {({ geographies }) =>
               geographies.map((geo) => {
                 const rawName =
+                  geo.properties.name ??
                   geo.properties.ST_NM ??
                   geo.properties.NAME_1 ??
-                  geo.properties.name ??
                   "";
                 const mappedName = STATE_NAME_MAP[rawName] ?? rawName;
                 const impact = impactByState[mappedName];
@@ -123,14 +124,20 @@ export default function IndiaChoropleth({
       <div className="mt-3 flex flex-wrap items-center justify-center gap-4 text-xs text-slate-600">
         <span className="flex items-center gap-1">
           <span className="inline-block h-3 w-6 rounded bg-[#b91c1c]" />
-          High negative impact
+          Below state crop-GSVA mean
         </span>
         <span className="flex items-center gap-1">
           <span className="inline-block h-3 w-6 rounded bg-[#22c55e]" />
-          Stable / positive
+          At or above state crop-GSVA mean
         </span>
         <span className="text-slate-400">Click a highlighted state to select</span>
       </div>
+      <p className="mt-2 text-center text-xs text-slate-500">
+        Illustrative boundaries, not an official map. Map data: {" "}
+        <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer" className="underline">
+          © OpenStreetMap contributors
+        </a>.
+      </p>
     </div>
   );
 }

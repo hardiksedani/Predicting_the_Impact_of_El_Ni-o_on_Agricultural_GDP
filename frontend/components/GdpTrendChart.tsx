@@ -32,7 +32,7 @@ export default function GdpTrendChart({ history }: Props) {
           <YAxis
             yAxisId="gdp"
             tick={{ fontSize: 12 }}
-            label={{ value: "GDP (₹ Cr)", angle: -90, position: "insideLeft", fontSize: 11 }}
+            label={{ value: "Crop GSVA (₹ crore)", angle: -90, position: "insideLeft", fontSize: 11 }}
           />
           <YAxis
             yAxisId="oni"
@@ -43,7 +43,7 @@ export default function GdpTrendChart({ history }: Props) {
           <Tooltip
             formatter={(value, name) => {
               if (typeof value !== "number") return [String(value), name];
-              if (name === "gdp") return [`${value.toFixed(1)} ₹ Cr`, "Agricultural GDP"];
+              if (name === "gdp") return [`₹${value.toFixed(1)} crore`, "Crop GSVA"];
               return [value.toFixed(2), "ONI Index"];
             }}
           />
@@ -52,7 +52,7 @@ export default function GdpTrendChart({ history }: Props) {
             yAxisId="gdp"
             type="monotone"
             dataKey="gdp"
-            name="Agricultural GDP"
+            name="Crop GSVA"
             stroke="#1e3a5f"
             strokeWidth={2}
             dot={{ r: 3 }}

@@ -27,8 +27,8 @@ export default function ModelComparisonChart({ data, metric = "rmse" }: Props) {
   }));
 
   const labels: Record<string, string> = {
-    mae: "MAE (₹ Cr)",
-    rmse: "RMSE (₹ Cr)",
+    mae: "MAE (₹ crore)",
+    rmse: "RMSE (₹ crore)",
     r2: "R²",
   };
 

@@ -23,9 +23,9 @@ import { api, ApiError, SearchResponse } from "@/lib/api";
 const EXAMPLE_QUERIES = [
   "What is El Niño and how does NOAA define the Oceanic Niño Index (ONI)?",
   "How does El Niño affect the Indian Southwest monsoon and agriculture?",
-  "What is the predicted agricultural output for Maharashtra under a moderate El Niño?",
+  "What is the estimated crop GSVA for Maharashtra under a moderate El Niño scenario?",
   "What happens to Punjab under a strong El Niño scenario?",
-  "Which states have the highest historical agricultural economic output?",
+  "Which states have the highest historical crop GSVA?",
 ];
 
 const INTENT_BADGES = {
@@ -67,7 +67,7 @@ export default function SearchPage() {
       <PageHeader
         badge="Two-Tier Intelligence Assistant"
         title="El Niño & Agriculture Search Assistant"
-        description="Ask scientific questions about ENSO dynamics, query historical panel observations, or run automated model predictions with zero hallucination."
+        description="Ask about ENSO, query the new official-data panel, or request a model scenario after manual training. Verify answers against the cited sources."
       />
 
       {/* Search Input Box */}

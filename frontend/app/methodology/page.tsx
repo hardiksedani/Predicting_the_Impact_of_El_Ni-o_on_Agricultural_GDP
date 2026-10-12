@@ -31,7 +31,7 @@ export default function MethodologyPage() {
                 PBL Academic Project
               </p>
               <h2 className="mt-1 text-xl font-bold text-navy-900">
-                Predicting the Impact of El Niño on Agricultural GDP using Panel Data Machine Learning
+                Studying El Niño, Weather, and State Crop GSVA with Panel Data Machine Learning
               </h2>
               <p className="mt-1 text-sm text-slate-700">
                 <strong>Institution:</strong> K. J. Somaiya Institute of Technology · Department of Artificial Intelligence and Data Science
@@ -49,9 +49,9 @@ export default function MethodologyPage() {
         <CardContent>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-6 text-center">
             {[
-              { step: "1. Data Acquisition", desc: "NOAA ONI, Open-Meteo, RBI GSVA", icon: Database },
-              { step: "2. Data Preprocessing", desc: "Range checks, state normalization", icon: CheckCircle2 },
-              { step: "3. Panel Engineering", desc: "Anomalies, climate lags (t-1)", icon: Scale },
+              { step: "1. Data Acquisition", desc: "User-supplied IMD grids, NOAA ONI, RBI crop GSVA", icon: Database },
+              { step: "2. Data Preprocessing", desc: "Missing-value and grid/date checks", icon: CheckCircle2 },
+              { step: "3. Panel Construction", desc: "April–March state-year alignment", icon: Scale },
               { step: "4. Multi-Model ML", desc: "Train 5 regression models", icon: Brain },
               { step: "5. Empirical Selection", desc: "Lowest RMSE on held-out test years", icon: BarChart },
               { step: "6. Scenario Engine", desc: "Hypothetical policy simulation", icon: ShieldCheck },
@@ -76,15 +76,43 @@ export default function MethodologyPage() {
         </CardHeader>
         <CardContent className="space-y-4 text-sm text-slate-700 leading-relaxed">
           <p>
-            While the project title reflects the academic curriculum formulation (<em>Agricultural GDP</em>),
-            official Indian economic statistical accounts publish state-level production as <strong>Gross State Value Added (GSVA) from Agriculture, Forestry, and Fishing</strong>.
+            This project predicts <strong>crop Gross State Value Added (GSVA)</strong> for a state and financial year,
+            not India&apos;s total GDP or a state&apos;s total GSDP. The selected RBI/NSO agriculture (crops) series
+            excludes the separate forestry and fishing sectors.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { term: "GVA", meaning: "Gross Value Added: output minus purchased inputs used in production." },
+              { term: "Crop GSVA", meaning: "Crop-sector value added within one state. This is our prediction target." },
+              { term: "GSDP", meaning: "The whole state economy: value added across sectors plus net product taxes." },
+              { term: "GDP", meaning: "The whole country economy: value added across sectors plus net product taxes." },
+            ].map(({ term, meaning }) => (
+              <div key={term} className="rounded-xl border border-blue-100 bg-blue-50 p-4">
+                <p className="font-semibold text-navy-900">{term}</p>
+                <p className="mt-1 text-xs text-slate-700">{meaning}</p>
+              </div>
+            ))}
+          </div>
+          <p>
+            For example, if crop output is worth ₹100 and purchased seeds, fertilizer, and other intermediate
+            inputs cost ₹40, value added is ₹60. That ₹60 is <strong>not farmer profit</strong>; labour and other
+            parts of production still have to be accounted for. “Gross” means depreciation has not been deducted.
+          </p>
+          <p>
+            <strong>Constant 2011–12 prices</strong> aim to separate real production changes from price inflation.
+            The older MoSPI economic PDFs use different base years and accounting definitions, so they are not
+            silently joined to the selected RBI series. Climate downloads extend from 2001 to 2025, but the
+            comparable selected target covers FY 2011–12 through 2024–25.
+          </p>
+          <p className="text-xs text-slate-600">
+            Official definitions: <a className="font-semibold text-indigo-700 hover:underline" href="https://www.mospi.gov.in/uploads/announcements/announcements_1772117257791_84ae898f-7be2-4b7d-a135-565e1a809513_FAQ_GDP_26022026_1902.pdf" target="_blank" rel="noreferrer">MoSPI GDP and GVA FAQ</a>.
           </p>
           <div className="overflow-x-auto rounded-xl border border-slate-100">
             <table className="w-full text-left text-xs">
               <thead className="bg-slate-50 text-slate-500">
                 <tr>
                   <th className="px-4 py-3">Variable Name</th>
-                  <th className="px-4 py-3">Official Series Description</th>
+                  <th className="px-4 py-3">Description</th>
                   <th className="px-4 py-3">Units</th>
                   <th className="px-4 py-3">Source</th>
                 </tr>
@@ -92,33 +120,41 @@ export default function MethodologyPage() {
               <tbody className="divide-y divide-slate-100">
                 <tr>
                   <td className="px-4 py-3 font-semibold text-navy-900">agricultural_gdp_cr</td>
-                  <td className="px-4 py-3">Gross State Value Added from Agriculture at Constant Prices (Base 2011-12)</td>
-                  <td className="px-4 py-3">₹ Crore</td>
-                  <td className="px-4 py-3">Reserve Bank of India (RBI) / MoSPI</td>
+                  <td className="px-4 py-3">Legacy API field name; the value is crop GSVA for an April–March financial year at constant 2011–12 prices, not GDP</td>
+                  <td className="px-4 py-3">₹ crore</td>
+                  <td className="px-4 py-3">RBI Table 30 / NSO</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 font-semibold text-navy-900">rainfall_mm</td>
-                  <td className="px-4 py-3">Annual Cumulative Precipitation at State Geographic Centroid</td>
+                  <td className="px-4 py-3">Financial-year rainfall at a representative state grid point</td>
                   <td className="px-4 py-3">millimeters (mm)</td>
-                  <td className="px-4 py-3">Open-Meteo Historical Archive / ECMWF ERA5</td>
+                  <td className="px-4 py-3">IMD 0.25° daily NetCDF grid</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 font-semibold text-navy-900">avg_temperature_c</td>
-                  <td className="px-4 py-3">Annual Mean 2m Surface Air Temperature</td>
+                  <td className="px-4 py-3">Financial-year mean of daily (Tmax + Tmin) / 2 at a representative point</td>
                   <td className="px-4 py-3">°Celsius</td>
-                  <td className="px-4 py-3">Open-Meteo Historical Archive</td>
+                  <td className="px-4 py-3">IMD 1° daily GRD grids</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 font-semibold text-navy-900">oni_index</td>
                   <td className="px-4 py-3">Oceanic Niño Index (3-month SST Anomaly in Niño 3.4 Region)</td>
                   <td className="px-4 py-3">°Celsius</td>
-                  <td className="px-4 py-3">NOAA Physical Sciences Laboratory</td>
+                  <td className="px-4 py-3">NOAA Climate Prediction Center ASCII ONI</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-semibold text-navy-900">state identity</td>
+                  <td className="px-4 py-3">One-hot state indicators calibrate different state output levels; not climate evidence</td>
+                  <td className="px-4 py-3">0 or 1</td>
+                  <td className="px-4 py-3">State label in the joined panel</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-xs text-slate-500">
-            * Measuring at Constant Prices (2011-12 Base) is critical because it captures real volume changes rather than inflationary price increases.
+            * IMD rainfall, IMD temperature, NOAA ONI, and state identity are inputs; crop GSVA is the output.
+            Weather uses the nearest IMD grid cell to one representative state point, not a statewide mean or station measurement.
+            Cell centers can lie outside state boundaries, notably the coarse temperature cell near Goa.
           </p>
         </CardContent>
       </Card>
@@ -157,8 +193,10 @@ export default function MethodologyPage() {
           </div>
           <div className="rounded-xl bg-blue-50 p-4 border border-blue-100 text-xs text-blue-900">
             <strong>Chronological Evaluation Principle:</strong> Because panel data is time-dependent, random k-fold cross validation introduces temporal leakage.
-            Models are trained on earlier historical years and evaluated strictly on held-out latest test years (e.g. 2021–2023).
-            The model exhibiting the minimum Root Mean Squared Error (RMSE) is automatically selected as the operational estimator.
+            Models are trained on earlier financial years and evaluated on later held-out financial years. The actual year split is shown in the model report after your training run.
+            The model exhibiting the minimum Root Mean Squared Error (RMSE) is selected among the five models.
+            MAE and RMSE are measured in ₹ crore; a high pooled R² can still coexist with large errors because states differ greatly in economic size.
+            Compare against a simple state-mean baseline before claiming the climate inputs add predictive value.
           </div>
         </CardContent>
       </Card>

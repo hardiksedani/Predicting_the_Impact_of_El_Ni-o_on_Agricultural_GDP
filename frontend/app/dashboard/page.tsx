@@ -45,7 +45,7 @@ export default function DashboardPage() {
           api.getStates(),
           api.getModelComparison().catch((e) => {
             if (e instanceof ApiError && e.status === 404) {
-              setModelsError("No trained models yet. Run the Data Pipeline first.");
+              setModelsError("No official-data models yet. Train the five models manually after reviewing the new panel.");
               return null;
             }
             throw e;
@@ -53,9 +53,7 @@ export default function DashboardPage() {
         ]);
         if (sumRes) setSummary(sumRes);
         setStates(statesRes.states);
-        if (statesRes.states.length > 0) {
-          setSelectedState(statesRes.states[0].state);
-        }
+        setSelectedState(statesRes.states.find((s) => s.trend.length > 0)?.state ?? "");
         if (modelsRes) setModels(modelsRes);
       } catch (e) {
         setError(e instanceof ApiError ? e.message : "Failed to load dashboard");
@@ -89,15 +87,16 @@ export default function DashboardPage() {
   if (loading) return <LoadingSpinner label="Loading dashboard…" />;
   if (error) return <ErrorMessage message={error} />;
 
-  const emptyData = states.length === 0;
+  const statesWithHistory = states.filter((s) => s.trend.length > 0).length;
+  const emptyData = statesWithHistory === 0;
 
   return (
     <div className="mx-auto max-w-7xl space-y-8 px-4 py-8 sm:px-6">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <PageHeader
           badge="Analytics Dashboard"
-          title="State-wise Agricultural Output &amp; Climate Intelligence"
-          description="Longitudinal panel observations, India choropleth deviation map, and multi-model benchmark."
+          title="State Crop GSVA &amp; Climate Dashboard"
+          description="Historical state crop GSVA, climate observations, and five-model benchmark. Crop GSVA is not total GDP."
         />
         <div className="flex gap-2">
           <Link href="/scenario">
@@ -107,7 +106,7 @@ export default function DashboardPage() {
           </Link>
           <Link href="/pipeline">
             <Button size="md">
-              <Zap className="h-4 w-4" /> Run Pipeline
+              <Zap className="h-4 w-4" /> Manual Workflow
             </Button>
           </Link>
         </div>
@@ -118,7 +117,7 @@ export default function DashboardPage() {
         <Card className="bg-gradient-to-br from-slate-50 to-white">
           <CardContent className="p-4 text-center">
             <Globe2 className="mx-auto h-5 w-5 text-indigo-500 mb-1" />
-            <p className="text-xl font-bold text-navy-900">{summary?.states_count ?? states.length}</p>
+            <p className="text-xl font-bold text-navy-900">{summary?.states_count ?? statesWithHistory}</p>
             <p className="text-[11px] text-slate-500 uppercase font-medium">States Covered</p>
           </CardContent>
         </Card>
@@ -129,7 +128,7 @@ export default function DashboardPage() {
             <p className="text-xl font-bold text-navy-900">
               {summary?.year_min && summary?.year_max ? `${summary.year_min}–${summary.year_max}` : "—"}
             </p>
-            <p className="text-[11px] text-slate-500 uppercase font-medium">Years Covered</p>
+            <p className="text-[11px] text-slate-500 uppercase font-medium">FY Start Years</p>
           </CardContent>
         </Card>
 
@@ -167,7 +166,7 @@ export default function DashboardPage() {
             <p className="text-xl font-bold text-navy-900">
               {summary?.best_rmse != null ? `₹${summary.best_rmse.toFixed(1)}` : "—"}
             </p>
-            <p className="text-[11px] text-slate-500 uppercase font-medium">Lowest RMSE</p>
+            <p className="text-[11px] text-slate-500 uppercase font-medium">Lowest RMSE (₹ crore)</p>
           </CardContent>
         </Card>
       </div>
@@ -178,10 +177,10 @@ export default function DashboardPage() {
             <BarChart3 className="mx-auto h-12 w-12 text-slate-300" />
             <p className="mt-4 text-lg font-semibold text-navy-900">No data in database yet</p>
             <p className="mt-2 text-sm text-slate-600">
-              Run the automated pipeline to download, clean, and train models.
+              Prepare and sync the new raw-data panel, then train the models manually.
             </p>
             <Link href="/pipeline" className="mt-6 inline-block">
-              <Button>Start Data Pipeline</Button>
+              <Button>View manual steps</Button>
             </Link>
           </CardContent>
         </Card>
@@ -192,10 +191,10 @@ export default function DashboardPage() {
               <CardHeader className="flex flex-row items-center justify-between">
                 <div>
                   <h3 className="text-lg font-semibold text-navy-900">
-                    India — State-wise Agricultural Output Deviation Map
+                    State Crop GSVA vs Each State&apos;s Historical Mean
                   </h3>
                   <p className="text-xs text-slate-500">
-                    Color represents percentage deviation from state historical mean (click state to inspect)
+                    Color shows how the latest recorded crop GSVA differs from that state&apos;s own historical mean—not an El Niño impact estimate. Click a state to inspect it.
                   </p>
                 </div>
                 {selectedState && (
@@ -220,7 +219,7 @@ export default function DashboardPage() {
           <Card>
             <CardHeader className="flex flex-wrap items-center justify-between gap-3">
               <h3 className="text-lg font-semibold text-navy-900">
-                Historical GDP &amp; ONI Index
+                Historical Crop GSVA &amp; ONI Index
               </h3>
               <select
                 value={selectedState}
@@ -228,8 +227,8 @@ export default function DashboardPage() {
                 className="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
               >
                 {states.map((s) => (
-                  <option key={s.state} value={s.state}>
-                    {s.state}
+                  <option key={s.state} value={s.state} disabled={s.trend.length === 0}>
+                    {s.state}{s.trend.length > 0 ? "" : " — history pending"}
                   </option>
                 ))}
               </select>
@@ -248,7 +247,7 @@ export default function DashboardPage() {
           <Card>
             <CardHeader>
               <h3 className="text-lg font-semibold text-navy-900">
-                Model Comparison (RMSE)
+                Crop GSVA Model Comparison (RMSE, ₹ crore)
               </h3>
             </CardHeader>
             <CardContent>

@@ -25,7 +25,7 @@ const links = [
   { href: "/search", label: "AI Search", icon: Search },
   { href: "/data", label: "Data Explorer", icon: Table2 },
   { href: "/methodology", label: "Methodology", icon: BookOpen },
-  { href: "/pipeline", label: "Pipeline", icon: Database },
+  { href: "/pipeline", label: "Manual Workflow", icon: Database },
 ];
 
 export default function Navbar() {
@@ -40,10 +40,10 @@ export default function Navbar() {
           </div>
           <div className="hidden sm:block">
             <p className="text-[10px] font-medium uppercase tracking-widest text-blue-300/80">
-              El Niño Impact Lab
+              El Niño &amp; Crop Data
             </p>
             <p className="text-sm font-bold text-white leading-tight">
-              Agri-GDP Predictor
+              Crop GSVA Explorer
             </p>
           </div>
         </Link>

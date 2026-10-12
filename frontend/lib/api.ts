@@ -54,6 +54,14 @@ export interface ModelMetrics {
   feature_importance: Record<string, number>;
 }
 
+export interface LinearClimatePermutation {
+  baseline_rmse_cr: number;
+  rmse_change_cr: Record<string, number>;
+  repeats: number;
+  test_years: number[];
+  method: string;
+}
+
 export interface ModelComparison {
   run_id?: string;
   trained_at: string;
@@ -63,11 +71,13 @@ export interface ModelComparison {
   best_model: ModelName;
   selection_metric?: string;
   target_variable?: string;
+  linear_permutation?: LinearClimatePermutation | null;
 }
 
 export interface SinglePrediction {
   model: ModelName;
   model_name_display?: string;
+  // Legacy backend key; the value is RBI/NSO crop GSVA, not total GDP.
   predicted_gdp_cr: number;
   predicted_impact_pct: number;
   absolute_change_cr?: number;
@@ -75,6 +85,7 @@ export interface SinglePrediction {
 
 export interface PredictResponse {
   state: string;
+  // Historical and ensemble "gdp" keys are legacy backend names for crop GSVA.
   historical_avg_gdp_cr: number;
   predictions: SinglePrediction[];
   ensemble_gdp_cr: number | null;
@@ -131,6 +142,7 @@ export interface YearGdpPoint {
 export interface StateSummary {
   state: string;
   trend: YearGdpPoint[];
+  prediction_available: boolean;
 }
 
 export interface HistoryRow {

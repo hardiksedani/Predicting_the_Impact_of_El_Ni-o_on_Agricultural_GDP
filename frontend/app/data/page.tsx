@@ -50,7 +50,7 @@ export default function DataPage() {
         <PageHeader
           badge="Dataset Explorer"
           title="Panel Data Browser"
-          description="Explore the cleaned climate × agricultural panel dataset. Verified official sources: NOAA (ONI), Open-Meteo, and RBI/MoSPI GSVA."
+          description="Explore the new IMD/NOAA/RBI financial-year panel. Rows come from representative weather grid points and RBI/NSO crop GSVA, not the old sample dataset."
         />
         <div className="flex gap-2">
           <a
@@ -75,14 +75,14 @@ export default function DataPage() {
       <Card className="border-indigo-100 bg-gradient-to-r from-indigo-50 to-blue-50">
         <CardContent className="flex flex-wrap items-center gap-4 p-6">
           <div className="flex-1">
-            <p className="font-semibold text-navy-900">Need fresh data?</p>
+            <p className="font-semibold text-navy-900">New raw-data workflow</p>
             <p className="mt-1 text-sm text-slate-600">
-              The pipeline downloads from NOAA, Open-Meteo, and MOSPI reference GDP,
-              cleans the panel, and trains all three ML models in one step.
+              Review the prepared panel, then run the five-model training command
+              yourself. The old automatic sample-data pipeline is disabled.
             </p>
           </div>
           <Link href="/pipeline">
-            <Button>Download &amp; Train</Button>
+            <Button>View manual steps</Button>
           </Link>
         </CardContent>
       </Card>
@@ -131,7 +131,7 @@ export default function DataPage() {
           <div className="flex items-center gap-2">
             <Table2 className="h-5 w-5 text-indigo-500" />
             <h3 className="text-lg font-semibold text-navy-900">
-              climate_gdp_data
+              official_climate_gdp_data
             </h3>
           </div>
           <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
@@ -146,10 +146,10 @@ export default function DataPage() {
               <Database className="mx-auto h-12 w-12 text-slate-300" />
               <p className="mt-4 font-medium text-navy-900">No data in database</p>
               <p className="mt-2 text-sm text-slate-600">
-                Run the Data Pipeline to fetch and store panel data automatically.
+                Prepare and sync the official raw-data panel from the project root.
               </p>
               <Link href="/pipeline" className="mt-6 inline-block">
-                <Button>Start Pipeline</Button>
+                <Button>View preparation steps</Button>
               </Link>
             </div>
           ) : (
@@ -158,11 +158,11 @@ export default function DataPage() {
                 <thead className="bg-slate-50">
                   <tr className="text-slate-500">
                     <th className="px-4 py-3">State</th>
-                    <th className="px-4 py-3">Year</th>
+                    <th className="px-4 py-3">FY start year</th>
                     <th className="px-4 py-3">Rainfall (mm)</th>
                     <th className="px-4 py-3">Temp (°C)</th>
                     <th className="px-4 py-3">ONI</th>
-                    <th className="px-4 py-3">GDP (₹ Cr)</th>
+                    <th className="px-4 py-3">Crop GSVA (₹ crore)</th>
                   </tr>
                 </thead>
                 <tbody>

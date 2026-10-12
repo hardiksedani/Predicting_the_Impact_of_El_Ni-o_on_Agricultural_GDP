@@ -45,8 +45,8 @@ export default function StateDetailPage() {
   }
 
   const values = history.map((h) => h.agricultural_gdp_cr);
-  const avgGdp = values.reduce((a, b) => a + b, 0) / values.length;
-  const latestGdp = history[history.length - 1].agricultural_gdp_cr;
+  const avgCropGsva = values.reduce((a, b) => a + b, 0) / values.length;
+  const latestCropGsva = history[history.length - 1].agricultural_gdp_cr;
   const avgRain = history.reduce((a, b) => a + b.rainfall_mm, 0) / history.length;
   const avgTemp = history.reduce((a, b) => a + b.avg_temperature_c, 0) / history.length;
 
@@ -63,30 +63,30 @@ export default function StateDetailPage() {
 
       <PageHeader
         badge="State Analysis"
-        title={`${stateName} — Agricultural & Climate Profile`}
-        description={`Longitudinal panel analysis of agricultural output, monsoon precipitation, and ENSO correlation from ${history[0].year} to ${history[history.length - 1].year}.`}
+        title={`${stateName} — Crop GSVA & Climate Profile`}
+        description={`Historical crop GSVA, representative-point IMD weather, and NOAA ONI from FY ${history[0].year} to FY ${history[history.length - 1].year}. The chart does not establish causation.`}
       />
 
       {/* KPI Cards */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardContent className="p-5">
-            <p className="text-xs font-semibold uppercase text-slate-500">Historical Avg GSVA</p>
+            <p className="text-xs font-semibold uppercase text-slate-500">Historical crop GSVA mean</p>
             <p className="mt-2 text-2xl font-bold text-navy-900">
-              ₹{avgGdp.toLocaleString(undefined, { maximumFractionDigits: 1 })} <span className="text-xs font-normal text-slate-500">Cr</span>
+              {avgCropGsva.toLocaleString(undefined, { maximumFractionDigits: 1 })} <span className="text-xs font-normal text-slate-500">₹ crore</span>
             </p>
-            <p className="mt-1 text-xs text-slate-500">Annual mean at constant prices</p>
+            <p className="mt-1 text-xs text-slate-500">RBI/NSO, constant 2011–12 prices; crops only</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent className="p-5">
-            <p className="text-xs font-semibold uppercase text-slate-500">Latest Year ({history[history.length - 1].year})</p>
+            <p className="text-xs font-semibold uppercase text-slate-500">Latest Crop GSVA (FY {history[history.length - 1].year} start)</p>
             <p className="mt-2 text-2xl font-bold text-navy-900">
-              ₹{latestGdp.toLocaleString(undefined, { maximumFractionDigits: 1 })} <span className="text-xs font-normal text-slate-500">Cr</span>
+              {latestCropGsva.toLocaleString(undefined, { maximumFractionDigits: 1 })} <span className="text-xs font-normal text-slate-500">₹ crore</span>
             </p>
-            <p className={`mt-1 text-xs font-semibold ${latestGdp >= avgGdp ? "text-emerald-600" : "text-red-600"}`}>
-              {latestGdp >= avgGdp ? "+" : ""}{(((latestGdp - avgGdp) / avgGdp) * 100).toFixed(1)}% vs baseline
+            <p className={`mt-1 text-xs font-semibold ${latestCropGsva >= avgCropGsva ? "text-emerald-600" : "text-red-600"}`}>
+              {latestCropGsva >= avgCropGsva ? "+" : ""}{(((latestCropGsva - avgCropGsva) / avgCropGsva) * 100).toFixed(1)}% vs historical mean
             </p>
           </CardContent>
         </Card>
@@ -99,7 +99,7 @@ export default function StateDetailPage() {
             <p className="mt-2 text-2xl font-bold text-navy-900">
               {avgRain.toFixed(1)} <span className="text-xs font-normal text-slate-500">mm/yr</span>
             </p>
-            <p className="mt-1 text-xs text-slate-500">Centroid annual accumulation</p>
+            <p className="mt-1 text-xs text-slate-500">Representative IMD grid point, financial year</p>
           </CardContent>
         </Card>
 
@@ -111,16 +111,16 @@ export default function StateDetailPage() {
             <p className="mt-2 text-2xl font-bold text-navy-900">
               {avgTemp.toFixed(1)} <span className="text-xs font-normal text-slate-500">°C</span>
             </p>
-            <p className="mt-1 text-xs text-slate-500">2-meter surface mean</p>
+            <p className="mt-1 text-xs text-slate-500">IMD Tmax/Tmin grid-point mean</p>
           </CardContent>
         </Card>
       </div>
 
-      {/* Historical GDP & ONI Chart */}
+      {/* Historical crop GSVA & ONI chart */}
       <Card>
         <CardHeader>
           <h3 className="text-lg font-bold text-navy-900">Longitudinal Output &amp; ONI Overlay</h3>
-          <p className="text-xs text-slate-500">Dashed line represents the Oceanic Niño Index; solid line tracks Agricultural GSVA/GDP in ₹ Crore.</p>
+          <p className="text-xs text-slate-500">Dashed line: NOAA ONI. Solid line: RBI/NSO crop GSVA in ₹ crore.</p>
         </CardHeader>
         <CardContent>
           <GdpTrendChart history={history} />
@@ -141,7 +141,7 @@ export default function StateDetailPage() {
                   <th className="px-4 py-3">Rainfall (mm)</th>
                   <th className="px-4 py-3">Temperature (°C)</th>
                   <th className="px-4 py-3">ONI Index</th>
-                  <th className="px-4 py-3">Agricultural Output (₹ Cr)</th>
+                  <th className="px-4 py-3">Crop GSVA (₹ crore)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">

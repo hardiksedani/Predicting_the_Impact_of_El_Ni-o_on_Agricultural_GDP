@@ -24,7 +24,7 @@ import { ONI_PRESETS } from "@/lib/constants";
 
 export default function ScenarioPage() {
   const [states, setStates] = useState<StateSummary[]>([]);
-  const [selectedState, setSelectedState] = useState("Maharashtra");
+  const [selectedState, setSelectedState] = useState("");
   const [rainfall, setRainfall] = useState(720);
   const [temperature, setTemperature] = useState(29.5);
   const [oniIndex, setOniIndex] = useState(1.5);
@@ -38,9 +38,7 @@ export default function ScenarioPage() {
     api.getStates()
       .then((statesRes) => {
         setStates(statesRes.states);
-        if (statesRes.states.length > 0) {
-          setSelectedState(statesRes.states[0].state);
-        }
+        setSelectedState(statesRes.states.find((s) => s.prediction_available)?.state ?? "");
       })
       .catch((e) => setError(e instanceof ApiError ? e.message : "Failed to load state metadata"))
       .finally(() => setPageLoading(false));
@@ -59,7 +57,7 @@ export default function ScenarioPage() {
       });
       setResult(res);
     } catch (e) {
-      setError(e instanceof ApiError ? e.message : "Simulation failed. Please run the data pipeline first.");
+      setError(e instanceof ApiError ? e.message : "Simulation failed. Review and sync the official panel, then train the five models manually.");
     } finally {
       setLoading(false);
     }
@@ -91,7 +89,9 @@ export default function ScenarioPage() {
 
     setRainfall(adjustedRain);
     setTemperature(adjustedTemp);
-    handleSimulate(selectedState, adjustedRain, adjustedTemp, presetVal, presetLabel);
+    if (selectedState) {
+      handleSimulate(selectedState, adjustedRain, adjustedTemp, presetVal, presetLabel);
+    }
   }
 
   // Trigger initial simulation once states load
@@ -104,13 +104,19 @@ export default function ScenarioPage() {
 
   if (pageLoading) return <LoadingSpinner label="Loading Scenario Laboratory…" />;
 
+  const availableCount = states.filter((s) => s.prediction_available).length;
+
   return (
     <div className="mx-auto max-w-7xl space-y-8 px-4 py-8 sm:px-6">
       <PageHeader
-        badge="Hypothetical Policy Simulation"
+        badge="Hypothetical Model Scenario"
         title="El Niño Scenario Laboratory"
-        description="Simulate the impact of ENSO anomalies and temperature fluctuations on Indian state agricultural output across 5 regression models."
+        description="Explore hypothetical combinations of ONI, rainfall, and temperature to estimate crop GSVA—not total GDP. Preset weather values are illustrative, not ENSO-caused forecasts."
       />
+      <p className="text-sm text-slate-600">
+        All {states.length} Indian states are listed. Scenario predictions are available for {availableCount};
+        the others need a validated training panel and retraining.
+      </p>
 
       {/* Preset Selector */}
       <Card className="border-indigo-100 bg-gradient-to-r from-navy-900 via-indigo-950 to-navy-900 text-white">
@@ -160,9 +166,10 @@ export default function ScenarioPage() {
                 }}
                 className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100"
               >
+                <option value="" disabled>Select a state with trained data</option>
                 {states.map((s) => (
-                  <option key={s.state} value={s.state}>
-                    {s.state}
+                  <option key={s.state} value={s.state} disabled={!s.prediction_available}>
+                    {s.state}{s.prediction_available ? "" : " — data/training pending"}
                   </option>
                 ))}
               </select>
@@ -226,7 +233,7 @@ export default function ScenarioPage() {
           <div className="mt-6 flex justify-end">
             <Button
               onClick={() => handleSimulate(selectedState, rainfall, temperature, oniIndex, activePreset)}
-              disabled={loading}
+              disabled={loading || !selectedState}
               size="md"
             >
               {loading ? "Simulating Scenario…" : "Run Simulation"}
@@ -244,18 +251,18 @@ export default function ScenarioPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <Card>
               <CardContent className="p-5">
-                <p className="text-xs font-medium text-slate-500 uppercase">State Baseline</p>
+                <p className="text-xs font-medium text-slate-500 uppercase">Historical Crop GSVA Mean</p>
                 <p className="mt-2 text-2xl font-bold text-navy-900">
                   ₹{result.historical_avg_gdp_cr.toLocaleString()} <span className="text-xs text-slate-500 font-normal">Cr</span>
                 </p>
-                <p className="mt-1 text-xs text-slate-500">Historical mean output</p>
+                <p className="mt-1 text-xs text-slate-500">RBI/NSO crops, constant 2011–12 prices</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-5">
                 <div className="flex items-center justify-between">
-                  <p className="text-xs font-medium text-slate-500 uppercase">Best Model Output</p>
+                  <p className="text-xs font-medium text-slate-500 uppercase">Selected Model Crop GSVA</p>
                   <Badge variant="success">Lowest RMSE</Badge>
                 </div>
                 <p className="mt-2 text-2xl font-bold text-navy-900">
@@ -269,7 +276,7 @@ export default function ScenarioPage() {
 
             <Card>
               <CardContent className="p-5">
-                <p className="text-xs font-medium text-slate-500 uppercase">Projected Impact</p>
+                <p className="text-xs font-medium text-slate-500 uppercase">Difference vs Historical Mean</p>
                 <p
                   className={`mt-2 text-2xl font-bold flex items-center gap-1 ${
                     result.best_model_result.predicted_impact_pct < 0 ? "text-red-600" : "text-emerald-600"
@@ -285,19 +292,19 @@ export default function ScenarioPage() {
                 </p>
                 <p className="mt-1 text-xs text-slate-500">
                   {result.best_model_result.absolute_change_cr > 0 ? "+" : ""}
-                  ₹{result.best_model_result.absolute_change_cr.toLocaleString()} Cr change
+                  ₹{result.best_model_result.absolute_change_cr.toLocaleString()} crore model difference
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-5">
-                <p className="text-xs font-medium text-slate-500 uppercase">Ensemble Average</p>
+                <p className="text-xs font-medium text-slate-500 uppercase">Mean Crop GSVA Estimate</p>
                 <p className="mt-2 text-2xl font-bold text-navy-900">
                   ₹{result.ensemble_gdp_cr?.toLocaleString()} <span className="text-xs text-slate-500 font-normal">Cr</span>
                 </p>
                 <p className="mt-1 text-xs text-slate-500">
-                  Mean of all 5 regression models
+                  Mean estimate from all 5 regression models
                 </p>
               </CardContent>
             </Card>
@@ -307,7 +314,7 @@ export default function ScenarioPage() {
           <Card>
             <CardHeader className="flex items-center gap-2">
               <Layers className="h-5 w-5 text-indigo-500" />
-              <h3 className="text-lg font-semibold text-navy-900">Multi-Model Scenario Estimates</h3>
+              <h3 className="text-lg font-semibold text-navy-900">Multi-Model Crop GSVA Estimates</h3>
             </CardHeader>
             <CardContent>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
@@ -336,7 +343,7 @@ export default function ScenarioPage() {
                         }`}
                       >
                         {p.predicted_impact_pct > 0 ? "+" : ""}
-                        {p.predicted_impact_pct.toFixed(1)}% vs baseline
+                        {p.predicted_impact_pct.toFixed(1)}% vs historical mean
                       </p>
                       <p className="mt-1 text-[11px] text-slate-400">
                         Diff: {p.absolute_change_cr > 0 ? "+" : ""}₹{p.absolute_change_cr.toLocaleString()} Cr
@@ -347,7 +354,7 @@ export default function ScenarioPage() {
               </div>
 
               <div className="mt-6 rounded-xl bg-slate-50 p-4 border border-slate-100">
-                <p className="text-sm font-semibold text-navy-900">Interpretation & Attribution:</p>
+                <p className="text-sm font-semibold text-navy-900">Model interpretation—not causal attribution:</p>
                 <p className="mt-1 text-sm text-slate-600 leading-relaxed">{result.interpretation}</p>
               </div>
 

@@ -30,12 +30,12 @@ export const MODEL_DESCRIPTIONS: Record<ModelName, string> = {
 };
 
 export const DISCLAIMER =
-  "This platform provides analytical estimates based on historical climate and economic data and machine-learning models. Results are not official government forecasts and should not be interpreted as proof that El Niño alone determines agricultural economic performance.";
+  "Estimates are not official forecasts or proof of an El Niño causal effect. The target is RBI/NSO crop GSVA at constant 2011–12 prices—not total GDP or farmer income. Climate inputs use one representative grid point per state, not state-wide averages.";
 
 export const ONI_PRESETS = [
-  { label: "La Niña (Cool / Excess)", value: -1.2, desc: "Above-average monsoon rainfall expected" },
-  { label: "Neutral ENSO", value: 0.0, desc: "Normal climatic patterns" },
-  { label: "Weak El Niño", value: 0.8, desc: "Mild monsoon deficit (-5% to -10%)" },
-  { label: "Moderate El Niño", value: 1.5, desc: "Noticeable monsoon deficit (-15% to -20%)" },
-  { label: "Strong El Niño", value: 2.2, desc: "Severe monsoon deficit (-25% to -35%)" },
+  { label: "La Niña", value: -1.2, desc: "Illustrative cool-phase ONI input" },
+  { label: "Neutral ENSO", value: 0.0, desc: "Illustrative near-neutral ONI input" },
+  { label: "Weak El Niño", value: 0.8, desc: "Illustrative weak warm-phase ONI input" },
+  { label: "Moderate El Niño", value: 1.5, desc: "Illustrative moderate warm-phase ONI input" },
+  { label: "Strong El Niño", value: 2.2, desc: "Illustrative strong warm-phase ONI input" },
 ];

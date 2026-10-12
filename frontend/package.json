@@ -18,9 +18,11 @@
     "react-dom": "^18",
     "react-simple-maps": "^3.0.0",
     "recharts": "^3.10.1",
-    "tailwind-merge": "^3.6.0"
+    "tailwind-merge": "^3.6.0",
+    "vardhan-maps": "^0.18.1"
   },
   "devDependencies": {
+    "@types/geojson": "^7946.0.16",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
