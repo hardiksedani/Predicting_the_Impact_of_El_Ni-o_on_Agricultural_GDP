@@ -1,0 +1,450 @@
+{
+  "rows": 970,
+  "rows_by_source": {
+    "mospi_1999_2000": 278,
+    "mospi_2004_05": 300,
+    "rbi_2011_12": 392
+  },
+  "complete_case_rows": 963,
+  "missing_values": 7,
+  "issues_by_code": {
+    "large_yoy_change": 5,
+    "missing_official_value": 7,
+    "missing_state_pdf": 1
+  },
+  "coverage": {
+    "mospi_1999_2000": {
+      "Andhra Pradesh": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Arunachal Pradesh": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Assam": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Bihar": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Chhattisgarh": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Goa": {
+        "rows": 9,
+        "first": "1999-00",
+        "last": "2007-08"
+      },
+      "Gujarat": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Haryana": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Himachal Pradesh": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Jharkhand": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Karnataka": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Kerala": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Madhya Pradesh": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Maharashtra": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Manipur": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Meghalaya": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Mizoram": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Nagaland": {
+        "rows": 8,
+        "first": "1999-00",
+        "last": "2006-07"
+      },
+      "Odisha": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Punjab": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Rajasthan": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Sikkim": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Tamil Nadu": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "Telangana": {
+        "rows": 0,
+        "first": null,
+        "last": null
+      },
+      "Tripura": {
+        "rows": 9,
+        "first": "1999-00",
+        "last": "2007-08"
+      },
+      "Uttar Pradesh": {
+        "rows": 11,
+        "first": "1999-00",
+        "last": "2009-10"
+      },
+      "Uttarakhand": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      },
+      "West Bengal": {
+        "rows": 10,
+        "first": "1999-00",
+        "last": "2008-09"
+      }
+    },
+    "mospi_2004_05": {
+      "Andhra Pradesh": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Arunachal Pradesh": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Assam": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Bihar": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Chhattisgarh": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Goa": {
+        "rows": 10,
+        "first": "2004-05",
+        "last": "2013-14"
+      },
+      "Gujarat": {
+        "rows": 10,
+        "first": "2004-05",
+        "last": "2013-14"
+      },
+      "Haryana": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Himachal Pradesh": {
+        "rows": 10,
+        "first": "2004-05",
+        "last": "2013-14"
+      },
+      "Jharkhand": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Karnataka": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Kerala": {
+        "rows": 10,
+        "first": "2004-05",
+        "last": "2013-14"
+      },
+      "Madhya Pradesh": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Maharashtra": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Manipur": {
+        "rows": 10,
+        "first": "2004-05",
+        "last": "2013-14"
+      },
+      "Meghalaya": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Mizoram": {
+        "rows": 10,
+        "first": "2004-05",
+        "last": "2013-14"
+      },
+      "Nagaland": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Odisha": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Punjab": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Rajasthan": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Sikkim": {
+        "rows": 10,
+        "first": "2004-05",
+        "last": "2013-14"
+      },
+      "Tamil Nadu": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Telangana": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Tripura": {
+        "rows": 10,
+        "first": "2004-05",
+        "last": "2013-14"
+      },
+      "Uttar Pradesh": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "Uttarakhand": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      },
+      "West Bengal": {
+        "rows": 11,
+        "first": "2004-05",
+        "last": "2014-15"
+      }
+    },
+    "rbi_2011_12": {
+      "Andhra Pradesh": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Arunachal Pradesh": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Assam": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Bihar": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Chhattisgarh": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Goa": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Gujarat": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Haryana": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Himachal Pradesh": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Jharkhand": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Karnataka": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Kerala": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Madhya Pradesh": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Maharashtra": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Manipur": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Meghalaya": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Mizoram": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Nagaland": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Odisha": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Punjab": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Rajasthan": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Sikkim": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Tamil Nadu": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Telangana": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Tripura": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Uttar Pradesh": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "Uttarakhand": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      },
+      "West Bengal": {
+        "rows": 14,
+        "first": "2011-12",
+        "last": "2024-25"
+      }
+    }
+  },
+  "ready_for_training": false,
+  "why_not_training_ready": [
+    "The three sources have different constant-price bases and accounting measures.",
+    "Financial-year targets have not been aligned to climate periods.",
+    "All extraction warnings and source-page values require review."
+  ],
+  "policy": "No missing-value imputation, clipping, outlier removal, or model fitting is performed."
+}

@@ -1,0 +1,100 @@
+{
+  "run_id": "run_20261001_192750_0d001f96",
+  "mode": "oni_plus_state",
+  "target": "RBI/NSO GSVA Agriculture (crops), constant 2011-12 prices (INR crore)",
+  "feature_columns": [
+    "oni_index",
+    "state__andhra_pradesh",
+    "state__arunachal_pradesh",
+    "state__assam",
+    "state__bihar",
+    "state__chhattisgarh",
+    "state__goa",
+    "state__gujarat",
+    "state__haryana",
+    "state__himachal_pradesh",
+    "state__jharkhand",
+    "state__karnataka",
+    "state__kerala",
+    "state__madhya_pradesh",
+    "state__maharashtra",
+    "state__manipur",
+    "state__meghalaya",
+    "state__mizoram",
+    "state__nagaland",
+    "state__odisha",
+    "state__punjab",
+    "state__rajasthan",
+    "state__sikkim",
+    "state__tamil_nadu",
+    "state__telangana",
+    "state__tripura",
+    "state__uttar_pradesh",
+    "state__uttarakhand",
+    "state__west_bengal"
+  ],
+  "source_sha256": {
+    "oni_ascii": "93f8c86c7a660f46318abe33b38c0479d184812d95a479a1fe869c0c2363a9e4",
+    "rbi_pdf": "c9ebaafc4fb46610e276e018dfbea353308961f418a1e896ffe7863be4c16f6a",
+    "extracted_agriculture_csv": "48fc79e3aa6527dda1e41d1997b9e16dcc3b54fa5ce4450c03d35c3c7c47b204"
+  },
+  "rows": 385,
+  "excluded_missing_official_targets": 7,
+  "train_years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020
+  ],
+  "test_years": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "state_mean_reference": {
+    "mae_cr": 9911.99,
+    "rmse_cr": 17552.79,
+    "r2": 0.8763
+  },
+  "models": {
+    "linear_regression": {
+      "mae_cr": 10060.64,
+      "rmse_cr": 17482.61,
+      "r2": 0.8773,
+      "artifact_sha256": "162d40ce9422474a1a6bece49cae0af3e1c7096ebddb74dc1836da3a3acdf954"
+    },
+    "random_forest": {
+      "mae_cr": 17401.92,
+      "rmse_cr": 21709.61,
+      "r2": 0.8108,
+      "artifact_sha256": "cadc77542e4096ea8550824c2eb8d6626c2e4fa9d8dbfc4a583b49ce447bf87e"
+    },
+    "gradient_boosting": {
+      "mae_cr": 11428.23,
+      "rmse_cr": 19057.78,
+      "r2": 0.8542,
+      "artifact_sha256": "d17d959ccfbb3e5f6f272068d020ff4ba1942300955caef138085bebc8924a7c"
+    },
+    "xgboost": {
+      "mae_cr": 11891.64,
+      "rmse_cr": 18513.13,
+      "r2": 0.8624,
+      "artifact_sha256": "43b603793ca6f51c19902174c203d9956722e5d5ec9d09928f1ca6daff8c723b"
+    },
+    "extra_trees": {
+      "mae_cr": 17526.59,
+      "rmse_cr": 22059.59,
+      "r2": 0.8047,
+      "artifact_sha256": "efe55ea25563cd8594db5e5eee34dcb6f5c70229b65fe6196a51629b40598bfc"
+    }
+  },
+  "best_model_by_test_rmse": "linear_regression",
+  "caution": "ONI is the same nationwide within each year. High pooled R2 may mainly reflect state size; compare the state-mean reference. Selecting the best model on these test years makes its reported score optimistic."
+}

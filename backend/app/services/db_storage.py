@@ -111,9 +111,12 @@ class LocalCollectionQuery:
 
     def stream(self):
         conn = _get_sqlite_conn()
-        cursor = conn.cursor()
-        cursor.execute("SELECT doc_id, data FROM documents WHERE collection = ?", (self.collection,))
-        rows = cursor.fetchall()
+        try:
+            cursor = conn.cursor()
+            cursor.execute("SELECT doc_id, data FROM documents WHERE collection = ?", (self.collection,))
+            rows = cursor.fetchall()
+        finally:
+            conn.close()
 
         matched = []
         for r in rows:
@@ -173,12 +176,15 @@ class LocalDocRef:
 
     def get(self) -> LocalDoc:
         conn = _get_sqlite_conn()
-        cursor = conn.cursor()
-        cursor.execute(
-            "SELECT data FROM documents WHERE collection = ? AND doc_id = ?",
-            (self.collection, self.doc_id),
-        )
-        row = cursor.fetchone()
+        try:
+            cursor = conn.cursor()
+            cursor.execute(
+                "SELECT data FROM documents WHERE collection = ? AND doc_id = ?",
+                (self.collection, self.doc_id),
+            )
+            row = cursor.fetchone()
+        finally:
+            conn.close()
         if not row:
             return LocalDoc(self.doc_id, {}, exists=False)
         return LocalDoc(self.doc_id, json.loads(row["data"]), exists=True)
@@ -186,24 +192,27 @@ class LocalDocRef:
     def set(self, data: dict[str, Any], merge: bool = False) -> None:
         conn = _get_sqlite_conn()
         now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-        with conn:
-            if merge:
-                existing = self.get()
-                if existing.exists:
-                    merged_data = existing.to_dict()
-                    merged_data.update(data)
-                    data = merged_data
+        try:
+            with conn:
+                if merge:
+                    existing = self.get()
+                    if existing.exists:
+                        merged_data = existing.to_dict()
+                        merged_data.update(data)
+                        data = merged_data
 
-            conn.execute(
-                """
-                INSERT INTO documents (collection, doc_id, data, updated_at)
-                VALUES (?, ?, ?, ?)
-                ON CONFLICT(collection, doc_id) DO UPDATE SET
-                    data = excluded.data,
-                    updated_at = excluded.updated_at
-                """,
-                (self.collection, self.doc_id, json.dumps(data), now),
-            )
+                conn.execute(
+                    """
+                    INSERT INTO documents (collection, doc_id, data, updated_at)
+                    VALUES (?, ?, ?, ?)
+                    ON CONFLICT(collection, doc_id) DO UPDATE SET
+                        data = excluded.data,
+                        updated_at = excluded.updated_at
+                    """,
+                    (self.collection, self.doc_id, json.dumps(data), now),
+                )
+        finally:
+            conn.close()
 
 
 class LocalBatch:
@@ -216,33 +225,36 @@ class LocalBatch:
     def commit(self):
         conn = _get_sqlite_conn()
         now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-        with conn:
-            for doc_ref, data, merge in self._ops:
-                final_data = data
-                if merge:
-                    cur = conn.cursor()
-                    cur.execute(
-                        "SELECT data FROM documents WHERE collection = ? AND doc_id = ?",
-                        (doc_ref.collection, doc_ref.doc_id),
+        try:
+            with conn:
+                for doc_ref, data, merge in self._ops:
+                    final_data = data
+                    if merge:
+                        cur = conn.cursor()
+                        cur.execute(
+                            "SELECT data FROM documents WHERE collection = ? AND doc_id = ?",
+                            (doc_ref.collection, doc_ref.doc_id),
+                        )
+                        row = cur.fetchone()
+                        if row:
+                            try:
+                                d = json.loads(row["data"])
+                                d.update(data)
+                                final_data = d
+                            except Exception:
+                                pass
+                    conn.execute(
+                        """
+                        INSERT INTO documents (collection, doc_id, data, updated_at)
+                        VALUES (?, ?, ?, ?)
+                        ON CONFLICT(collection, doc_id) DO UPDATE SET
+                            data = excluded.data,
+                            updated_at = excluded.updated_at
+                        """,
+                        (doc_ref.collection, doc_ref.doc_id, json.dumps(final_data), now),
                     )
-                    row = cur.fetchone()
-                    if row:
-                        try:
-                            d = json.loads(row["data"])
-                            d.update(data)
-                            final_data = d
-                        except Exception:
-                            pass
-                conn.execute(
-                    """
-                    INSERT INTO documents (collection, doc_id, data, updated_at)
-                    VALUES (?, ?, ?, ?)
-                    ON CONFLICT(collection, doc_id) DO UPDATE SET
-                        data = excluded.data,
-                        updated_at = excluded.updated_at
-                    """,
-                    (doc_ref.collection, doc_ref.doc_id, json.dumps(final_data), now),
-                )
+        finally:
+            conn.close()
         self._ops.clear()
 
 

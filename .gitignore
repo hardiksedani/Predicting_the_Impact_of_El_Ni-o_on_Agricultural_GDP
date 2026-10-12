@@ -28,6 +28,20 @@ out/
 # Models cache
 /tmp/models/
 backend/tmp/
+data/raw/imd/*.nc
+data/raw/imd/*.part
+
+# Large user-supplied raw hydrometeorological and GIS downloads
+/data/raw/rainfall/*.nc
+/data/raw/temperature/tmax/*.GRD
+/data/raw/temperature/tmax/*.grd
+/data/raw/temperature/tmin/*.GRD
+/data/raw/temperature/tmin/*.grd
+/data/raw/basin_boundaries/*
+/data/raw/oni/*.txt
+/data/raw/oni/*.ascii
+/data/raw/streamflow/*.csv
+/data/raw/economic/**/*.pdf
 
 # IDE & OS
 .idea/

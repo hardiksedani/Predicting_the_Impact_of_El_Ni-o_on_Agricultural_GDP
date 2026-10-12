@@ -1,9 +1,11 @@
-"""Download real historical climate, ENSO, and agricultural economic data.
+"""Download climate and ENSO data plus the bundled economic sample.
 
 Sources:
 1. NOAA Physical Sciences Laboratory - Oceanic Niño Index (ONI)
-2. Open-Meteo Archive API - State-wise precipitation & temperature
-3. RBI / MoSPI Reference - State-wise Agricultural GSVA/GDP
+2. Open-Meteo Archive API - State-centroid precipitation & temperature
+3. Bundled project reference - illustrative agricultural GDP target
+
+Official IMD rainfall is fetched separately by scripts/download_imd_rainfall.py.
 """
 
 import logging

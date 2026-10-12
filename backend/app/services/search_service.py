@@ -146,8 +146,8 @@ def _answer_historical(query: str) -> tuple[str, Optional[dict[str, Any]], list[
     q = query.lower()
     citations = [
         SearchCitation(
-            source="PBL Panel Database (Derived from RBI, MoSPI & Open-Meteo)",
-            title="Cleaned State-wise Climate and Agricultural GSVA Panel",
+            source="PBL Panel Database (Open-Meteo climate, NOAA ONI, unverified GDP sample)",
+            title="Cleaned state-wise climate and illustrative agricultural target panel",
             url=None,
             snippet=f"Covering {df['state'].nunique()} states from {int(df['year'].min())} to {int(df['year'].max())}.",
         )
@@ -287,9 +287,9 @@ def _answer_scenario(query: str) -> tuple[str, Optional[dict[str, Any]], list[Se
         f"### HYPOTHETICAL MODEL SCENARIO: {preset_name.upper()}\n\n"
         f"• **State:** {state_match}\n"
         f"• **Scenario Inputs:** Rainfall: {scen_res.inputs['rainfall_mm']} mm, Temp: {scen_res.inputs['avg_temperature_c']}°C, ONI: {scen_res.inputs['oni_index']}\n"
-        f"• **Historical Baseline:** ₹{scen_res.historical_avg_gdp_cr:,.1f} Crore\n"
-        f"• **Projected Output ({scen_res.best_model_result.model_name_display}):** ₹{scen_res.best_model_result.predicted_gdp_cr:,.1f} Crore\n"
-        f"• **Projected Impact:** {scen_res.best_model_result.predicted_impact_pct:+.1f}% ({scen_res.best_model_result.absolute_change_cr:+,.1f} ₹ Cr)\n\n"
+        f"• **Historical Sample Baseline:** {scen_res.historical_avg_gdp_cr:,.1f} (unverified units)\n"
+        f"• **Projected Sample Output ({scen_res.best_model_result.model_name_display}):** {scen_res.best_model_result.predicted_gdp_cr:,.1f} (unverified units)\n"
+        f"• **Projected Impact:** {scen_res.best_model_result.predicted_impact_pct:+.1f}% ({scen_res.best_model_result.absolute_change_cr:+,.1f} sample units)\n\n"
         f"**Interpretation:** {scen_res.interpretation}"
     )
 

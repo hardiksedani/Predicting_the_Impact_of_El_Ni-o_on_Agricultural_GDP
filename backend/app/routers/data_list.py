@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Query
 
+from app.constants import OFFICIAL_COLLECTION
 from app.models.schemas import ClimateDataRow, ClimateDataResponse
 from app.services.db_storage import get_db
 
@@ -13,7 +14,7 @@ async def list_climate_data(
     year_max: int | None = Query(None),
 ):
     db = get_db()
-    query = db.collection("climate_gdp_data")
+    query = db.collection(OFFICIAL_COLLECTION)
 
     if state:
         query = query.where("state", "==", state)

@@ -17,7 +17,10 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BASE_DIR / "backend"))
 
+from app.constants import OFFICIAL_COLLECTION
+from app.services.db_storage import get_db
 from app.services.ml import train_all_models
+from sync_official_panel import validated_panel, verify_collection
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
@@ -35,7 +38,11 @@ def main():
     logger.info("PHASE 7 - 11: MULTI-MODEL MACHINE LEARNING TRAINING")
     logger.info("==================================================")
 
-    result = train_all_models()
+    panel, digest = validated_panel()
+    stored = list(get_db().collection(OFFICIAL_COLLECTION).stream())
+    verify_collection(panel, digest, stored)
+    panel["panel_sha256"] = digest
+    result = train_all_models(panel)
 
     print("\n" + "=" * 65)
     print("TRAINING & BENCHMARK RESULTS (TEST DATASET)")
@@ -44,7 +51,7 @@ def main():
     print(f"Train Years:       {result.get('train_years')}")
     print(f"Test Years:        {result.get('test_years')}")
     print("-" * 65)
-    print(f"{'Model':<25} | {'MAE (INR Cr)':<14} | {'RMSE (INR Cr)':<14} | {'R2':<8}")
+    print(f"{'Model':<25} | {'MAE (₹ Cr)':<14} | {'RMSE (₹ Cr)':<14} | {'R2':<8}")
     print("-" * 65)
 
     for name, m in result["models"].items():

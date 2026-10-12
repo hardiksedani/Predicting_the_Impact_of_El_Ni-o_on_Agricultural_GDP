@@ -6,15 +6,10 @@ import pandas as pd
 
 logger = logging.getLogger(__name__)
 
-# MOSPI / RBI-style reference panel (bundled + optional remote mirror)
+# Bundled project reference panel. Provenance is unverified; do not label as RBI/MoSPI.
 LOCAL_GDP_PATH = (
     Path(__file__).resolve().parents[2] / "data" / "sources" / "agricultural_gdp_reference.csv"
 )
-REMOTE_GDP_URL = (
-    "https://raw.githubusercontent.com/datasets/india-state-wise/master/data/state-wise-data.csv"
-)
-
-
 def _load_local_reference() -> pd.DataFrame | None:
     if not LOCAL_GDP_PATH.exists():
         return None
@@ -28,14 +23,14 @@ def _load_local_reference() -> pd.DataFrame | None:
 def fetch_agricultural_gdp() -> pd.DataFrame:
     """
     Download agricultural GDP panel.
-    Primary: bundled MOSPI-style reference CSV.
+    Primary: bundled sample CSV with unverified economic provenance.
     Fallback: expanded sample panel from project sample_data.
     """
     logger.info("Fetching agricultural GDP reference data")
 
     df = _load_local_reference()
     if df is not None:
-        logger.info("GDP: loaded %d rows from local MOSPI reference", len(df))
+        logger.info("GDP: loaded %d rows from unverified local reference", len(df))
         return df
 
     sample_path = (

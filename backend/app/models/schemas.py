@@ -37,15 +37,27 @@ class ModelMetrics(BaseModel):
     feature_importance: dict[str, float]
 
 
+class LinearClimatePermutation(BaseModel):
+    baseline_rmse_cr: float
+    rmse_change_cr: dict[str, float]
+    repeats: int
+    test_years: list[int]
+    method: str
+
+
 class TrainResponse(BaseModel):
     run_id: Optional[str] = None
     trained_at: str
     train_years: list[int]
     test_years: list[int]
+    panel_rows: int | None = None
+    train_rows: int | None = None
+    test_rows: int | None = None
     models: dict[str, ModelMetrics]
     best_model: ModelName
     selection_metric: str = "rmse"
-    target_variable: str = "Agricultural GVA / GDP (Base 2011-12, ₹ Crore)"
+    target_variable: str = "Bundled agricultural GDP sample (official source and units unverified)"
+    linear_permutation: Optional[LinearClimatePermutation] = None
 
 
 class PredictRequest(BaseModel):
@@ -111,6 +123,7 @@ class YearGdpPoint(BaseModel):
 class StateSummary(BaseModel):
     state: str
     trend: list[YearGdpPoint]
+    prediction_available: bool = False
 
 
 class StatesResponse(BaseModel):
@@ -185,6 +198,7 @@ class CleaningReport(BaseModel):
 
 class PipelineRunResponse(BaseModel):
     status: str
+    rainfall_source: str | None = None
     started_at: str
     completed_at: str | None = None
     failed_at: str | None = None
@@ -198,6 +212,7 @@ class PipelineRunResponse(BaseModel):
 
 class PipelineStatusResponse(BaseModel):
     status: str = "idle"
+    rainfall_source: str | None = None
     message: str | None = None
     started_at: str | None = None
     completed_at: str | None = None

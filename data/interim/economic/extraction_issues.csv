@@ -1,0 +1,14 @@
+﻿severity,code,state,financial_year,source_file,pdf_page,detail
+review,large_yoy_change,Assam,2022-23,data/raw/economic/rbi_2011_12.pdf,2,+51.3% from prior financial year; not altered
+review,large_yoy_change,Chhattisgarh,2001-02,data/raw/economic/mospi_1999_2000/GSDP_Chattisgarh.pdf,2,+50.4% from prior financial year; not altered
+review,large_yoy_change,Manipur,2017-18,data/raw/economic/rbi_2011_12.pdf,2,+88.5% from prior financial year; not altered
+review,large_yoy_change,Rajasthan,2003-04,data/raw/economic/mospi_1999_2000/GSDP_Rajasthan.pdf,2,+87.8% from prior financial year; not altered
+review,large_yoy_change,Telangana,2019-20,data/raw/economic/rbi_2011_12.pdf,2,+55.4% from prior financial year; not altered
+warning,missing_official_value,Goa,2024-25,data/raw/economic/rbi_2011_12.pdf,2,Source table contains a dash; not imputed
+warning,missing_official_value,Gujarat,2023-24,data/raw/economic/rbi_2011_12.pdf,2,Source table contains a dash; not imputed
+warning,missing_official_value,Gujarat,2024-25,data/raw/economic/rbi_2011_12.pdf,2,Source table contains a dash; not imputed
+warning,missing_official_value,Manipur,2024-25,data/raw/economic/rbi_2011_12.pdf,2,Source table contains a dash; not imputed
+warning,missing_official_value,Mizoram,2024-25,data/raw/economic/rbi_2011_12.pdf,2,Source table contains a dash; not imputed
+warning,missing_official_value,Nagaland,2024-25,data/raw/economic/rbi_2011_12.pdf,2,Source table contains a dash; not imputed
+warning,missing_official_value,Sikkim,2024-25,data/raw/economic/rbi_2011_12.pdf,2,Source table contains a dash; not imputed
+warning,missing_state_pdf,Telangana,,,,State did not exist separately in this historical series

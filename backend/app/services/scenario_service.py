@@ -10,7 +10,6 @@ import pandas as pd
 
 from app.constants import (
     DISCLAIMER,
-    FEATURE_COLUMNS,
     MODEL_DISPLAY_NAMES,
     MODEL_NAMES,
 )
@@ -24,6 +23,7 @@ from app.services.ml import (
     get_model_metrics,
     get_state_historical_avg_gdp,
     load_model,
+    model_features,
 )
 
 PRESET_CONFIGS: dict[str, dict[str, float]] = {
@@ -49,47 +49,51 @@ def _interpret_scenario_impact(impact_pct: float, state: str, preset_name: Optio
         severity = "positive expansion"
 
     return (
-        f"The model estimates a {severity} ({impact_pct:+.1f}%) in {state}'s "
-        f"agricultural economic output {preset_str}relative to its historical baseline. "
-        f"Rainfall deficit and sea surface warming (elevated ONI) are key contributors to the projected deviation."
+        f"The model estimates a {severity} ({impact_pct:+.1f}%) for the {state} "
+        f"sample {preset_str}relative to its historical baseline. "
+        "This what-if comparison changes several inputs together and does not isolate "
+        "a causal effect of rainfall, temperature, or ONI."
     )
 
 
 def run_scenario_simulation(req: ScenarioRequest) -> ScenarioResponse:
     state = req.state.strip()
-    baseline = get_state_historical_avg_gdp(state)
     metrics_data = get_model_metrics()
+    if not metrics_data:
+        raise ValueError("No official-data models trained yet. Run scripts/train_models.py manually.")
+    training_states = list(metrics_data.get("training_states") or [])
+    if state not in training_states:
+        raise ValueError(f"{state} was not included in the official training panel.")
+    baseline = get_state_historical_avg_gdp(state, metrics_data)
     best_model_name: ModelName = "xgboost"
     if metrics_data and "best_model" in metrics_data:
         best_model_name = metrics_data["best_model"]
 
     models_to_run = [req.model] if req.model else MODEL_NAMES
 
-    features = pd.DataFrame(
-        [[req.rainfall, req.temperature, req.oni_index]],
-        columns=FEATURE_COLUMNS,
-    )
+    features = model_features(pd.DataFrame([{
+        "state": state,
+        "rainfall_mm": req.rainfall,
+        "avg_temperature_c": req.temperature,
+        "oni_index": req.oni_index,
+    }]), training_states)
     results: list[ScenarioSingleResult] = []
 
     for name in models_to_run:
-        try:
-            model = load_model(name)
-            predicted = float(model.predict(features)[0])
-            abs_change = round(predicted - baseline, 2)
-            pct_change = round((abs_change / baseline) * 100.0, 2) if baseline > 0 else 0.0
+        model = load_model(name, metrics_data)
+        predicted = float(model.predict(features)[0])
+        abs_change = round(predicted - baseline, 2)
+        pct_change = round((abs_change / baseline) * 100.0, 2) if baseline > 0 else 0.0
 
-            results.append(
-                ScenarioSingleResult(
-                    model=name,
-                    model_name_display=MODEL_DISPLAY_NAMES.get(name, name),
-                    predicted_gdp_cr=round(predicted, 2),
-                    predicted_impact_pct=pct_change,
-                    absolute_change_cr=abs_change,
-                )
+        results.append(
+            ScenarioSingleResult(
+                model=name,
+                model_name_display=MODEL_DISPLAY_NAMES.get(name, name),
+                predicted_gdp_cr=round(predicted, 2),
+                predicted_impact_pct=pct_change,
+                absolute_change_cr=abs_change,
             )
-        except Exception as exc:
-            # Fallback if model not trained yet
-            continue
+        )
 
     if not results:
         raise ValueError(

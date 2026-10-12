@@ -1,8 +1,15 @@
 from fastapi import APIRouter, HTTPException
+from fastapi.concurrency import run_in_threadpool
 
 from app.constants import DISCLAIMER, MODEL_DISPLAY_NAMES, MODEL_NAMES
 from app.models.schemas import PredictRequest, PredictResponse, SinglePrediction, TrainResponse
-from app.services.ml import get_all_model_runs, get_model_metrics, log_prediction, predict_gdp
+from app.services.ml import (
+    get_all_model_runs,
+    get_linear_climate_permutation,
+    get_model_metrics,
+    log_prediction,
+    predict_gdp,
+)
 
 router = APIRouter(prefix="/api", tags=["models"])
 
@@ -34,7 +41,8 @@ async def models_comparison():
             status_code=404,
             detail="No trained models found. Run POST /api/train first.",
         )
-    return TrainResponse(**metrics)
+    permutation = await run_in_threadpool(get_linear_climate_permutation, metrics)
+    return TrainResponse(**metrics, linear_permutation=permutation)
 
 
 @router.get("/models/best")

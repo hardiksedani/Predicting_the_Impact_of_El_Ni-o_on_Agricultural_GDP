@@ -1,5 +1,16 @@
 """Indian state centroids for Open-Meteo climate fetching."""
 
+# Current Indian states (Union Territories are intentionally separate). This
+# catalogue is not a claim that the model has been trained for every state.
+INDIAN_STATES: tuple[str, ...] = (
+    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand",
+    "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur",
+    "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan",
+    "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh",
+    "Uttarakhand", "West Bengal",
+)
+
 STATE_COORDINATES: dict[str, tuple[float, float]] = {
     "Andhra Pradesh": (15.9129, 79.7400),
     "Bihar": (25.0961, 85.3131),

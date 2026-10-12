@@ -37,7 +37,12 @@ FEATURE_COLUMNS = BASE_FEATURE_COLUMNS
 
 TARGET_COLUMN = "agricultural_gdp_cr"
 TARGET_ALT_COLUMN = "agricultural_gva_cr"
-TARGET_LABEL = "Agricultural GVA / GDP (Base 2011-12, ₹ Crore)"
+TARGET_LABEL = "Bundled agricultural GDP sample (official source and units unverified)"
+OFFICIAL_TARGET_LABEL = "RBI/NSO GSVA Agriculture (crops), constant 2011-12 prices (INR crore)"
+OFFICIAL_TARGET_SOURCE = "rbi_2011_12"
+OFFICIAL_COLLECTION = "official_climate_gdp_data"
+OFFICIAL_CLIMATE_METHOD = "nearest_representative_grid_point_fy_apr_mar"
+OFFICIAL_MODEL_STORAGE_PREFIX = "models/official"
 
 REQUIRED_CSV_COLUMNS = [
     "state",
@@ -48,14 +53,6 @@ REQUIRED_CSV_COLUMNS = [
     "agricultural_gdp_cr",
 ]
 
-MODEL_STORAGE_PATHS = {
-    "linear_regression": "models/linear_regression_latest.joblib",
-    "random_forest": "models/random_forest_latest.joblib",
-    "gradient_boosting": "models/gradient_boosting_latest.joblib",
-    "xgboost": "models/xgboost_latest.joblib",
-    "extra_trees": "models/extra_trees_latest.joblib",
-}
-
 BASE_DIR = Path(__file__).resolve().parents[2]
 LOCAL_MODEL_CACHE_DIR = str(BASE_DIR / "data" / "models")
 LOCAL_DATA_DIR = str(BASE_DIR / "data")
@@ -63,5 +60,6 @@ LOCAL_DATA_DIR = str(BASE_DIR / "data")
 DISCLAIMER = (
     "This platform provides analytical estimates based on historical climate and economic data "
     "and machine-learning models. Results are not official government forecasts and should not "
-    "be interpreted as proof that El Niño alone determines agricultural economic performance."
+    "be interpreted as proof that El Niño alone determines agricultural economic performance. "
+    "The target is RBI/NSO crop GSVA at constant 2011-12 prices; climate inputs represent one grid point per state, not statewide averages."
 )

@@ -1,244 +1,302 @@
-# Predicting the Impact of El Niño on Agricultural GDP using Panel Data Machine Learning
+<div align="center">
 
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com)
-[![Next.js 14](https://img.shields.io/badge/Next.js-14-black.svg)](https://nextjs.org/)
-[![License: Academic](https://img.shields.io/badge/License-Academic%20PBL-orange.svg)]()
+# 🌾 El Niño & Indian Crops
 
-### Project-Based Learning (PBL) Capstone Project
-- **Institution**: K. J. Somaiya Institute of Technology
-- **Department**: Department of Artificial Intelligence and Data Science
-- **Objective**: Develop an empirical, multi-model panel data machine learning system to estimate and simulate the macroeconomic impact of El Niño-Southern Oscillation (ENSO) climate shocks on Indian state-wise Agricultural Gross State Value Added (GSVA).
+### State Crop GSVA Explorer
 
----
+**Climate data. Economic insight. Five machine learning perspectives.**
 
-## 1. Academic Abstract & Economic Target
+Explore how rainfall, temperature, and El Niño relate to the value of crop production across Indian states.
 
-### Economic Target Definition
-The dependent variable in this study is officially defined as:
-> **Agricultural Gross State Value Added (GSVA) at Constant Prices (Base Year: 2011–12), measured in ₹ Crore.**
+<p>
+  <img src="https://img.shields.io/badge/Next.js-14-0F172A?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js 14" />
+  <img src="https://img.shields.io/badge/React-18-149ECA?style=for-the-badge&logo=react&logoColor=white" alt="React 18" />
+  <img src="https://img.shields.io/badge/FastAPI-Python-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI with Python" />
+  <img src="https://img.shields.io/badge/Machine_Learning-5_Models-7C3AED?style=for-the-badge" alt="Five machine learning models" />
+</p>
 
-*Methodological Note on GVA vs GDP:*
-In accordance with standard national accounting standards (System of National Accounts - SNA 2008) utilized by the Central Statistics Office (CSO) and Reserve Bank of India (RBI):
-$$\text{Gross Domestic Product (GDP)} = \text{Gross Value Added (GVA at Basic Prices)} + \text{Product Taxes} - \text{Product Subsidies}$$
-Because state-wise agricultural sectoral accounts are compiled at factor cost / basic prices, the precise target is **Agricultural GSVA**. In literature and non-technical discourse, this is conventionally termed *Agricultural GDP*. Our platform explicitly maintains this economic distinction for viva and presentation rigor.
+[Features](#features) · [Quick Start](#quick-start) · [Methodology](#data-and-methodology) · [API Reference](#api-reference)
 
----
+**K. J. Somaiya Institute of Technology**<br />
+Department of Artificial Intelligence and Data Science · Project-Based Learning
 
-## 2. Multi-Model Research Philosophy
-
-Rather than presuming a single machine learning model (such as Random Forest) is superior a priori, this platform implements a rigorous **Five-Model Benchmark**:
-
-| Model | Category | Academic Role |
-| :--- | :--- | :--- |
-| **Linear Regression (OLS)** | Econometric Baseline | Tests linear climate-elasticity hypothesis; benchmark for non-linear gains |
-| **Random Forest Regressor** | Bagging Ensemble | Mitigates variance; models non-linear interactions across panel dimensions |
-| **Gradient Boosting Regressor** | Sequential Boosting | Optimizes residual errors sequentially across climate anomaly thresholds |
-| **XGBoost Regressor** | Regularized Boosting | Employs $L_1$/$L_2$ leaf regularization and second-order Taylor gradients |
-| **Extra Trees Regressor** | Extremely Randomized Trees | Extreme randomization of cut points; robust against panel collinearity |
-
-### Out-of-Sample Chronological Validation
-To prevent temporal data leakage endemic to panel data, we enforce a strict **time-aware chronological split**:
-- **In-Sample Training Period**: 2009–2019 (11 years)
-- **Held-out Out-of-Sample Test Period**: 2020–2023 (4 years)
-
-Selection Rule: The platform dynamically designates the **Best Model** based on the lowest **Root Mean Squared Error (RMSE)** and **Mean Absolute Error (MAE)** on the held-out test partition.
+</div>
 
 ---
 
-## 3. Real-World Data Provenance & Engineered Features
+## Overview
 
-The dataset comprises a 15-year balanced panel (2009–2023) across 10 representative agricultural states of India (Maharashtra, Punjab, Uttar Pradesh, Madhya Pradesh, Rajasthan, Gujarat, Andhra Pradesh, Karnataka, Haryana, and West Bengal).
+**Crop GSVA Explorer** is a full-stack climate and agricultural economics platform. It brings together official weather data, the Oceanic Niño Index (ONI), and state economic records in an interactive workspace for historical analysis, model comparison, and hypothetical climate scenarios.
 
-| Dimension | Source Provider | Measurement & Units | Coverage |
-| :--- | :--- | :--- | :--- |
-| **Oceanic Niño Index (ONI)** | NOAA Climate Prediction Center (CPC) | 3-month running mean ERSST.v5 SST anomalies in Niño 3.4 (°C) | Monthly, 2009–2023 |
-| **Monsoon Precipitation** | Open-Meteo ERA5 Reanalysis Archive | Total annual & monsoon precipitation (mm) | Daily aggregated, 2009–2023 |
-| **2-Meter Temperature** | Open-Meteo ERA5 Reanalysis Archive | Mean daily 2-meter air temperature (°C) | Daily aggregated, 2009–2023 |
-| **Agricultural GSVA** | RBI Handbook of Statistics / MoSPI | Sectoral Agriculture & Allied GSVA at Constant 2011-12 Prices (₹ Cr) | Annual, 2009–2023 |
+The Next.js frontend turns the state-year panel into maps, charts, and searchable records. The FastAPI backend serves the data, runs predictions, compares scenarios, and manages versioned model artifacts. Local SQLite storage supports development without Firebase credentials; Firestore and Cloud Storage are available when configured.
 
-### Engineered Panel Features
-- **Rainfall Anomaly ($A_{\text{rain}}$)**: $R_{i,t} - \bar{R}_i$ (deviation from state 15-year historical mean).
-- **Temperature Anomaly ($A_{\text{temp}}$)**: $T_{i,t} - \bar{T}_i$ (thermal stress index).
-- **Lagged ENSO Effects**: $ONI_{t-1}$ to capture delayed kharif-to-rabi macroeconomic propagation.
+| Coverage | Modeling window | Prepared dataset | Regression models |
+| :---: | :---: | :---: | :---: |
+| **28 Indian states** | **FY 2011–12 → FY 2024–25** | **385 complete state-years** | **5 model families** |
 
----
+*Dataset figures describe the current [official panel report](data/processed/official_panel_report.json). Union Territories are outside the state catalogue.*
 
-## 4. Platform Capabilities & Architecture
+> **What does the platform estimate?**<br />
+> Crop **Gross State Value Added (GSVA)** at constant 2011–12 prices, measured in **₹ crore**. This is the value added by crop production within a state—not total GDP, all-sector GSDP, or the combined agriculture, forestry, and fishing sector.
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│               Next.js 14 App Router (React)                 │
-│  - Scenario Lab (/scenario)     - AI Search Assistant (/search) │
-│  - Multi-Model Bench (/models)  - Methodology & Viva (/methodology)│
-│  - State Profiles (/states/[s]) - Data & Export (/data)     │
-└──────────────────────────────┬──────────────────────────────┘
-                               │ JSON REST API
-┌──────────────────────────────▼──────────────────────────────┐
-│                    FastAPI Python Backend                   │
-│  - Multi-Model Training & Evaluation (scikit-learn, XGBoost)│
-│  - Scenario Simulation Engine (deviation, ensemble, attribution)│
-│  - Two-Tier Grounded Search Service (intent router + citations)│
-│  - CSV / JSON Panel & Metric Data Exporters                 │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-       ┌───────────────────────┴───────────────────────┐
-       ▼                                               ▼
-┌─────────────────────────────┐         ┌─────────────────────────────┐
-│  SQLite Local Database      │         │ Firebase Firestore + Storage│
-│  (Zero-config out-of-the-   │   OR    │ (Production Cloud Storage;  │
-│   box storage for local run)│         │  active when keys provided) │
-└─────────────────────────────┘         └─────────────────────────────┘
+## Features
+
+| | Workspace | What you can do |
+| :---: | --- | --- |
+| 📊 | **Dashboard** | Explore state coverage, historical trends, climate indicators, and an interactive India map. |
+| 🗺️ | **State profiles** | Inspect an individual state's climate and crop-GSVA history. |
+| 🌦️ | **Prediction studio** | Enter a state, rainfall, temperature, and ONI to compare model estimates. |
+| 🧪 | **Scenario Lab** | Explore neutral ENSO, weak/moderate/strong El Niño, La Niña, or custom conditions against historical baselines. |
+| 🧠 | **Model comparison** | Compare five regressors using error metrics, feature importance, and training-run details. |
+| 🔎 | **AI Search** | Ask supported climate, historical-data, prediction, and scenario questions through intent-based routing and a curated knowledge base. |
+| 🗃️ | **Data Explorer** | Browse and filter the official panel; export data and model metrics as CSV or JSON. |
+| 📖 | **Methodology & workflow** | Review source definitions, modeling assumptions, and the manual preparation and training sequence. |
+
+The search assistant uses the project's knowledge base and analytical services; no external LLM API key is required.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A[IMD rainfall and temperature] --> D[Extract, aggregate, and validate]
+    B[NOAA Oceanic Niño Index] --> D
+    C[RBI / NSO crop GSVA] --> D
+    D --> E[Official state-year panel]
+    E -->|Sync| F[(SQLite or Firestore)]
+    E -->|Manual training| G[Five regression models]
+    G --> H[Versioned model artifacts]
+    F <--> I[FastAPI backend]
+    H --> I
+    I <--> J[Next.js frontend]
+    J --> K[Dashboards · Predictions · Scenarios]
+
+    classDef source fill:#eff6ff,stroke:#3b82f6,color:#172554;
+    classDef data fill:#ecfdf5,stroke:#10b981,color:#064e3b;
+    classDef app fill:#f5f3ff,stroke:#8b5cf6,color:#4c1d95;
+    class A,B,C source;
+    class D,E,F data;
+    class G,H,I,J,K app;
 ```
 
-### Key New Features
-1. **El Niño Scenario Lab (`/scenario`)**: Interactive simulation workbench with 5 empirical presets (*Normal*, *Weak El Niño*, *Moderate El Niño*, *Strong El Niño*, *La Niña*) and real-time sliders with ensemble averaging.
-2. **Two-Tier Grounded AI Search (`/search`)**: Zero-hallucination assistant classifying queries into *Factual*, *Historical*, *Prediction*, *Scenario*, or *Mixed* intents, returning exact metrics and verified citations (NOAA, IMD, RBI, MoSPI, DES).
-3. **State Deep-Dive Profiles (`/states/[state]`)**: Granular climate-economy trajectories, climate vulnerability indices, and historical drought correlations.
-4. **Academic Data & Metric Exporters**: Instant CSV and JSON downloads of the full cleaned panel and model evaluation benchmarks.
+| Layer | Technologies |
+| --- | --- |
+| **Frontend** | Next.js 14 · React 18 · TypeScript · Tailwind CSS |
+| **Charts & interaction** | Recharts · React Simple Maps · Framer Motion · Lucide icons |
+| **Backend** | FastAPI · Uvicorn · Pydantic |
+| **Data processing** | pandas · NumPy · SciPy · pdfplumber |
+| **Machine learning** | scikit-learn · XGBoost · joblib |
+| **Storage** | SQLite and local files · optional Firebase Firestore and Cloud Storage |
 
----
+## Quick start
 
-## 5. Quick Start & Execution Guide
+### 1. Install dependencies
 
-### Step 1: Environment Setup
+Use **Python 3.10+**, **Node.js 18.17+**, and **npm**. The commands below use Windows PowerShell and start from the repository root.
 
-#### Backend Setup
-```bash
-# From repository root
-cd backend
-python -m venv venv
+```powershell
+# Backend environment
+python -m venv backend\.venv
+& .\backend\.venv\Scripts\python.exe -m pip install -r backend\requirements.txt
 
-# Windows activate
-.\venv\Scripts\activate
-
-# Install requirements
-pip install -r requirements.txt
-```
-
-#### Frontend Setup
-```bash
-# In another terminal
+# Frontend dependencies
 cd frontend
-npm install
+npm ci
+cd ..
 ```
 
----
+If `backend/.venv` already exists, skip creating it. Firebase configuration is optional for local use.
 
-### Step 2: Reproducible Pipeline Scripts
+### 2. Start the backend
 
-Execute the end-to-end data and modeling pipeline in sequence:
+Open a terminal at the repository root:
 
-```bash
-# 1. Download NOAA ONI & Open-Meteo ERA5 climate data (2009-2023)
-python scripts/download_data.py
-
-# 2. Clean panel, engineer anomaly features, and populate database
-python scripts/preprocess_data.py
-
-# 3. Train all 5 regression models with chronological time split
-python scripts/train_models.py
-
-# 4. Generate empirical evaluation and benchmarking report
-python scripts/evaluate_models.py
-
-# 5. Test interactive scenario prediction CLI
-python scripts/run_prediction.py --state Maharashtra --preset "Moderate El Niño"
-
-# 6. Run complete end-to-end automated verification suite
-python scripts/test_system.py
-```
-
----
-
-### Step 3: Running the Application
-
-```bash
-# Terminal 1: Backend Server (FastAPI)
+```powershell
 cd backend
-.\venv\Scripts\activate
-python -m uvicorn app.main:app --reload --port 8000
+& .\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+```
 
-# Terminal 2: Frontend Server (Next.js)
+### 3. Start the frontend
+
+Open a second terminal at the repository root:
+
+```powershell
 cd frontend
 npm run dev
 ```
 
-Visit **`http://localhost:3000`** in your browser.
+| Service | Local address |
+| --- | --- |
+| **Application** | [localhost:3000](http://localhost:3000) |
+| **Interactive API docs** | [localhost:8000/docs](http://localhost:8000/docs) |
+| **API health check** | [localhost:8000/health](http://localhost:8000/health) |
 
----
+**Using the existing prepared workspace?** Start both services and open the dashboard. Data views use the synced official panel; predictions and scenarios use a compatible trained run. For a fresh checkout without the data and artifacts, follow [Prepare data and train](#prepare-data-and-train). Large raw source files are excluded from Git.
 
-## 6. Project Directory Structure
+<details>
+<summary><strong>Configuration: API address, CORS, and optional Firebase</strong></summary>
 
+Set a custom backend address in `frontend/.env.local`:
+
+```dotenv
+NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
 ```
-pbl-agriculture-project/
+
+Restart the frontend after changing this value.
+
+For Firebase, create `backend/.env` using [backend/.env.example](backend/.env.example) and replace the placeholders with your project settings:
+
+```dotenv
+FIREBASE_PROJECT_ID=your-project-id
+FIREBASE_STORAGE_BUCKET=your-project-id.firebasestorage.app
+GOOGLE_APPLICATION_CREDENTIALS=./serviceAccountKey.json
+```
+
+The relative credential path above assumes the backend is started from `backend/`. For root-level data scripts, use an absolute credential path and set the same Firebase variables in that terminal so both processes use the same storage. Keep service-account credentials out of version control. For SQLite-only use, leave the Firebase settings unset rather than copying placeholder values.
+
+The backend also accepts `CORS_ORIGINS`, a comma-separated list of frontend origins. Defaults include `http://localhost:3000`, `http://127.0.0.1:3000`, and `http://localhost:3001`.
+
+</details>
+
+## Data and methodology
+
+### From daily climate records to annual economic observations
+
+| Input | Source | Preparation |
+| --- | --- | --- |
+| **Rainfall** | IMD daily 0.25° NetCDF grids | Sum daily rainfall within each April–March financial year. |
+| **Temperature** | IMD daily 1° Tmax/Tmin GRD grids | Average daily `(Tmax + Tmin) / 2` within the financial year. |
+| **ENSO** | NOAA CPC Oceanic Niño Index | Average ten complete overlapping three-month seasons within the financial year. |
+| **Crop GSVA** | RBI/NSO state economic table | Extract the crops series at constant 2011–12 prices, in ₹ crore. |
+
+Each row represents **one state × one financial year**. The `year` column stores the start year: `2011` means FY 2011–12. Climate data is sampled from the nearest grid cell to one documented [representative point per state](data/metadata/state_representative_points.csv), then joined to the economic target.
+
+Of **392 candidate state-years**, **385 have complete inputs and targets**. Seven missing official targets are excluded rather than imputed. The panel preparation checks at least 95% daily climate coverage and records source hashes and exclusions for review.
+
+### Five models, one comparison framework
+
+| Model | Role |
+| --- | --- |
+| **Linear Regression** | An interpretable linear benchmark. |
+| **Random Forest** | An ensemble of decision trees for nonlinear relationships. |
+| **Extra Trees** | A randomized tree ensemble for comparison with Random Forest. |
+| **Gradient Boosting** | Sequential trees that learn from residual errors. |
+| **XGBoost** | Gradient-boosted trees using the XGBoost implementation. |
+
+All five models use **rainfall, mean temperature, ONI, and one-hot state identity**. The year determines the chronological split; it is not a predictor. Earlier years form the training partition and later years form the held-out test partition.
+
+The platform reports **MAE and RMSE in ₹ crore**, **R² as a dimensionless score**, and **MAPE as a percentage**. The displayed best model has the lowest held-out RMSE. View the active run in the Models page or through `/api/models/comparison`; scores from the legacy sample dataset do not describe the official panel.
+
+<details>
+<summary><strong>Research scope and interpretation</strong></summary>
+
+- Climate features are **grid-point proxies**, not state-area averages or station observations. A selected cell can fall outside the state boundary, particularly with Goa's coarse temperature grid.
+- State identity captures persistent differences in economic scale. A high pooled R² alone does not demonstrate climate-prediction skill; examine per-state errors and compare simple baselines.
+- The best model is selected using the same held-out RMSE reported in the app. A separate validation partition and untouched final test would give a stronger assessment of the selected model.
+- Scenario outputs are conditional model estimates. They do not establish that El Niño or a changed climate input causes a particular economic outcome.
+- Earlier climate downloads are retained, but the comparable selected economic series begins in FY 2011–12. Older MoSPI series with different price bases are not blended into this target. Basin polygons and river-streamflow downloads are outside the active crop-GSVA model.
+- The compatibility field `agricultural_gdp_cr` refers to crop GSVA in the official workflow.
+
+</details>
+
+## Prepare data and train
+
+Use this sequence when setting up the official dataset or deliberately rebuilding it. Place the source downloads in the locations documented in [Raw data and provenance](data/raw/README.md), then run the following from the repository root.
+
+```powershell
+# Install the PDF extraction dependency
+& .\backend\.venv\Scripts\python.exe -m pip install -r scripts\requirements-economic.txt
+
+# 1. Extract economic tables
+& .\backend\.venv\Scripts\python.exe scripts\extract_economic_targets.py --overwrite
+
+# Review data/interim/economic/extraction_issues.csv before continuing.
+
+# 2. Build the financial-year panel
+& .\backend\.venv\Scripts\python.exe scripts\prepare_official_panel.py --overwrite
+
+# Review data/processed/official_panel.csv and official_panel_report.json.
+
+# 3. Sync the reviewed panel to the configured storage
+& .\backend\.venv\Scripts\python.exe scripts\sync_official_panel.py
+
+# 4. Train and compare all five models
+& .\backend\.venv\Scripts\python.exe scripts\train_models.py
+```
+
+The sync step validates source and panel hashes and refuses to replace a different existing official panel. It writes to the configured storage, including Firestore when enabled. Training saves versioned artifacts and metrics; serving checks that the active model run matches the official panel.
+
+Training is an explicit command-line step. The legacy one-click `/api/train` and `/api/pipeline/run` endpoints are disabled for this workflow. The older download/preprocessing scripts are not substitutes for the sequence above.
+
+**Further reading:** [Official panel workflow](scripts/OFFICIAL_PANEL_WORKFLOW.md) · [Economic extraction](scripts/ECONOMIC_EXTRACTION.md) · [Raw data and provenance](data/raw/README.md)
+
+## API reference
+
+With the backend running, use [Swagger UI](http://localhost:8000/docs) to inspect request schemas and try the endpoints.
+
+| Method | Endpoint | Purpose |
+| --- | --- | --- |
+| `GET` | `/health` | Service health. |
+| `GET` | `/api/dashboard/summary` | Dataset and model overview. |
+| `GET` | `/api/states` | State catalogue and availability. |
+| `GET` | `/api/states/{state}/history` | Historical state observations. |
+| `GET` | `/api/data` | Filtered panel records. |
+| `GET` | `/api/models/comparison` | Active model metrics and comparison. |
+| `GET` | `/api/models/runs` | Training-run history. |
+| `POST` | `/api/predict` | Crop-GSVA estimates for supplied climate inputs. |
+| `GET` | `/api/scenario/presets` | Available hypothetical climate presets. |
+| `POST` | `/api/scenario` | Scenario estimates and baseline comparison. |
+| `POST` | `/api/search` | Route supported questions to knowledge and analytical services. |
+| `GET` | `/api/export/panel` | Download panel data as CSV or JSON. |
+| `GET` | `/api/export/metrics` | Download model metrics as JSON or CSV. |
+
+## Project structure
+
+```text
+.
+├── frontend/                 # Next.js application
+│   ├── app/                  # Dashboard, models, predictions, scenarios, and more
+│   ├── components/           # Charts, maps, navigation, and reusable UI
+│   └── lib/                  # API client, constants, and utilities
 ├── backend/
 │   ├── app/
-│   │   ├── constants.py              # 5 Models, features, paths, citations
-│   │   ├── main.py                   # FastAPI entrypoint & CORS
-│   │   ├── models/schemas.py         # Pydantic v2 schemas
-│   │   ├── routers/                  # Modular API routes (scenario, search, etc.)
-│   │   └── services/
-│   │       ├── db_storage.py         # Resilient Dual SQLite / Firebase adapter
-│   │       ├── ml.py                 # 5 models, time-split, training & metrics
-│   │       ├── scenario_service.py   # Simulation engine & economic attribution
-│   │       └── search_service.py     # Two-tier search & citation synthesis
-│   └── requirements.txt
-├── frontend/
-│   ├── app/
-│   │   ├── dashboard/                # Macro KPIs, charts, state table
-│   │   ├── scenario/                 # Scenario Simulation Lab
-│   │   ├── search/                   # AI Search & Knowledge Assistant
-│   │   ├── methodology/              # Somaiya PBL Presentation & Data Dictionary
-│   │   ├── models/                   # 5-Model Evaluation & Benchmark Table
-│   │   ├── states/[state]/           # State-specific deep-dive profiles
-│   │   └── data/                     # Panel Explorer & CSV/JSON Export
-│   ├── components/                   # Recharts visualizations & Navigation
-│   └── lib/api.ts                    # Strongly typed API client
+│   │   ├── routers/          # FastAPI endpoints
+│   │   ├── services/         # Storage, ingestion, ML, scenarios, and search
+│   │   └── models/           # Request and response schemas
+│   └── tests/                # Backend regression tests
 ├── data/
-│   ├── raw/                          # Raw NOAA and Open-Meteo downloads
-│   ├── processed/                    # Cleaned panel CSV & model evaluation JSON
-│   ├── models/                       # Versioned .joblib ML model artifacts
-│   ├── metadata/                     # sources_metadata.json with provenance
-│   └── pbl_database.sqlite           # SQLite storage database
-├── scripts/
-│   ├── download_data.py              # Ingestion script
-│   ├── preprocess_data.py            # Feature engineering script
-│   ├── train_models.py               # 5-model training script
-│   ├── evaluate_models.py            # Model benchmarking script
-│   ├── run_prediction.py             # CLI scenario prediction utility
-│   └── test_system.py                # Comprehensive test suite
-└── README.md
+│   ├── raw/                  # Original source downloads
+│   ├── interim/              # Extracted economic tables and derived climate data
+│   ├── metadata/             # Source provenance and representative points
+│   ├── processed/            # Official panel and validation report
+│   ├── models/official/      # Versioned official-panel model artifacts
+│   └── pbl_database.sqlite   # Local database
+├── scripts/                  # Extraction, preparation, sync, and training
+└── sample_data/              # Legacy sample data, separate from the official panel
 ```
 
----
+<details>
+<summary><strong>Troubleshooting</strong></summary>
 
-## 7. Model Evaluation Results (Latest Empirical Run)
+| Symptom | What to check |
+| --- | --- |
+| Frontend cannot reach the API | Confirm `/health` responds, check `NEXT_PUBLIC_API_BASE_URL`, and restart the frontend after changing it. |
+| Browser reports a CORS error | Ensure the frontend origin is included in the backend's `CORS_ORIGINS`. |
+| Data pages are empty | Validate and sync the official panel to the same storage used by the backend. |
+| Predictions or scenarios are unavailable | Check for a compatible official training run and its artifacts; complete the manual training step if needed. |
+| Sync reports a source or panel mismatch | Review the source files and validation report, then rebuild the affected preparation steps. |
+| npm reports a missing `npm-cli.js` | Repair the Node.js/npm installation. If dependencies already exist, run `node node_modules/next/dist/bin/next dev` from `frontend/` as a temporary launcher. |
 
-*Evaluated on out-of-sample held-out test data (Years: 2020–2023):*
-
-| Model | MAE (₹ Cr) | RMSE (₹ Cr) | $R^2$ Score | MAPE (%) | Selected |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Linear Regression (OLS Baseline)** | 15.16 | 17.49 | 0.4058 | 14.0% | Baseline |
-| **Random Forest Regressor** | 13.37 | 17.62 | 0.3969 | 12.6% | Non-Linear |
-| **Gradient Boosting Regressor** | 13.74 | 18.33 | 0.3468 | 13.1% | Sequential |
-| **XGBoost Regressor** | 14.02 | 19.03 | 0.2965 | 12.9% | Regularized |
-| **Extra Trees Regressor** | **12.19** | **15.68** | **0.5224** | **11.2%** | **BEST PERFORMER** |
-
-*Key Academic Finding:*
-Extra Trees demonstrated the lowest RMSE (15.68) and highest out-of-sample $R^2$ (0.5224), indicating that extreme randomization of split thresholds mitigates multi-collinearity between rainfall anomalies and temperature deviations in Indian agricultural panel data.
+</details>
 
 ---
 
-## 8. Academic Viva Voce & Presentation Talking Points
+<div align="center">
 
-When presenting this project to the evaluation committee:
-1. **Explain the Target**: Clarify that state agricultural accounts compile **Agricultural GSVA** at constant 2011-12 prices, eliminating inflationary distortion.
-2. **Justify Multi-Model Choice**: Emphasize that empirical data science tests multiple algorithmic inductive biases (OLS linearity vs. Tree ensembles vs. Gradient Boosting) on out-of-sample data rather than declaring one model without empirical proof.
-3. **Address Data Leakage**: Explain why standard random K-Fold cross validation is invalid for panel data (it leaks future temporal shocks into past predictions), which is why we enforced a **chronological time-aware split** (2009–2019 train, 2020–2023 test).
-4. **Explain Scenario Simulation**: Highlight how the scenario engine allows policymakers to test "what-if" monsoon deficits before sowing season begins.
+**Built to explore the connection between climate and Indian crop production.**
 
----
+An educational research project at **K. J. Somaiya Institute of Technology**.<br />
+Source attribution: **IMD · NOAA CPC · RBI/NSO**. See the [provenance notes](data/raw/README.md) for dataset references.
 
-## 9. Disclaimer
-*This platform provides analytical estimates and simulation scenarios based on empirical panel machine learning models. It is designed for academic research, education, and policy decision support, and does not constitute an official government macroeconomic forecast.*
+<sub>Analytical estimates for research and learning. Outputs are not official government forecasts.</sub>
+
+</div>

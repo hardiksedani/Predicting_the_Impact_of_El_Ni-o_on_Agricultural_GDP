@@ -1,0 +1,72 @@
+{
+  "run_id": "run_20261001_192838_b6f78a48",
+  "mode": "strict_oni",
+  "target": "RBI/NSO GSVA Agriculture (crops), constant 2011-12 prices (INR crore)",
+  "feature_columns": [
+    "oni_index"
+  ],
+  "source_sha256": {
+    "oni_ascii": "93f8c86c7a660f46318abe33b38c0479d184812d95a479a1fe869c0c2363a9e4",
+    "rbi_pdf": "c9ebaafc4fb46610e276e018dfbea353308961f418a1e896ffe7863be4c16f6a",
+    "extracted_agriculture_csv": "48fc79e3aa6527dda1e41d1997b9e16dcc3b54fa5ce4450c03d35c3c7c47b204"
+  },
+  "rows": 385,
+  "excluded_missing_official_targets": 7,
+  "train_years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020
+  ],
+  "test_years": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "state_mean_reference": {
+    "mae_cr": 9911.99,
+    "rmse_cr": 17552.79,
+    "r2": 0.8763
+  },
+  "models": {
+    "linear_regression": {
+      "mae_cr": 37608.23,
+      "rmse_cr": 50987.94,
+      "r2": -0.0435,
+      "artifact_sha256": "7d4e1ea88ef29bca005cd6d9d5e0c6aff580bce4807e40a7d447e6399cc5cba5"
+    },
+    "random_forest": {
+      "mae_cr": 37723.36,
+      "rmse_cr": 51129.45,
+      "r2": -0.0493,
+      "artifact_sha256": "63c6f8de97d0b0a903e8d10808f815adbfcf84be18c7b4184407420d208affc5"
+    },
+    "gradient_boosting": {
+      "mae_cr": 37688.9,
+      "rmse_cr": 51131.57,
+      "r2": -0.0494,
+      "artifact_sha256": "3c48a11de36b40bf0a701a5ce1d50ebfdc7571839d30c134019af19bea0c7ff3"
+    },
+    "xgboost": {
+      "mae_cr": 37645.9,
+      "rmse_cr": 50850.99,
+      "r2": -0.0379,
+      "artifact_sha256": "ddd6c982e8d82e60af04dcb4e9e75b48ba490cd77cd8cc4fe0619cdfbd8f0642"
+    },
+    "extra_trees": {
+      "mae_cr": 37740.12,
+      "rmse_cr": 51066.61,
+      "r2": -0.0467,
+      "artifact_sha256": "b1efe584d4016cc23e29a6cab042531a7b6e0a858136fd92811dfba47d05b1e6"
+    }
+  },
+  "best_model_by_test_rmse": "xgboost",
+  "caution": "ONI is the same nationwide within each year. High pooled R2 may mainly reflect state size; compare the state-mean reference. Selecting the best model on these test years makes its reported score optimistic."
+}

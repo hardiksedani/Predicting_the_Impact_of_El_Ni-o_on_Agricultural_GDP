@@ -1,0 +1,29 @@
+{
+  "provider": "India Meteorological Department, Climate Research & Services, Pune",
+  "source_page": "https://www.imdpune.gov.in/cmpg/Griddata/Rainfall_1_NetCDF.html",
+  "download_endpoint": "https://imdpune.gov.in/cmpg/Griddata/rainfallone.php",
+  "years": [
+    2009,
+    2023
+  ],
+  "spatial_method": "nearest 1-degree grid cell to each state centroid; not a state-wide average",
+  "temporal_method": "sum daily rainfall in each calendar year",
+  "units": "mm",
+  "netcdf_sha256_by_year": {
+    "2009": "0793ca1d0ca0d4af2af282c40d772b1fba0d251545982da6b496023b70c949aa",
+    "2010": "d26b1954117908c6653a88bf0414a672560efd07c116953b3b58cbf40ecde69b",
+    "2011": "7510e3cd3e3a37e4f37859f53c2ecfcaf4728054430fb7a52ff7b84f090184ca",
+    "2012": "bc193d8e8b048f09fb8f7e62b36e03b6714c2453033df75efc5b410337c478e0",
+    "2013": "3635934775a053a71609783e2554bdd03c266ce590401e9c89746c73b637ef51",
+    "2014": "5a3c87a896922e81e2852fcd00ae13f39045deac191a8dd38a9f0939a1d9d767",
+    "2015": "b71c580b1bffeaa62a7a6ffa721a13cdc955060df71c23f4050bf50f214fdda8",
+    "2016": "ec2258c0a25fdfada4b0df23c20a18c247b7baf94b797ac86fa81481361a08a8",
+    "2017": "b049d6c1361c717bd7650a0be3b7b6bfd54d70ada4c2e832ff8b3d75abbb0811",
+    "2018": "1b7194a93001f69a6bf0d0c669b7b3e9e75b77530f19af6c5cc0973805a2782b",
+    "2019": "4bf6bf9200bea88d31a1a441b6248bbf6e03d822b0604e4a11ffa20158197437",
+    "2020": "1b801cfa879cf0f1f58e2f8bf731e1c29a95d7ccd9f580331dd5face2e6c6910",
+    "2021": "ccdc479e758afb72c88dd481e6588d374f561f258f58ceaf9587463116fc1580",
+    "2022": "417ff3d5b65a74ba72208fdf54582f15a29174cbfb6fbf71a85b0d2d5ec66aed",
+    "2023": "a45311f503f7cae4dea98f5b1399d2f4147ddc3703a8edc5ad721fb483166f3f"
+  }
+}

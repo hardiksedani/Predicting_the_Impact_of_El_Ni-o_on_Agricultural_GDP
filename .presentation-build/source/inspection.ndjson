@@ -1,0 +1,344 @@
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"DEFAULT"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"29/9/2026","textShapes":7}
+{"kind":"shape","id":"sh/547294r6","slide":1,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/k3yl0zql","slide":1,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/7qp4be9c","slide":1,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"name":"Text 4","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/fu94fe98","slide":1,"name":"Text 5","text":"T.Y. Mini Project Presentation","textPreview":"T.Y. Mini Project Presentation","textChars":30,"textLines":1,"bbox":[48,148.8,864,28.8]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"name":"Text 6","text":"Predicting the Impact of El Niño on Agricultural GDP using Panel Data Machine Learning","textPreview":"Predicting the Impact of El Niño on Agricultural GDP using Panel Data Machine Learning","textChars":86,"textLines":1,"bbox":[86.4,180.48,787.2,72]}
+{"kind":"textbox","id":"sh/wn6dc7eh","slide":1,"name":"Text 7","text":"Guide: Prof. Prashant Bhandare\nGroup No: 25","textPreview":"Guide: Prof. Prashant Bhandare | Group No: 25","textChars":43,"textLines":2,"bbox":[48,273.6,864,67.2]}
+{"kind":"textbox","id":"sh/hofulsf2","slide":1,"name":"Text 8","text":"Hardik Sedani - 70\nAltair Patel - 68\nNikhil More - 66","textPreview":"Hardik Sedani - 70 | Altair Patel - 68 | Nikhil More - 66","textChars":53,"textLines":3,"bbox":[48,350.4,864,91.2]}
+{"kind":"textbox","id":"sh/ul4vaxgb","slide":1,"name":"Text 9","text":"Department of AI&DS, K.J. Somaiya Institute of Technology, Sion, Mumbai 400022","textPreview":"Department of AI&DS, K.J. Somaiya Institute of Technology, Sion, Mumbai 400022","textChars":78,"textLines":1,"bbox":[19.2,475.2,816,28.8]}
+{"kind":"image","id":"im/kr6xgnu5","slide":1,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"Introduce the team and guide. One-line pitch: we built a full-stack ML platform that estimates how El Niño shocks change state-wise Agricultural GDP in India."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"29/9/2026","textShapes":2}
+{"kind":"shape","id":"sh/9072xkry","slide":2,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/ozy1ofad","slide":2,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/b29kza94","slide":2,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"name":"Text 4","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"table","id":"tb/fm9kvatk","slide":2,"name":"Contents Table","rows":14,"cols":2,"preview":"Sr.No. | Content","bbox":[137.64,146.98,455.64,345.41]}
+{"kind":"image","id":"im/mhoz29kn","slide":2,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":""}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"29/9/2026","textShapes":10}
+{"kind":"shape","id":"sh/cza94vmx","slide":3,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/d0jax03i","slide":3,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/298ryl4v","slide":3,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/obq90bml","slide":3,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"name":"Text 4","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"name":"Text 5","text":"1. Introduction","textPreview":"1. Introduction","textChars":15,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"shape","id":"sh/n6ls3alk","slide":3,"name":"Shape 6","bbox":[48,182.4,278.4,220.8]}
+{"kind":"textbox","id":"sh/n2l4fq98","slide":3,"name":"Text 7","text":"Background","textPreview":"Background","textChars":10,"textLines":1,"bbox":[62.4,192,249.6,28.8]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"name":"Text 8","text":"El Niño alters global weather patterns, causing delayed monsoons, lower rainfall, higher temperatures and drought in India.\nIndian agriculture depends on the monsoon, so crop output and Agricultural GDP fall when rainfall fails.","textPreview":"El Niño alters global weather patterns, causing delayed monsoons, lower rainfall, higher temperatures and drought in India. | Indian agri...","textChars":228,"textLines":2,"bbox":[62.4,228.48,251.52,168]}
+{"kind":"shape","id":"sh/943mhgre","slide":3,"name":"Shape 9","bbox":[340.8,182.4,278.4,220.8]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"name":"Text 10","text":"Problem Statement","textPreview":"Problem Statement","textChars":17,"textLines":1,"bbox":[355.2,192,249.6,28.8]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"name":"Text 11","text":"Rainfall, temperature, El Niño index and past GDP data exist, but there is no reliable AI system that estimates how a stronger El Niño would change state-wise Agricultural GDP.","textPreview":"Rainfall, temperature, El Niño index and past GDP data exist, but there is no reliable AI system that estimates how a stronger El Niño wo...","textChars":176,"textLines":1,"bbox":[355.2,228.48,251.52,168]}
+{"kind":"shape","id":"sh/a5c3ql8z","slide":3,"name":"Shape 12","bbox":[633.6,182.4,278.4,220.8]}
+{"kind":"textbox","id":"sh/x8nml0ra","slide":3,"name":"Text 13","text":"Motivation","textPreview":"Motivation","textChars":10,"textLines":1,"bbox":[648,192,249.6,28.8]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"name":"Text 14","text":"Farmers' income depends directly on agricultural output.\nGovernments need early information to plan subsidies, irrigation support and food reserves.\nAccurate prediction enables proactive policy and lower economic losses.","textPreview":"Farmers' income depends directly on agricultural output. | Governments need early information to plan subsidies, irrigation support and f...","textChars":220,"textLines":3,"bbox":[648,228.48,251.52,168]}
+{"kind":"shape","id":"sh/ja54na9g","slide":3,"name":"Shape 15","bbox":[48,417.6,864,76.8]}
+{"kind":"textbox","id":"sh/i9w3u58v","slide":3,"name":"Text 16","text":"PREDICTION TARGET\nAgricultural Gross State Value Added (GSVA) at constant 2011-12 prices, in ₹ Crore. Conventionally called Agricultural GDP.","textPreview":"PREDICTION TARGET | Agricultural Gross State Value Added (GSVA) at constant 2011-12 prices, in ₹ Crore. Conventionally called Agricultura...","textChars":141,"textLines":2,"bbox":[67.2,424.32,825.6,63.36]}
+{"kind":"image","id":"im/p4bu58jm","slide":3,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"GSVA vs GDP: state agricultural accounts are compiled at basic prices (GVA). GDP = GVA + product taxes - product subsidies. In everyday discourse this is called Agricultural GDP, so we use both terms and are explicit about the distinction."}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"29/9/2026","textShapes":4}
+{"kind":"shape","id":"sh/1cj2d8b6","slide":4,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/0ba143al","slide":4,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/rm1k7yt4","slide":4,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/doj29oba","slide":4,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"name":"Text 4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"name":"Text 5","text":"2. Literature Survey","textPreview":"2. Literature Survey","textChars":20,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"shape","id":"sh/kbm987y5","slide":4,"name":"Shape 6","bbox":[48,432,864,62.4]}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"name":"Text 7","text":"Research gap:  no prior work combines panel data, multi-model ML and ENSO scenario simulation to estimate state-wise Agricultural GSVA.","textPreview":"Research gap:  no prior work combines panel data, multi-model ML and ENSO scenario simulation to estimate state-wise Agricultural GSVA.","textChars":135,"textLines":1,"bbox":[67.2,432,825.6,62.4]}
+{"kind":"table","id":"tb/gfadozi9","slide":4,"name":"Table 0","rows":5,"cols":4,"preview":"Sr. | Reviewed Area | Key Findings | Limitation","bbox":[48,182.4,720,96]}
+{"kind":"image","id":"im/1gfm90ze","slide":4,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":""}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"29/9/2026","textShapes":14}
+{"kind":"shape","id":"sh/dgbulwnm","slide":5,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/cf2tcr61","slide":5,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/z2tcnm5s","slide":5,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/l4bupwny","slide":5,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"name":"Text 4","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"name":"Text 5","text":"3. Objectives","textPreview":"3. Objectives","textChars":13,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"shape","id":"sh/m5kbi1oj","slide":5,"name":"Shape 6","bbox":[48,182.4,864,67.2]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"name":"Text 7","text":"PRIMARY OBJECTIVE\nBuild an AI system that estimates and simulates the impact of El Niño on the Agricultural GDP of Indian states.","textPreview":"PRIMARY OBJECTIVE | Build an AI system that estimates and simulates the impact of El Niño on the Agricultural GDP of Indian states.","textChars":129,"textLines":2,"bbox":[67.2,185.28,825.6,61.44]}
+{"kind":"shape","id":"sh/x4vedgvm","slide":5,"name":"Shape 8","bbox":[52.8,269.76,30.72,30.72]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"name":"Text 9","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[52.8,269.76,30.72,30.72]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"name":"Text 10","text":"Collect NOAA ONI, ERA5 rainfall and temperature, and RBI/MoSPI Agricultural GSVA for 10 states (2009–2023).","textPreview":"Collect NOAA ONI, ERA5 rainfall and temperature, and RBI/MoSPI Agricultural GSVA for 10 states (2009–2023).","textChars":107,"textLines":1,"bbox":[100.8,266.88,806.4,36.48]}
+{"kind":"shape","id":"sh/k7mxovud","slide":5,"name":"Shape 11","bbox":[52.8,314.88,30.72,30.72]}
+{"kind":"textbox","id":"sh/58vehgvy","slide":5,"name":"Text 12","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[52.8,314.88,30.72,30.72]}
+{"kind":"textbox","id":"sh/i54fmlc7","slide":5,"name":"Text 13","text":"Clean and merge into a balanced panel; engineer anomaly and lagged-ENSO features.","textPreview":"Clean and merge into a balanced panel; engineer anomaly and lagged-ENSO features.","textChars":81,"textLines":1,"bbox":[100.8,312,806.4,36.48]}
+{"kind":"shape","id":"sh/j6dwfqds","slide":5,"name":"Shape 14","bbox":[52.8,360,30.72,30.72]}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"name":"Text 15","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[52.8,360,30.72,30.72]}
+{"kind":"textbox","id":"sh/tcfel0vu","slide":5,"name":"Text 16","text":"Benchmark five models (OLS, Random Forest, Gradient Boosting, XGBoost, Extra Trees) on a chronological split.","textPreview":"Benchmark five models (OLS, Random Forest, Gradient Boosting, XGBoost, Extra Trees) on a chronological split.","textChars":109,"textLines":1,"bbox":[100.8,357.12,806.4,36.48]}
+{"kind":"shape","id":"sh/hgrmpwj2","slide":5,"name":"Shape 17","bbox":[52.8,405.12,30.72,30.72]}
+{"kind":"textbox","id":"sh/gfi5grih","slide":5,"name":"Text 18","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[52.8,405.12,30.72,30.72]}
+{"kind":"textbox","id":"sh/fe94nm1w","slide":5,"name":"Text 19","text":"Simulate El Niño scenarios, from Normal to Strong El Niño and La Niña, for state-wise GSVA.","textPreview":"Simulate El Niño scenarios, from Normal to Strong El Niño and La Niña, for state-wise GSVA.","textChars":91,"textLines":1,"bbox":[100.8,402.24,806.4,36.48]}
+{"kind":"shape","id":"sh/ud0ne10b","slide":5,"name":"Shape 20","bbox":[52.8,450.24,30.72,30.72]}
+{"kind":"textbox","id":"sh/pkr6tgjy","slide":5,"name":"Text 21","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[52.8,450.24,30.72,30.72]}
+{"kind":"textbox","id":"sh/4ji5kbid","slide":5,"name":"Text 22","text":"Deliver a web platform with dashboard, scenario lab, grounded AI search and data exports.","textPreview":"Deliver a web platform with dashboard, scenario lab, grounded AI search and data exports.","textChars":89,"textLines":1,"bbox":[100.8,447.36,806.4,36.48]}
+{"kind":"image","id":"im/8j2x8b6t","slide":5,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":""}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"29/9/2026","textShapes":14}
+{"kind":"shape","id":"sh/yhg7epsj","slide":6,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/zi98nu94","slide":6,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/87ipkzal","slide":6,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/7m98ru9g","slide":6,"name":"Text 4","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"name":"Text 5","text":"4. Data & Features","textPreview":"4. Data & Features","textChars":18,"textLines":1,"bbox":[48,132.48,432,40.32]}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"name":"Text 6","text":"10 states  |  2009–2023  |  150 panel observations","textPreview":"10 states  |  2009–2023  |  150 panel observations","textChars":50,"textLines":1,"bbox":[441.6,132.48,470.4,40.32]}
+{"kind":"textbox","id":"sh/w32twb6l","slide":6,"name":"Text 7","text":"Engineered panel features","textPreview":"Engineered panel features","textChars":25,"textLines":1,"bbox":[48,364.8,480,26.88]}
+{"kind":"shape","id":"sh/v2tcn650","slide":6,"name":"Shape 8","bbox":[48,395.52,278.4,96]}
+{"kind":"textbox","id":"sh/u1kbu1ov","slide":6,"name":"Text 9","text":"Rainfall anomaly","textPreview":"Rainfall anomaly","textChars":16,"textLines":1,"bbox":[62.4,400.32,249.6,24]}
+{"kind":"textbox","id":"sh/5svutgni","slide":6,"name":"Text 10","text":"R(i,t) − mean R(i)","textPreview":"R(i,t) − mean R(i)","textChars":18,"textLines":1,"bbox":[62.4,424.32,249.6,26.88]}
+{"kind":"textbox","id":"sh/47mt0b6x","slide":6,"name":"Text 11","text":"Deviation from the state's 15-year mean.","textPreview":"Deviation from the state's 15-year mean.","textChars":40,"textLines":1,"bbox":[62.4,453.12,249.6,33.6]}
+{"kind":"shape","id":"sh/j6dcr65c","slide":6,"name":"Shape 12","bbox":[340.8,395.52,278.4,96]}
+{"kind":"textbox","id":"sh/i54bylor","slide":6,"name":"Text 13","text":"Temperature anomaly","textPreview":"Temperature anomaly","textChars":19,"textLines":1,"bbox":[355.2,400.32,249.6,24]}
+{"kind":"textbox","id":"sh/twfux0ne","slide":6,"name":"Text 14","text":"T(i,t) − mean T(i)","textPreview":"T(i,t) − mean T(i)","textChars":18,"textLines":1,"bbox":[355.2,424.32,249.6,26.88]}
+{"kind":"textbox","id":"sh/svmt4v6t","slide":6,"name":"Text 15","text":"Thermal stress index for each state-year.","textPreview":"Thermal stress index for each state-year.","textChars":41,"textLines":1,"bbox":[355.2,453.12,249.6,33.6]}
+{"kind":"shape","id":"sh/cbe5g3ih","slide":6,"name":"Shape 16","bbox":[633.6,395.52,278.4,96]}
+{"kind":"textbox","id":"sh/dcnm98zm","slide":6,"name":"Text 17","text":"Lagged ENSO effect","textPreview":"Lagged ENSO effect","textChars":18,"textLines":1,"bbox":[648,400.32,249.6,24]}
+{"kind":"textbox","id":"sh/qpwnet0b","slide":6,"name":"Text 18","text":"ONI(t−1)","textPreview":"ONI(t−1)","textChars":8,"textLines":1,"bbox":[648,424.32,249.6,26.88]}
+{"kind":"textbox","id":"sh/bq547yhw","slide":6,"name":"Text 19","text":"Captures delayed kharif-to-rabi impact.","textPreview":"Captures delayed kharif-to-rabi impact.","textChars":39,"textLines":1,"bbox":[648,453.12,249.6,33.6]}
+{"kind":"table","id":"tb/ud47ihwb","slide":6,"name":"Table 0","rows":5,"cols":4,"preview":"Dimension | Source | Measurement | Coverage","bbox":[48,182.4,720,96]}
+{"kind":"image","id":"im/neh8na9g","slide":6,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"States: Maharashtra, Punjab, Uttar Pradesh, Madhya Pradesh, Rajasthan, Gujarat, Andhra Pradesh, Karnataka, Haryana, West Bengal. 10 states x 15 years = 150 observations, a balanced panel."}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"29/9/2026","textShapes":19}
+{"kind":"shape","id":"sh/cb2tkvap","slide":7,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/dcbud0ra","slide":7,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/ydkbm5sv","slide":7,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/kzmdova1","slide":7,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/l0vuh0rm","slide":7,"name":"Text 4","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"name":"Text 5","text":"5. Implementation","textPreview":"5. Implementation","textChars":17,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"name":"Text 6","text":"Reproducible pipeline (scripts/)","textPreview":"Reproducible pipeline (scripts/)","textChars":32,"textLines":1,"bbox":[48,177.6,576,26.88]}
+{"kind":"shape","id":"sh/baxkjqlk","slide":7,"name":"Shape 7","bbox":[48,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"name":"Text 8","text":"Download Data","textPreview":"Download Data","textChars":13,"textLines":1,"bbox":[48,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"name":"Text 9","text":"download_data.py","textPreview":"download_data.py","textChars":16,"textLines":1,"bbox":[43.2,274.56,139.2,19.2]}
+{"kind":"shape","id":"sh/cbq1sv25","slide":7,"name":"Shape 10","bbox":[179.52,232.32,13.44,15.36]}
+{"kind":"shape","id":"sh/n6x0fqlo","slide":7,"name":"Shape 11","bbox":[194.88,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/25ojml43","slide":7,"name":"Text 12","text":"Preprocess","textPreview":"Preprocess","textChars":10,"textLines":1,"bbox":[194.88,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"name":"Text 13","text":"preprocess_data.py","textPreview":"preprocess_data.py","textChars":18,"textLines":1,"bbox":[190.08,274.56,139.2,19.2]}
+{"kind":"shape","id":"sh/o761ov2t","slide":7,"name":"Shape 14","bbox":[326.4,232.32,13.44,15.36]}
+{"kind":"shape","id":"sh/f2d0b6lc","slide":7,"name":"Shape 15","bbox":[341.76,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/eh4jil4r","slide":7,"name":"Text 16","text":"Train 5 Models","textPreview":"Train 5 Models","textChars":14,"textLines":1,"bbox":[341.76,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"name":"Text 17","text":"train_models.py","textPreview":"train_models.py","textChars":15,"textLines":1,"bbox":[336.96,274.56,139.2,19.2]}
+{"kind":"shape","id":"sh/jedkn654","slide":7,"name":"Shape 18","bbox":[473.28,232.32,13.44,15.36]}
+{"kind":"shape","id":"sh/4fm1wb6p","slide":7,"name":"Shape 19","bbox":[488.64,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/50v2pgna","slide":7,"name":"Text 20","text":"Evaluate","textPreview":"Evaluate","textChars":8,"textLines":1,"bbox":[488.64,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/q143ylov","slide":7,"name":"Text 21","text":"evaluate_models.py","textPreview":"evaluate_models.py","textChars":18,"textLines":1,"bbox":[483.84,274.56,139.2,19.2]}
+{"kind":"shape","id":"sh/r2dkrq5g","slide":7,"name":"Shape 22","bbox":[620.16,232.32,13.44,15.36]}
+{"kind":"shape","id":"sh/s3ml0v61","slide":7,"name":"Shape 23","bbox":[635.52,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/d4f2t0nm","slide":7,"name":"Text 24","text":"Predict","textPreview":"Predict","textChars":7,"textLines":1,"bbox":[635.52,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/e5o32lor","slide":7,"name":"Text 25","text":"run_prediction.py","textPreview":"run_prediction.py","textChars":17,"textLines":1,"bbox":[630.72,274.56,139.2,19.2]}
+{"kind":"shape","id":"sh/f6xkvq5c","slide":7,"name":"Shape 26","bbox":[767.04,232.32,13.44,15.36]}
+{"kind":"shape","id":"sh/p0zmlk7u","slide":7,"name":"Shape 27","bbox":[782.4,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/ozq5szq9","slide":7,"name":"Text 28","text":"System Test","textPreview":"System Test","textChars":11,"textLines":1,"bbox":[782.4,211.2,129.6,57.6]}
+{"kind":"textbox","id":"sh/nyh4jupo","slide":7,"name":"Text 29","text":"test_system.py","textPreview":"test_system.py","textChars":14,"textLines":1,"bbox":[777.6,274.56,139.2,19.2]}
+{"kind":"textbox","id":"sh/2x8nqp83","slide":7,"name":"Text 30","text":"Tools & Technologies","textPreview":"Tools & Technologies","textChars":20,"textLines":1,"bbox":[48,316.8,480,26.88]}
+{"kind":"textbox","id":"sh/x4j6p47q","slide":7,"name":"Text 31","text":"Language: Python 3.11+\nData & ML: Pandas, NumPy, scikit-learn, XGBoost\nBackend: FastAPI, Pydantic v2\nModel artifacts: joblib (versioned)","textPreview":"Language: Python 3.11+ | Data & ML: Pandas, NumPy, scikit-learn, XGBoost | Backend: FastAPI, Pydantic v2 | Model artifacts: joblib (versi...","textChars":136,"textLines":4,"bbox":[48,350.4,422.4,144]}
+{"kind":"textbox","id":"sh/c3a5wzq5","slide":7,"name":"Text 32","text":"Frontend: Next.js 14 (App Router), React, Recharts\nStorage: SQLite (local) or Firebase Firestore + Storage\nHosting: Vercel\nTools: VS Code, Git / GitHub","textPreview":"Frontend: Next.js 14 (App Router), React, Recharts | Storage: SQLite (local) or Firebase Firestore + Storage | Hosting: Vercel | Tools: V...","textChars":151,"textLines":4,"bbox":[489.6,350.4,422.4,144]}
+{"kind":"image","id":"im/kfilofml","slide":7,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":""}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"29/9/2026","textShapes":19}
+{"kind":"shape","id":"sh/18byd4zy","slide":8,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/g72x4zyd","slide":8,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/ri9g7uhw","slide":8,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"name":"Text 4","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"Text 5","text":"6. System Architecture","textPreview":"6. System Architecture","textChars":22,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"shape","id":"sh/id0fu50z","slide":8,"name":"Shape 6","bbox":[48,180.48,864,94.08]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"name":"Text 7","text":"Presentation layer: Next.js 14 App Router (React)","textPreview":"Presentation layer: Next.js 14 App Router (React)","textChars":49,"textLines":1,"bbox":[62.4,185.28,768,26.88]}
+{"kind":"shape","id":"sh/98rehwve","slide":8,"name":"Shape 8","bbox":[62.4,225.6,128.64,30.72]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"name":"Text 9","text":"Dashboard","textPreview":"Dashboard","textChars":9,"textLines":1,"bbox":[62.4,225.6,128.64,30.72]}
+{"kind":"shape","id":"sh/n6pwfmd8","slide":8,"name":"Shape 10","bbox":[200.64,225.6,128.64,30.72]}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"name":"Text 11","text":"Scenario Lab","textPreview":"Scenario Lab","textChars":12,"textLines":1,"bbox":[200.64,225.6,128.64,30.72]}
+{"kind":"shape","id":"sh/1k7edwv2","slide":8,"name":"Shape 12","bbox":[338.88,225.6,128.64,30.72]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"name":"Text 13","text":"Model Benchmark","textPreview":"Model Benchmark","textChars":15,"textLines":1,"bbox":[338.88,225.6,128.64,30.72]}
+{"kind":"shape","id":"sh/zipwbmdc","slide":8,"name":"Shape 14","bbox":[477.12,225.6,128.64,30.72]}
+{"kind":"textbox","id":"sh/kfixwbe1","slide":8,"name":"Text 15","text":"AI Search","textPreview":"AI Search","textChars":9,"textLines":1,"bbox":[477.12,225.6,128.64,30.72]}
+{"kind":"shape","id":"sh/lgbepgvm","slide":8,"name":"Shape 16","bbox":[615.36,225.6,128.64,30.72]}
+{"kind":"textbox","id":"sh/tw7e9gnq","slide":8,"name":"Text 17","text":"State Profiles","textPreview":"State Profiles","textChars":14,"textLines":1,"bbox":[615.36,225.6,128.64,30.72]}
+{"kind":"shape","id":"sh/svydgb65","slide":8,"name":"Shape 18","bbox":[753.6,225.6,128.64,30.72]}
+{"kind":"textbox","id":"sh/7u5w765k","slide":8,"name":"Text 19","text":"Data & Export","textPreview":"Data & Export","textChars":13,"textLines":1,"bbox":[753.6,225.6,128.64,30.72]}
+{"kind":"shape","id":"sh/6twve1oz","slide":8,"name":"Shape 20","bbox":[470.4,278.4,19.2,21.12]}
+{"kind":"textbox","id":"sh/5sne5wne","slide":8,"name":"Text 21","text":"JSON REST API","textPreview":"JSON REST API","textChars":13,"textLines":1,"bbox":[499.2,278.4,192,21.12]}
+{"kind":"shape","id":"sh/kredcr6t","slide":8,"name":"Shape 22","bbox":[48,303.36,864,94.08]}
+{"kind":"textbox","id":"sh/jq5w365o","slide":8,"name":"Text 23","text":"Application layer: FastAPI Python backend","textPreview":"Application layer: FastAPI Python backend","textChars":41,"textLines":1,"bbox":[62.4,308.16,768,26.88]}
+{"kind":"shape","id":"sh/i5wva1o3","slide":8,"name":"Shape 24","bbox":[62.4,348.48,199.68,30.72]}
+{"kind":"textbox","id":"sh/x4ne1wni","slide":8,"name":"Text 25","text":"Model training & evaluation","textPreview":"Model training & evaluation","textChars":27,"textLines":1,"bbox":[62.4,348.48,199.68,30.72]}
+{"kind":"shape","id":"sh/w3ed8r6x","slide":8,"name":"Shape 26","bbox":[271.68,348.48,199.68,30.72]}
+{"kind":"textbox","id":"sh/m9sb2x4v","slide":8,"name":"Text 27","text":"Scenario simulation engine","textPreview":"Scenario simulation engine","textChars":26,"textLines":1,"bbox":[271.68,348.48,199.68,30.72]}
+{"kind":"shape","id":"sh/na1sb2lg","slide":8,"name":"Shape 28","bbox":[480.96,348.48,199.68,30.72]}
+{"kind":"textbox","id":"sh/8bat47ml","slide":8,"name":"Text 29","text":"Grounded search service","textPreview":"Grounded search service","textChars":23,"textLines":1,"bbox":[480.96,348.48,199.68,30.72]}
+{"kind":"shape","id":"sh/9w3uds36","slide":8,"name":"Shape 30","bbox":[690.24,348.48,199.68,30.72]}
+{"kind":"textbox","id":"sh/y5sbed4j","slide":8,"name":"Text 31","text":"CSV / JSON exporters","textPreview":"CSV / JSON exporters","textChars":20,"textLines":1,"bbox":[690.24,348.48,199.68,30.72]}
+{"kind":"shape","id":"sh/z61s7il4","slide":8,"name":"Shape 32","bbox":[470.4,401.28,19.2,19.2]}
+{"kind":"shape","id":"sh/07atgnmp","slide":8,"name":"Shape 33","bbox":[48,424.32,403.2,69.12]}
+{"kind":"textbox","id":"sh/l8ja9s3a","slide":8,"name":"Text 34","text":"SQLite (local)\nZero-config storage for local runs","textPreview":"SQLite (local) | Zero-config storage for local runs","textChars":49,"textLines":2,"bbox":[48,424.32,403.2,69.12]}
+{"kind":"textbox","id":"sh/q18bad4n","slide":8,"name":"Text 35","text":"OR","textPreview":"OR","textChars":2,"textLines":1,"bbox":[451.2,424.32,57.6,69.12]}
+{"kind":"shape","id":"sh/b2hs3il8","slide":8,"name":"Shape 36","bbox":[508.8,424.32,403.2,69.12]}
+{"kind":"textbox","id":"sh/3u18fepo","slide":8,"name":"Text 37","text":"Firebase Firestore + Storage\nCloud storage, active when keys are provided","textPreview":"Firebase Firestore + Storage | Cloud storage, active when keys are provided","textChars":73,"textLines":2,"bbox":[508.8,424.32,403.2,69.12]}
+{"kind":"image","id":"im/tobmh0nq","slide":8,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"The backend uses a dual storage adapter (db_storage.py): SQLite works out of the box; Firestore is used automatically when credentials are supplied."}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"29/9/2026","textShapes":7}
+{"kind":"shape","id":"sh/1cfmhgne","slide":9,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/0b65obm9","slide":9,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/nex4jq5k","slide":9,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/9gzml0nq","slide":9,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"name":"Text 4","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"name":"Text 5","text":"7. Modelling & Validation","textPreview":"7. Modelling & Validation","textChars":25,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"textbox","id":"sh/oza1gfyh","slide":9,"name":"Text 6","text":"Chronological out-of-sample validation","textPreview":"Chronological out-of-sample validation","textChars":38,"textLines":1,"bbox":[48,382.08,576,26.88]}
+{"kind":"shape","id":"sh/p0ji9kf2","slide":9,"name":"Shape 7","bbox":[48,412.8,633.6,40.32]}
+{"kind":"textbox","id":"sh/2xsjepgb","slide":9,"name":"Text 8","text":"Train: 2009–2019 (11 years)","textPreview":"Train: 2009–2019 (11 years)","textChars":27,"textLines":1,"bbox":[48,412.8,633.6,40.32]}
+{"kind":"shape","id":"sh/3y107axw","slide":9,"name":"Shape 9","bbox":[681.6,412.8,230.4,40.32]}
+{"kind":"textbox","id":"sh/cnu1kzyd","slide":9,"name":"Text 10","text":"Test: 2020–2023 (4 years)","textPreview":"Test: 2020–2023 (4 years)","textChars":25,"textLines":1,"bbox":[681.6,412.8,230.4,40.32]}
+{"kind":"textbox","id":"sh/do3id4fy","slide":9,"name":"Text 11","text":"Random K-fold is avoided because it leaks future shocks into past predictions. The best model has the lowest RMSE and MAE on the held-out years.","textPreview":"Random K-fold is avoided because it leaks future shocks into past predictions. The best model has the lowest RMSE and MAE on the held-out...","textChars":144,"textLines":1,"bbox":[48,458.88,864,38.4]}
+{"kind":"table","id":"tb/0nulwjap","slide":9,"name":"Table 0","rows":6,"cols":3,"preview":"Model | Category | Role in the benchmark","bbox":[48,180.48,720,96]}
+{"kind":"image","id":"im/t8z610vu","slide":9,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"Why not K-fold: in panel data, random folds train on future years and predict past ones, which inflates accuracy. The chronological split mimics real forecasting."}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"29/9/2026","textShapes":10}
+{"kind":"shape","id":"sh/xc3mho32","slide":10,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/cbu58j2h","slide":10,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/zelojyl8","slide":10,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/l036l83y","slide":10,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/kzu5c32t","slide":10,"name":"Text 4","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"name":"Text 5","text":"8. Results: Model Evaluation","textPreview":"8. Results: Model Evaluation","textChars":28,"textLines":1,"bbox":[48,132.48,556.8,40.32]}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"name":"Text 6","text":"Held-out test set, 2020–2023","textPreview":"Held-out test set, 2020–2023","textChars":28,"textLines":1,"bbox":[604.8,132.48,307.2,40.32]}
+{"kind":"shape","id":"sh/d87uxg3m","slide":10,"name":"Shape 7","bbox":[48,393.6,278.4,100.8]}
+{"kind":"textbox","id":"sh/q5gb21kb","slide":10,"name":"Text 8","text":"15.68","textPreview":"15.68","textChars":5,"textLines":1,"bbox":[62.4,396.48,249.6,57.6]}
+{"kind":"textbox","id":"sh/r6pcv6lw","slide":10,"name":"Text 9","text":"₹ Cr RMSE, lowest of five models","textPreview":"₹ Cr RMSE, lowest of five models","textChars":32,"textLines":1,"bbox":[62.4,453.12,254.4,33.6]}
+{"kind":"shape","id":"sh/0bit8b2d","slide":10,"name":"Shape 10","bbox":[340.8,393.6,278.4,100.8]}
+{"kind":"textbox","id":"sh/1cru1g3y","slide":10,"name":"Text 11","text":"0.5224","textPreview":"0.5224","textChars":6,"textLines":1,"bbox":[355.2,396.48,249.6,57.6]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"name":"Text 12","text":"R² on unseen years, highest","textPreview":"R² on unseen years, highest","textChars":27,"textLines":1,"bbox":[355.2,453.12,254.4,33.6]}
+{"kind":"shape","id":"sh/fapcz6ls","slide":10,"name":"Shape 13","bbox":[633.6,393.6,278.4,100.8]}
+{"kind":"textbox","id":"sh/ozitcv29","slide":10,"name":"Text 14","text":"11.2%","textPreview":"11.2%","textChars":5,"textLines":1,"bbox":[648,396.48,249.6,57.6]}
+{"kind":"textbox","id":"sh/p0ru503u","slide":10,"name":"Text 15","text":"MAPE, lowest of five models","textPreview":"MAPE, lowest of five models","textChars":27,"textLines":1,"bbox":[648,453.12,254.4,33.6]}
+{"kind":"table","id":"tb/7ud07yhc","slide":10,"name":"Table 0","rows":6,"cols":6,"preview":"Model | MAE (₹ Cr) | RMSE (₹ Cr) | R² | MAPE | Selected","bbox":[48,182.4,720,96]}
+{"kind":"image","id":"im/mh4bm183","slide":10,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"Extra Trees wins on all four metrics. Note the metrics are on the out-of-sample years 2020-2023 only."}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"29/9/2026","textShapes":5}
+{"kind":"shape","id":"sh/xcryxg7y","slide":11,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/wbih4b6d","slide":11,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/n69grmpw","slide":11,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/98rytw72","slide":11,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/o7ih0r6h","slide":11,"name":"Text 4","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/72t03qp0","slide":11,"name":"Text 5","text":"8. Results: Key Findings","textPreview":"8. Results: Key Findings","textChars":24,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"textbox","id":"sh/ofqtgnyt","slide":11,"name":"Text 6","text":"Key findings","textPreview":"Key findings","textChars":12,"textLines":1,"bbox":[585.6,180.48,326.4,28.8]}
+{"kind":"textbox","id":"sh/9gza9sze","slide":11,"name":"Text 7","text":"Extra Trees leads on every metric: RMSE 15.68 ₹ Cr, R² 0.52.\nThe OLS baseline is second-best (R² 0.41), suggesting much of the climate effect is near-linear.\nBoosted models trail on this small panel of 150 observations.\nR² of about 0.52 means roughly half the variance is explained, so outputs are estimates, not forecasts.\nRandom split points likely help with collinear rainfall and temperature anomalies.","textPreview":"Extra Trees leads on every metric: RMSE 15.68 ₹ Cr, R² 0.52. | The OLS baseline is second-best (R² 0.41), suggesting much of the climate ...","textChars":406,"textLines":5,"bbox":[585.6,216,326.4,278.4]}
+{"kind":"chart","id":"ch/rq9cjud4","slide":11,"name":"Chart 0","chartType":"bar","title":"Out-of-sample error, 2020–2023 (₹ Crore)","bbox":[38.4,177.6,528,321.6]}
+{"kind":"image","id":"im/dsn6xw32","slide":11,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":""}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"29/9/2026","textShapes":11}
+{"kind":"shape","id":"sh/1gbm9s3a","slide":12,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/0f2lgnmp","slide":12,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/ra943il8","slide":12,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/dcbm583y","slide":12,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/sb2lcnmd","slide":12,"name":"Text 4","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"name":"Text 5","text":"9. Platform Features","textPreview":"9. Platform Features","textChars":20,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"shape","id":"sh/a543mx4r","slide":12,"name":"Shape 6","bbox":[48,182.4,422.4,145.92]}
+{"kind":"shape","id":"sh/wvupgz6t","slide":12,"name":"Shape 7","bbox":[65.28,199.68,48,48]}
+{"kind":"textbox","id":"sh/atc7epon","slide":12,"name":"Text 8","text":"El Niño Scenario Lab","textPreview":"El Niño Scenario Lab","textChars":20,"textLines":1,"bbox":[129.6,201.6,326.4,30.72]}
+{"kind":"textbox","id":"sh/bulo7u58","slide":12,"name":"Text 9","text":"Five presets (Normal, Weak, Moderate, Strong El Niño, La Niña) with live sliders and ensemble averaging.","textPreview":"Five presets (Normal, Weak, Moderate, Strong El Niño, La Niña) with live sliders and ensemble averaging.","textChars":104,"textLines":1,"bbox":[129.6,238.08,326.4,84.48]}
+{"kind":"shape","id":"sh/orapcf6h","slide":12,"name":"Shape 10","bbox":[489.6,182.4,422.4,145.92]}
+{"kind":"shape","id":"sh/9sj65kn2","slide":12,"name":"Shape 11","bbox":[506.88,199.68,48,48]}
+{"kind":"textbox","id":"sh/nq1o3a5w","slide":12,"name":"Text 12","text":"Grounded AI Search","textPreview":"Grounded AI Search","textChars":18,"textLines":1,"bbox":[571.2,201.6,326.4,30.72]}
+{"kind":"textbox","id":"sh/0nap8f6l","slide":12,"name":"Text 13","text":"Classifies questions as Factual, Historical, Prediction, Scenario or Mixed, and answers with exact metrics and citations (NOAA, IMD, RBI, MoSPI).","textPreview":"Classifies questions as Factual, Historical, Prediction, Scenario or Mixed, and answers with exact metrics and citations (NOAA, IMD, RBI,...","textChars":145,"textLines":1,"bbox":[571.2,238.08,326.4,84.48]}
+{"kind":"shape","id":"sh/1oj61kn6","slide":12,"name":"Shape 14","bbox":[48,343.68,422.4,145.92]}
+{"kind":"shape","id":"sh/hkbm5wzu","slide":12,"name":"Shape 15","bbox":[65.28,360.96,48,48]}
+{"kind":"textbox","id":"sh/fit436ho","slide":12,"name":"Text 16","text":"State Deep-Dive Profiles","textPreview":"State Deep-Dive Profiles","textChars":24,"textLines":1,"bbox":[129.6,362.88,326.4,30.72]}
+{"kind":"textbox","id":"sh/uh0na1g3","slide":12,"name":"Text 17","text":"Per-state climate–economy trajectories, vulnerability indices and historical drought correlations.","textPreview":"Per-state climate–economy trajectories, vulnerability indices and historical drought correlations.","textChars":98,"textLines":1,"bbox":[129.6,399.36,326.4,84.48]}
+{"kind":"shape","id":"sh/tgrm1wzy","slide":12,"name":"Shape 18","bbox":[489.6,343.68,422.4,145.92]}
+{"kind":"shape","id":"sh/sfi58ryd","slide":12,"name":"Shape 19","bbox":[506.88,360.96,48,48]}
+{"kind":"textbox","id":"sh/6t0n6hg7","slide":12,"name":"Text 20","text":"Data & Metric Exports","textPreview":"Data & Metric Exports","textChars":21,"textLines":1,"bbox":[571.2,362.88,326.4,30.72]}
+{"kind":"textbox","id":"sh/dcv6dgz2","slide":12,"name":"Text 21","text":"One-click CSV and JSON downloads of the cleaned panel and the model benchmark results.","textPreview":"One-click CSV and JSON downloads of the cleaned panel and the model benchmark results.","textChars":86,"textLines":1,"bbox":[571.2,399.36,326.4,84.48]}
+{"kind":"image","id":"im/nmx8zu50","slide":12,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"image","id":"im/ps7mlwbu","slide":12,"name":"Image 1","bbox":[77.76,212.16,23.04,23.04]}
+{"kind":"image","id":"im/4relsru9","slide":12,"name":"Image 2","bbox":[519.36,212.16,23.04,23.04]}
+{"kind":"image","id":"im/3q54jmto","slide":12,"name":"Image 3","bbox":[77.76,373.44,23.04,23.04]}
+{"kind":"image","id":"im/2pw3qhc3","slide":12,"name":"Image 4","bbox":[519.36,373.44,23.04,23.04]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"Suggested: run a live demo here at https://pblminiprojecttyaids.vercel.app and show the Scenario Lab with a Strong El Niño preset for Maharashtra."}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"29/9/2026","textShapes":12}
+{"kind":"shape","id":"sh/q50nydsj","slide":13,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/bq9orito","slide":13,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/o3i5w3ad","slide":13,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/21gnuts7","slide":13,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/32ponyts","slide":13,"name":"Text 4","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"name":"Text 5","text":"10. Applications","textPreview":"10. Applications","textChars":16,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"shape","id":"sh/1076lobm","slide":13,"name":"Shape 6","bbox":[48,196.8,13.44,13.44]}
+{"kind":"textbox","id":"sh/hcfy9k3u","slide":13,"name":"Text 7","text":"Policy planning: Early warning for food inflation and drought relief.","textPreview":"Policy planning: Early warning for food inflation and drought relief.","textChars":69,"textLines":1,"bbox":[76.8,184.32,508.8,40.32]}
+{"kind":"shape","id":"sh/gb6x0zm9","slide":13,"name":"Shape 8","bbox":[48,248.64,13.44,13.44]}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"name":"Text 9","text":"Subsidy & irrigation: Identify states needing support before the impact peaks.","textPreview":"Subsidy & irrigation: Identify states needing support before the impact peaks.","textChars":78,"textLines":1,"bbox":[76.8,236.16,508.8,40.32]}
+{"kind":"shape","id":"sh/u9ofyp43","slide":13,"name":"Shape 10","bbox":[48,300.48,13.44,13.44]}
+{"kind":"textbox","id":"sh/t8fy5k3i","slide":13,"name":"Text 11","text":"Food reserves: Plan procurement and storage ahead of a weak monsoon.","textPreview":"Food reserves: Plan procurement and storage ahead of a weak monsoon.","textChars":68,"textLines":1,"bbox":[76.8,288,508.8,40.32]}
+{"kind":"shape","id":"sh/876xwfmx","slide":13,"name":"Shape 12","bbox":[48,352.32,13.44,13.44]}
+{"kind":"textbox","id":"sh/7mdg3als","slide":13,"name":"Text 13","text":"Farmer support: Target assistance to the most affected regions.","textPreview":"Farmer support: Target assistance to the most affected regions.","textChars":63,"textLines":1,"bbox":[76.8,339.84,508.8,40.32]}
+{"kind":"shape","id":"sh/6l4fu547","slide":13,"name":"Shape 14","bbox":[48,404.16,13.44,13.44]}
+{"kind":"textbox","id":"sh/lkvy103m","slide":13,"name":"Text 15","text":"What-if analysis: Test monsoon-deficit scenarios before the sowing season.","textPreview":"What-if analysis: Test monsoon-deficit scenarios before the sowing season.","textChars":74,"textLines":1,"bbox":[76.8,391.68,508.8,40.32]}
+{"kind":"shape","id":"sh/kjmxsfm1","slide":13,"name":"Shape 16","bbox":[48,456,13.44,13.44]}
+{"kind":"textbox","id":"sh/cnqh8fux","slide":13,"name":"Text 17","text":"Economic research: Study how climate indicators shape agricultural output.","textPreview":"Economic research: Study how climate indicators shape agricultural output.","textChars":74,"textLines":1,"bbox":[76.8,443.52,508.8,40.32]}
+{"kind":"shape","id":"sh/xozyhkbi","slide":13,"name":"Shape 18","bbox":[614.4,184.32,297.6,307.2]}
+{"kind":"textbox","id":"sh/q18f65cr","slide":13,"name":"Text 19","text":"Boundary of use","textPreview":"Boundary of use","textChars":15,"textLines":1,"bbox":[633.6,196.8,259.2,33.6]}
+{"kind":"textbox","id":"sh/bmhgfatc","slide":13,"name":"Text 20","text":"The platform gives analytical estimates and simulation scenarios to support decisions.","textPreview":"The platform gives analytical estimates and simulation scenarios to support decisions.","textChars":86,"textLines":1,"bbox":[633.6,240,259.2,96]}
+{"kind":"textbox","id":"sh/oz6x4vul","slide":13,"name":"Text 21","text":"It is not an official government forecast, and it does not claim El Niño is the sole cause of a change in Agricultural GSVA.","textPreview":"It is not an official government forecast, and it does not claim El Niño is the sole cause of a change in Agricultural GSVA.","textChars":124,"textLines":1,"bbox":[633.6,345.6,259.2,134.4]}
+{"kind":"image","id":"im/qd4fuhsn","slide":13,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":""}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"29/9/2026","textShapes":21}
+{"kind":"shape","id":"sh/xc7eds76","slide":14,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/wbydknq1","slide":14,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/jepwf2pc","slide":14,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/5grehs7i","slide":14,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/kfidonqx","slide":14,"name":"Text 4","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/zi5c3y98","slide":14,"name":"Text 5","text":"11. Future Scope","textPreview":"11. Future Scope","textChars":16,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"shape","id":"sh/ehwvat8n","slide":14,"name":"Shape 6","bbox":[48,182.4,278.4,144]}
+{"kind":"textbox","id":"sh/c3e1gjyd","slide":14,"name":"Text 7","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[62.4,192,76.8,38.4]}
+{"kind":"textbox","id":"sh/x4ni9ofy","slide":14,"name":"Text 8","text":"More climate variables","textPreview":"More climate variables","textChars":22,"textLines":1,"bbox":[62.4,232.32,249.6,28.8]}
+{"kind":"textbox","id":"sh/a1wze9g7","slide":14,"name":"Text 9","text":"Add soil moisture, humidity and reservoir levels.","textPreview":"Add soil moisture, humidity and reservoir levels.","textChars":49,"textLines":1,"bbox":[62.4,264,249.6,57.6]}
+{"kind":"shape","id":"sh/b2507exs","slide":14,"name":"Shape 10","bbox":[340.8,182.4,278.4,144]}
+{"kind":"textbox","id":"sh/kre1k3y9","slide":14,"name":"Text 11","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[355.2,192,76.8,38.4]}
+{"kind":"textbox","id":"sh/ls7idofu","slide":14,"name":"Text 12","text":"All states and UTs","textPreview":"All states and UTs","textChars":18,"textLines":1,"bbox":[355.2,232.32,249.6,28.8]}
+{"kind":"textbox","id":"sh/y5wjitgj","slide":14,"name":"Text 13","text":"Extend the panel from 10 states to the whole country.","textPreview":"Extend the panel from 10 states to the whole country.","textChars":53,"textLines":1,"bbox":[355.2,264,249.6,57.6]}
+{"kind":"shape","id":"sh/z650byxo","slide":14,"name":"Shape 14","bbox":[633.6,182.4,278.4,144]}
+{"kind":"textbox","id":"sh/0buh8zy5","slide":14,"name":"Text 15","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[648,192,76.8,38.4]}
+{"kind":"textbox","id":"sh/1w3i14fq","slide":14,"name":"Text 16","text":"Crop-level models","textPreview":"Crop-level models","textChars":17,"textLines":1,"bbox":[648,232.32,249.6,28.8]}
+{"kind":"textbox","id":"sh/hsvy50re","slide":14,"name":"Text 17","text":"Predict wheat, cotton, sugarcane and soybean instead of aggregate GSVA.","textPreview":"Predict wheat, cotton, sugarcane and soybean instead of aggregate GSVA.","textChars":71,"textLines":1,"bbox":[648,264,249.6,57.6]}
+{"kind":"shape","id":"sh/grmxwvqt","slide":14,"name":"Shape 18","bbox":[48,340.8,278.4,144]}
+{"kind":"textbox","id":"sh/fqdg3q98","slide":14,"name":"Text 19","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[62.4,350.4,76.8,38.4]}
+{"kind":"textbox","id":"sh/up4fal83","slide":14,"name":"Text 20","text":"District-level output","textPreview":"District-level output","textChars":21,"textLines":1,"bbox":[62.4,390.72,249.6,28.8]}
+{"kind":"textbox","id":"sh/pwvy90rq","slide":14,"name":"Text 21","text":"Move from state-level to district-level predictions.","textPreview":"Move from state-level to district-level predictions.","textChars":52,"textLines":1,"bbox":[62.4,422.4,249.6,57.6]}
+{"kind":"shape","id":"sh/4vmh0vq5","slide":14,"name":"Shape 22","bbox":[340.8,340.8,278.4,144]}
+{"kind":"textbox","id":"sh/3udg7q9k","slide":14,"name":"Text 23","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[355.2,350.4,76.8,38.4]}
+{"kind":"textbox","id":"sh/2t4fyl8z","slide":14,"name":"Text 24","text":"Deep learning & tuning","textPreview":"Deep learning & tuning","textChars":22,"textLines":1,"bbox":[355.2,390.72,249.6,28.8]}
+{"kind":"textbox","id":"sh/d0fydk7m","slide":14,"name":"Text 25","text":"Try LSTM and hyperparameter search to improve on R² 0.52.","textPreview":"Try LSTM and hyperparameter search to improve on R² 0.52.","textChars":57,"textLines":1,"bbox":[355.2,422.4,249.6,57.6]}
+{"kind":"shape","id":"sh/cz6h4fq1","slide":14,"name":"Shape 26","bbox":[633.6,340.8,278.4,144]}
+{"kind":"textbox","id":"sh/atg3idk7","slide":14,"name":"Text 27","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[648,350.4,76.8,38.4]}
+{"kind":"textbox","id":"sh/bup4rils","slide":14,"name":"Text 28","text":"Live data feeds","textPreview":"Live data feeds","textChars":15,"textLines":1,"bbox":[648,390.72,249.6,28.8]}
+{"kind":"textbox","id":"sh/cvylkn2d","slide":14,"name":"Text 29","text":"Refresh ONI and ERA5 data automatically and retrain on a schedule.","textPreview":"Refresh ONI and ERA5 data automatically and retrain on a schedule.","textChars":66,"textLines":1,"bbox":[648,422.4,249.6,57.6]}
+{"kind":"image","id":"im/qt4ri1s3","slide":14,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":""}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"29/9/2026","textShapes":9}
+{"kind":"shape","id":"sh/547mhg3m","slide":15,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/k3y5ov21","slide":15,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/76p4jqls","slide":15,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/t87ml0ji","slide":15,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/s7y5sv2x","slide":15,"name":"Text 4","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/na5476l8","slide":15,"name":"Text 5","text":"12. Conclusion","textPreview":"12. Conclusion","textChars":14,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"textbox","id":"sh/m9c3e1kn","slide":15,"name":"Text 6","text":"Built an end-to-end system: data ingestion, panel preparation, five ML models, scenario simulation and a web platform.\nBenchmarked models on a strict chronological split (train 2009–2019, test 2020–2023) to avoid temporal leakage.\nExtra Trees performed best: RMSE 15.68 ₹ Cr, MAE 12.19 ₹ Cr, R² 0.5224 on unseen years.\nThe Scenario Lab turns model output into what-if estimates that support proactive agricultural policy.","textPreview":"Built an end-to-end system: data ingestion, panel preparation, five ML models, scenario simulation and a web platform. | Benchmarked mode...","textChars":421,"textLines":4,"bbox":[48,187.2,528,307.2]}
+{"kind":"shape","id":"sh/wrm9kvep","slide":15,"name":"Shape 7","bbox":[604.8,184.32,307.2,307.2]}
+{"kind":"textbox","id":"sh/hsvat0fa","slide":15,"name":"Text 8","text":"5 models  |  10 states  |  15 years","textPreview":"5 models  |  10 states  |  15 years","textChars":35,"textLines":1,"bbox":[619.2,196.8,278.4,33.6]}
+{"kind":"textbox","id":"sh/upkrilwj","slide":15,"name":"Text 9","text":"LIVE DEMO","textPreview":"LIVE DEMO","textChars":9,"textLines":1,"bbox":[624,254.4,268.8,19.2]}
+{"kind":"textbox","id":"sh/vqdsrqx4","slide":15,"name":"Text 10","text":"pblminiprojecttyaids.vercel.app","textPreview":"pblminiprojecttyaids.vercel.app","textChars":31,"textLines":1,"bbox":[624,275.52,273.6,48]}
+{"kind":"textbox","id":"sh/4vm9ovel","slide":15,"name":"Text 11","text":"SOURCE CODE","textPreview":"SOURCE CODE","textChars":11,"textLines":1,"bbox":[624,345.6,268.8,19.2]}
+{"kind":"textbox","id":"sh/5wvax0f6","slide":15,"name":"Text 12","text":"github.com/hardiksedani/\npbl_mini_project_ty_aids","textPreview":"github.com/hardiksedani/ | pbl_mini_project_ty_aids","textChars":49,"textLines":2,"bbox":[624,366.72,273.6,48]}
+{"kind":"image","id":"im/503mdsry","slide":15,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":""}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"29/9/2026","textShapes":4}
+{"kind":"shape","id":"sh/8z2h8bq1","slide":16,"name":"Shape 0","bbox":[935.42,127.87,24.19,412.13]}
+{"kind":"shape","id":"sh/9kby1g7m","slide":16,"name":"Shape 1","bbox":[0,507.74,220.99,32.26]}
+{"kind":"shape","id":"sh/ytkf2h8j","slide":16,"name":"Shape 2","bbox":[220.99,507.74,714.62,32.26]}
+{"kind":"textbox","id":"sh/kv2h4rqp","slide":16,"name":"Text 3","text":"29/9/2026","textPreview":"29/9/2026","textChars":9,"textLines":1,"bbox":[26.88,507.74,153.6,32.26]}
+{"kind":"textbox","id":"sh/lwbyxwra","slide":16,"name":"Text 4","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[883.2,507.74,43.2,32.26]}
+{"kind":"textbox","id":"sh/ip4zel83","slide":16,"name":"Text 5","text":"13. References","textPreview":"13. References","textChars":14,"textLines":1,"bbox":[48,132.48,864,40.32]}
+{"kind":"textbox","id":"sh/3qdg7qpo","slide":16,"name":"Text 6","text":"[1] Open-Meteo, \"Historical Weather API (ERA5 Reanalysis).\" [Online]. Available: https://open-meteo.com/\n[2] NOAA Climate Prediction Center, \"Oceanic Niño Index (ONI) Historical Data.\" [Online]. Available: https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php. [Accessed: Aug. 6, 2026].\n[3] Ministry of Statistics and Programme Implementation (MoSPI), \"State-wise Agricultural GDP Data.\" [Online]. Available: https://mospi.gov.in/. [Accessed: Aug. 6, 2026].\n[4] Reserve Bank of India (RBI), \"Handbook of Statistics on Indian States.\" [Online]. Available: https://www.rbi.org.in/. [Accessed: Aug. 6, 2026].\n[5] India Meteorological Department (IMD), \"Rainfall and Temperature Data.\" [Online]. Available: https://mausam.imd.gov.in/. [Accessed: Aug. 6, 2026].\n[6] P. Mahesh and R. Soundrapandiyan, \"Yield Prediction for Crops by Gradient-Based Algorithms,\" PLOS ONE, vol. 19, no. 8, p. e0291928, Aug. 2024.\n[7] U. V. Nikhil, A. M. Pandiyan, S. P. Raja, and Z. Stamenkovic, \"Machine Learning-Based Crop Yield Prediction in South India: Performance Analysis of Various Models,\" Computers, vol. 13, no. 6, p. 137, May 2024.\n[8] Y. Li, H. Zeng, M. Zhang, B. Wu, and X. Qin, \"Global De-Trending Significantly Improves the Accuracy of XGBoost-Based County-Level Maize and Soybean Yield Prediction in the Midwestern United States,\" GIScience & Remote Sensing, vol. 61, no. 1, p. 2349341, 2024.","textPreview":"[1] Open-Meteo, \"Historical Weather API (ERA5 Reanalysis).\" [Online]. Available: https://open-meteo.com/ | [2] NOAA Climate Prediction Ce...","textChars":1412,"textLines":8,"bbox":[48,182.4,864,316.8]}
+{"kind":"image","id":"im/sn2t4fa1","slide":16,"name":"Image 0","bbox":[0,0,960,139.87]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":""}

@@ -1,0 +1,154 @@
+{
+  "target": "RBI/NSO GSVA Agriculture (crops), 2011-12 constant prices, INR crore",
+  "climate_method": "nearest IMD grid cell to one representative point per state; grid centers may fall outside state boundaries (notably coastal Goa); not a state-wide average or station observation",
+  "time_window": "financial year April-March; ONI mean of 10 complete 3-month seasons inside FY",
+  "unused_available_climate_years": "2001-2010 retained in raw files but not used because the comparable RBI target begins FY 2011-12",
+  "input_years": [
+    2011,
+    2024
+  ],
+  "candidate_state_years": 392,
+  "training_ready_rows": 385,
+  "states_with_rows": 28,
+  "rows_by_state": {
+    "Andhra Pradesh": 14,
+    "Arunachal Pradesh": 14,
+    "Assam": 14,
+    "Bihar": 14,
+    "Chhattisgarh": 14,
+    "Goa": 13,
+    "Gujarat": 12,
+    "Haryana": 14,
+    "Himachal Pradesh": 14,
+    "Jharkhand": 14,
+    "Karnataka": 14,
+    "Kerala": 14,
+    "Madhya Pradesh": 14,
+    "Maharashtra": 14,
+    "Manipur": 13,
+    "Meghalaya": 14,
+    "Mizoram": 13,
+    "Nagaland": 13,
+    "Odisha": 14,
+    "Punjab": 14,
+    "Rajasthan": 14,
+    "Sikkim": 13,
+    "Tamil Nadu": 14,
+    "Telangana": 14,
+    "Tripura": 14,
+    "Uttar Pradesh": 14,
+    "Uttarakhand": 14,
+    "West Bengal": 14
+  },
+  "minimum_rainfall_coverage": 1.0,
+  "minimum_temperature_coverage": 0.994521,
+  "source_quality_flags_retained_for_review": [
+    {
+      "state": "Assam",
+      "financial_year": "2022-23",
+      "quality_flags": "large_yoy_change"
+    },
+    {
+      "state": "Manipur",
+      "financial_year": "2017-18",
+      "quality_flags": "large_yoy_change"
+    },
+    {
+      "state": "Telangana",
+      "financial_year": "2019-20",
+      "quality_flags": "large_yoy_change"
+    }
+  ],
+  "exclusions": [
+    {
+      "state": "Goa",
+      "year": 2024,
+      "excluded_reason": "official_target_missing"
+    },
+    {
+      "state": "Gujarat",
+      "year": 2023,
+      "excluded_reason": "official_target_missing"
+    },
+    {
+      "state": "Gujarat",
+      "year": 2024,
+      "excluded_reason": "official_target_missing"
+    },
+    {
+      "state": "Manipur",
+      "year": 2024,
+      "excluded_reason": "official_target_missing"
+    },
+    {
+      "state": "Mizoram",
+      "year": 2024,
+      "excluded_reason": "official_target_missing"
+    },
+    {
+      "state": "Nagaland",
+      "year": 2024,
+      "excluded_reason": "official_target_missing"
+    },
+    {
+      "state": "Sikkim",
+      "year": 2024,
+      "excluded_reason": "official_target_missing"
+    }
+  ],
+  "source_sha256": {
+    "rbi_pdf": "c9ebaafc4fb46610e276e018dfbea353308961f418a1e896ffe7863be4c16f6a",
+    "rbi_extraction_csv": "48fc79e3aa6527dda1e41d1997b9e16dcc3b54fa5ce4450c03d35c3c7c47b204",
+    "oni_ascii": "93f8c86c7a660f46318abe33b38c0479d184812d95a479a1fe869c0c2363a9e4",
+    "state_points": "aab5d8dbc270d32927ec9cd721dd07cb45c236f6802b9fd087fa42852cb4c1e6"
+  },
+  "climate_file_sha256": {
+    "data/raw/rainfall/rainfall_2011.nc": "925e06db22b6797afd393b781e834ee8016cf8850b2501f73dbb13e6c2c936de",
+    "data/raw/temperature/tmax/2011.GRD": "642d337d4aa4ab0c4b167d04b923b3ec285a29d79920d5a8d3e5747953b7ccf2",
+    "data/raw/temperature/tmin/2011.GRD": "72cfc0ffbe88da7c56834d7ad096c8d336620505623e46093d291c9900ebba38",
+    "data/raw/rainfall/rainfall_2012.nc": "7708a4846e8ef0664962c7042e886f3a5f055af365d536782eff63760dc3f666",
+    "data/raw/temperature/tmax/2012.GRD": "0f55a48c4ca1b6558e60bbb2047e0a7cfb5ff720c43c7cc39fca892b4754ef3c",
+    "data/raw/temperature/tmin/2012.GRD": "2d70c8debb4833463e272a60e793538d81e295dcddddb2fc009cf956a1a24668",
+    "data/raw/rainfall/rainfall_2013.nc": "2042932a2aea8288bbf45482272f65b9225e8aafa9a44cf06c65962007f8bc79",
+    "data/raw/temperature/tmax/2013.GRD": "80c0e0162343cb6808db7bde56eab3222322a64d69bc493078fe05a9fb38af77",
+    "data/raw/temperature/tmin/2013.GRD": "e10e2fcc9a8ca6a6de8b8ccb3b20837a076bd4b45fd106175136e3ccbc9f9977",
+    "data/raw/rainfall/rainfall_2014.nc": "9ecca0e9049f0e6cf366a44420e2e7361bff67bf97ae43c6502999b25da76457",
+    "data/raw/temperature/tmax/2014.GRD": "68f6b0b7a6e4ed4e12ac13fd3e0884244b5d6b330fedee1ac43a4bd419ec9fd7",
+    "data/raw/temperature/tmin/2014.GRD": "6fde6cdaf1c53919d32d11326340440cd16feb735b1a34ba0b050c3e67e744e1",
+    "data/raw/rainfall/rainfall_2015.nc": "c276ce7ebff1d74d79123a7c777d9ef61c3c5765aa3b6db464ff6224b30a3926",
+    "data/raw/temperature/tmax/2015.GRD": "1f59cb38f0412c31f00ed5b0283ce3c8d4aecb33f7c798037b23eda7a2da1fc9",
+    "data/raw/temperature/tmin/2015.GRD": "4aab466ad7c3df41d9d78b8f77a305555590959e2963de9e2d37d1dd1ea11e5c",
+    "data/raw/rainfall/rainfall_2016.nc": "e5b0ba1feb2bf10a3347091867237b1c480a71cbd8087037ef846e4346cbcdef",
+    "data/raw/temperature/tmax/2016.GRD": "4cb547522de59e6af4a93b5a50810de406004b2553921337270f499db4e0c12e",
+    "data/raw/temperature/tmin/2016.GRD": "015c455543de61b4ea6aefcecdfd2218c99b8c60d8c3301a024aa63313d7ab7b",
+    "data/raw/rainfall/rainfall_2017.nc": "49786e2d2b661c5d3bcfb3ffd90385c1133ec27a8a04bf272ff2df5029106a9c",
+    "data/raw/temperature/tmax/2017.GRD": "ab6f1602d4bf3d2fb72af1c95123135715d03363ffcff2edba290460be348aa2",
+    "data/raw/temperature/tmin/2017.GRD": "8eba57d8306167936170d952b618681b0bf2d69d2a18b26f92e5ddb371ccf182",
+    "data/raw/rainfall/rainfall_2018.nc": "26bd53aeb2d6f3f7d39516c41606db005dede474906b33462d1a0caef69cd6ec",
+    "data/raw/temperature/tmax/2018.GRD": "d3177ec1a2f39235834a7ab5fa5120866bb9106f1fc2c06d8eba0d5bcdf7e555",
+    "data/raw/temperature/tmin/2018.GRD": "aad48cb4bd39b8f9495b8cce50d228893bac7ef9b55b6f8c7526a82ebe0a2ea9",
+    "data/raw/rainfall/rainfall_2019.nc": "c551c563b3514d492a2de94c706c1c254d5826656738b4a8e7dbd83841344a5b",
+    "data/raw/temperature/tmax/2019.GRD": "562086409f4db9ca32b6d554e2cb209926c4caf9892d7b5385195b254e0576ab",
+    "data/raw/temperature/tmin/2019.GRD": "5c188d132b748c454fda878216fd5d2e2c06e5fa313b7fb2231050c90306c147",
+    "data/raw/rainfall/rainfall_2020.nc": "2e567f0f71f3a1936ba11d61a0214fc3927c7b969ee5669d14959aa0b6b026dc",
+    "data/raw/temperature/tmax/2020.GRD": "f77b8b50582c400eca0510a1738050ab10bf628b648f5a7a9e9d3c7842637ba8",
+    "data/raw/temperature/tmin/2020.GRD": "2f3f6530b06eb24ae54612528011b97e1f6b38cacbe742fc51c1b3a8f3cf6be4",
+    "data/raw/rainfall/rainfall_2021.nc": "fb0f291fa7e214a7811023a9309cead67233b6b4e0bfcc5b277643f976f68374",
+    "data/raw/temperature/tmax/2021.GRD": "d869f0277dcc3b2038421f3a20a2ebf82cd7889dd553742577eda8f7603036dc",
+    "data/raw/temperature/tmin/2021.GRD": "b1f1a4c0246783c56b3f1117353aa167458e6f140c969ee7453b76cec830cd4d",
+    "data/raw/rainfall/rainfall_2022.nc": "83ae0d4e48f3a408eec3b54844476d406faf70928dc13c79f0bd085e3b0224b8",
+    "data/raw/temperature/tmax/2022.GRD": "b8340004e3c13e7b1b0a9ff14d03771bbfe048b64db92fb7e23260c2f52ca214",
+    "data/raw/temperature/tmin/2022.GRD": "59c9e294e2b8c59e58bd9ef241bc47604f83f54a2807398bb48137a92b5e8225",
+    "data/raw/rainfall/rainfall_2023.nc": "1fa0cbcb56769fd3cd2702e36dc3ee1b81b74755b77c7f058c70dfc3afb82831",
+    "data/raw/temperature/tmax/2023.GRD": "3279af28be8f222970dc0a48cb9530228ca55ae136a26020291de59d618d982b",
+    "data/raw/temperature/tmin/2023.GRD": "d52d47893ff1286e433d21b91160cb39a5b8f39398c625a997eb48132891a45c",
+    "data/raw/rainfall/rainfall_2024.nc": "1ef02aeba5694dbb57a6cca23a3c2cc11740affb185137c1eacbeab59893228a",
+    "data/raw/temperature/tmax/2024.GRD": "de50b8732a3e0fd7dea29a9c5604ca78b5c02e78b8164fb20ad2f6e00ed4c017",
+    "data/raw/temperature/tmin/2024.GRD": "31bcc5cbaca7ccf8da69ec5e6801ad036214dce850c1c50fcda9f1af1e77addd",
+    "data/raw/rainfall/rainfall_2025.nc": "7d03cd397ebb1d7209ffae947d3965113643e1f30023cca657f0aa2c800af035",
+    "data/raw/temperature/tmax/2025.GRD": "673775eafe685d180c5d7a19018287599697a3f6800332470ab27ca512bd4b88",
+    "data/raw/temperature/tmin/2025.GRD": "371bc1866e4c3d9455902ed22ef6e9c66ceaf2dcad3d274f45768d2b81249258"
+  },
+  "model_training_performed": false,
+  "panel_sha256": "ef7e899dfe5f1b2a5301ae41d82e5f67d212c22386edf4ab906a7151716f4d3a"
+}

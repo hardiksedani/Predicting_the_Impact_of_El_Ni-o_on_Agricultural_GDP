@@ -37,18 +37,21 @@ async def dashboard_summary():
     latest_docs = (
         db.collection("predictions")
         .order_by("created_at", direction="DESCENDING")
-        .limit(1)
+        .limit(100)
         .stream()
     )
     latest_prediction = None
     for doc in latest_docs:
         data = doc.to_dict()
-        latest_prediction = {
-            "state": data.get("state"),
-            "predicted_impact_pct": data.get("predicted_impact_pct"),
-            "model_used": data.get("model_used"),
-            "created_at": data.get("created_at"),
-        }
+        if (metrics and data.get("panel_sha256") == metrics.get("panel_sha256") and
+                data.get("model_run_id") == metrics.get("run_id")):
+            latest_prediction = {
+                "state": data.get("state"),
+                "predicted_impact_pct": data.get("predicted_impact_pct"),
+                "model_used": data.get("model_used"),
+                "created_at": data.get("created_at"),
+            }
+            break
 
     return DashboardSummary(
         states_count=states_count,

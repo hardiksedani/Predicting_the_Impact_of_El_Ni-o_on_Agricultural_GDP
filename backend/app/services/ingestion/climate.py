@@ -76,6 +76,10 @@ def fetch_climate_panel(
                 logger.info("Climate: %s — %d years", state, len(df))
                 fetched = True
                 break
+            except httpx.ConnectError:
+                # A connection or DNS failure affects the entire source; let the
+                # pipeline use its saved data instead of retrying every state.
+                raise
             except Exception as exc:
                 logger.warning("Climate fetch attempt %d failed for %s: %s", attempt + 1, state, exc)
                 time.sleep(3.0 * (attempt + 1))

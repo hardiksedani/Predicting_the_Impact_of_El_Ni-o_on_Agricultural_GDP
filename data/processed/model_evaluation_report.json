@@ -1,6 +1,6 @@
 {
-  "run_id": "run_20260919_205758",
-  "trained_at": "2026-09-19T20:58:00.311615Z",
+  "run_id": "run_20260929_083133",
+  "trained_at": "2026-09-29T08:31:35.538759Z",
   "train_years": [
     2009,
     2010,
@@ -20,13 +20,16 @@
     2022,
     2023
   ],
+  "panel_rows": 150,
+  "train_rows": 110,
+  "test_rows": 40,
   "models": {
     "linear_regression": {
       "mae": 15.16,
       "rmse": 17.49,
       "r2": 0.4058,
       "mape": 14.03,
-      "training_time_sec": 0.052,
+      "training_time_sec": 0.043,
       "hyperparameters": {
         "copy_X": true,
         "fit_intercept": true,
@@ -44,7 +47,7 @@
       "rmse": 17.62,
       "r2": 0.3969,
       "mape": 12.64,
-      "training_time_sec": 0.197,
+      "training_time_sec": 0.106,
       "hyperparameters": {
         "bootstrap": true,
         "ccp_alpha": 0.0,
@@ -72,7 +75,7 @@
       "rmse": 18.33,
       "r2": 0.3468,
       "mape": 13.06,
-      "training_time_sec": 0.115,
+      "training_time_sec": 0.064,
       "hyperparameters": {
         "alpha": 0.9,
         "ccp_alpha": 0.0,
@@ -99,26 +102,26 @@
       }
     },
     "xgboost": {
-      "mae": 14.02,
-      "rmse": 19.03,
-      "r2": 0.2965,
-      "mape": 12.9,
-      "training_time_sec": 1.427,
+      "mae": 14.0,
+      "rmse": 19.09,
+      "r2": 0.2917,
+      "mape": 12.81,
+      "training_time_sec": 1.324,
       "hyperparameters": {
         "objective": "reg:squarederror",
         "colsample_bytree": 0.85,
         "enable_categorical": true,
         "learning_rate": 0.08,
         "max_depth": 4,
-        "missing": NaN,
+        "missing": null,
         "n_estimators": 150,
         "random_state": 42,
         "subsample": 0.85
       },
       "feature_importance": {
-        "rainfall_mm": 0.2548,
-        "avg_temperature_c": 0.477,
-        "oni_index": 0.2682
+        "rainfall_mm": 0.2487,
+        "avg_temperature_c": 0.4779,
+        "oni_index": 0.2734
       }
     },
     "extra_trees": {
@@ -126,7 +129,7 @@
       "rmse": 15.68,
       "r2": 0.5224,
       "mape": 11.23,
-      "training_time_sec": 0.149,
+      "training_time_sec": 0.066,
       "hyperparameters": {
         "bootstrap": false,
         "ccp_alpha": 0.0,
@@ -152,5 +155,5 @@
   },
   "best_model": "extra_trees",
   "selection_metric": "rmse",
-  "target_variable": "Agricultural GVA / GDP (Base 2011-12, \u20b9 Crore)"
+  "target_variable": "Bundled agricultural GDP sample (official source and units unverified)"
 }

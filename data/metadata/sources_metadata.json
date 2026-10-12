@@ -17,14 +17,14 @@
       "processing_notes": "Parsed from monthly fixed-width table, filtered to panel observation years, aggregated to annual calendar-year mean."
     },
     {
-      "source_name": "Open-Meteo Historical Weather Archive API (ECMWF ERA5 / IMD reanalysis)",
+      "source_name": "Open-Meteo Historical Weather Archive API",
       "source_url": "https://archive-api.open-meteo.com/v1/archive",
       "download_date": "2026-09-20",
       "coverage_period": "2009 - 2023",
       "variables": [
         {
           "name": "rainfall_mm",
-          "full_name": "Annual Precipitation Sum",
+          "full_name": "Annual Precipitation Sum (default benchmark)",
           "units": "millimeters (mm)",
           "definition": "Sum of daily precipitation at geographic centroids of Indian agricultural states."
         },
@@ -35,25 +35,41 @@
           "definition": "Average 2-meter air temperature over the calendar year."
         }
       ],
-      "license_usage_notes": "Open-Meteo API Terms: Open database license (ODbL) / ECMWF ERA5 Copernicus",
-      "processing_notes": "Queried per state centroid coordinates with Asia/Kolkata timezone, daily readings aggregated to annual sums/means."
+      "license_usage_notes": "Follow Open-Meteo and underlying provider terms. The current API query does not pin an ERA5 model; do not label the saved series as ERA5-only without verification.",
+      "processing_notes": "Queried per state centroid coordinates with Asia/Kolkata timezone. Both rainfall and temperature are used in the restored default benchmark."
     },
     {
-      "source_name": "Reserve Bank of India (RBI) & MoSPI Directorate of Economics and Statistics",
-      "source_url": "https://rbi.org.in/scripts/AnnualPublications.aspx?head=Handbook+of+Statistics+on+Indian+States",
-      "download_date": "2026-09-20",
+      "source_name": "India Meteorological Department (IMD), Climate Research & Services, Pune",
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/Rainfall_1_NetCDF.html",
+      "download_date": "2026-09-29",
+      "coverage_period": "2009 - 2023",
+      "variables": [
+        {
+          "name": "rainfall_mm",
+          "full_name": "Annual rainfall at nearest 1-degree grid cell to state centroid",
+          "units": "millimeters (mm)",
+          "definition": "Sum of official IMD daily gridded rainfall for a single cell near each state centroid; not an area-weighted state mean."
+        }
+      ],
+      "license_usage_notes": "IMD publishes the data and citation guidance on its download page; retain attribution and consult IMD terms for redistribution.",
+      "processing_notes": "Optional comparison source, not the default benchmark. Annual NetCDF files downloaded by scripts/download_imd_rainfall.py; nearest-cell selection, missing-value validation, and calendar-year sum. Per-file SHA-256 checksums in imd_rainfall_provenance.json."
+    },
+    {
+      "source_name": "Bundled agricultural GDP reference panel (unverified sample)",
+      "source_url": "backend/app/data/sources/agricultural_gdp_reference.csv",
+      "download_date": null,
       "coverage_period": "2009 - 2023",
       "variables": [
         {
           "name": "agricultural_gva_cr",
           "alias": "agricultural_gdp_cr",
-          "full_name": "Gross State Value Added (GSVA) from Agriculture, Forestry and Fishing at Constant Prices",
-          "units": "₹ Crore (Base Year 2011-12)",
-          "definition": "Official state-level agricultural economic output measure. Measured at constant prices to eliminate price inflation distortions."
+          "full_name": "Agricultural GDP sample target",
+          "units": "Unverified (column label claims ₹ Crore)",
+          "definition": "Locally bundled state-year reference values; primary RBI/MoSPI table, units, and methodology have not been verified."
         }
       ],
-      "license_usage_notes": "National Data Sharing and Accessibility Policy (NDSAP) / Government of India open data",
-      "processing_notes": "Standardized across state reclassifications and price base shifts. Linked on (state, year) with meteorological observations."
+      "license_usage_notes": "Bundled project sample; do not represent it as official RBI/MoSPI GSVA.",
+      "processing_notes": "Loaded from a local CSV and linked on (state, year). The repeated cross-state value pattern requires replacement with a traceable official economic series before substantive interpretation."
     }
   ]
 }
