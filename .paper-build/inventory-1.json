@@ -1,0 +1,106 @@
+{
+  "word/footer1.xml": {
+    "size": 2971,
+    "sha256": "4ab9dabea4338d4dd1c94266395f10f2fa297679fb511f18a1ba89d3d298ea81"
+  },
+  "word/footer2.xml": {
+    "size": 2971,
+    "sha256": "db8e56306bdcc1515ca9ee5fd2d53bbd65bf21ee1638816b25944ad59718119f"
+  },
+  "word/footer3.xml": {
+    "size": 2969,
+    "sha256": "db950eafb3b8083afc27aacd05679aa3a6a78f89e8e2fab1271a1ed00ff5d844"
+  },
+  "word/numbering.xml": {
+    "size": 13375,
+    "sha256": "d366fb428896cd7c71caf004451deddd688056d38ef15992f4fbe2fd65608abe"
+  },
+  "word/settings.xml": {
+    "size": 2152,
+    "sha256": "26f2853fde05b88d4b0a9da0bb016d56a896901f60c9272dddf33c3f3fa61e4a"
+  },
+  "word/fontTable.xml": {
+    "size": 2179,
+    "sha256": "c5ec566fc41c125e8cb21e179114c10ee8b113d79465e3efb3bce899b1fa662a"
+  },
+  "word/_rels/fontTable.xml.rels": {
+    "size": 593,
+    "sha256": "3d023f53e0f649040fc1c385a7b0ee7b027bc012b8dd519b6c8144f8a417c01c"
+  },
+  "word/styles.xml": {
+    "size": 19392,
+    "sha256": "6305948452fba8d75e77420f5a44ef25e552f728027b123360e8e622d2657691"
+  },
+  "customXML/itemProps1.xml": {
+    "size": 404,
+    "sha256": "fc2e321bb5ca54d5f2b99b99f91d681d004417098918a318be88fe525218c9a3"
+  },
+  "customXML/item1.xml": {
+    "size": 1273,
+    "sha256": "79e7af5e8edd71b67a5b5ee7fb0e1a5071a11347bf7891da2e417a85c59b2c4f"
+  },
+  "customXML/_rels/item1.xml.rels": {
+    "size": 295,
+    "sha256": "26ac718f80df621ee703e3c0f143a63034967c5fe65fbfdcefbf96419235355e"
+  },
+  "docProps/core.xml": {
+    "size": 529,
+    "sha256": "a48c92c5034bb09f667ca5270809b30bb217da8f12776116d64ba6d49eb13e05"
+  },
+  "word/document.xml": {
+    "size": 822577,
+    "sha256": "9ff08999103181f50bf9acbcae00e3c5c736dabd3ae45de65f36717daf80f68a"
+  },
+  "word/_rels/document.xml.rels": {
+    "size": 2136,
+    "sha256": "68a7edd0c50867da0893277cb81ea700de5789967600bac86d1100496bdd01bf"
+  },
+  "_rels/.rels": {
+    "size": 443,
+    "sha256": "450973054150e155baa20de9ae4d682cf52545a537ed2b84ed78400b7dc15ddc"
+  },
+  "word/fonts/NotoSansSymbols-regular.ttf": {
+    "size": 183620,
+    "sha256": "3c9c40311ae6012f7d3c4a4ff98952b2c7bbc0d4c89a93ba22986ff1f1884af5"
+  },
+  "word/fonts/NotoSansSymbols-bold.ttf": {
+    "size": 183344,
+    "sha256": "afc2a6b7050df884f5deb2618ebbdecb9fa2f163d3ca66ca75f8b069febc6741"
+  },
+  "word/media/image2.png": {
+    "size": 132700,
+    "sha256": "67af8e015d43f51720d7db775ec04c0ffc81e02bd8d0287d5026a94010fa4452"
+  },
+  "word/theme/theme1.xml": {
+    "size": 6054,
+    "sha256": "7ca91f37cb4cbf77b0a7dad843458d74fb20b2d40d98bffe73e3d9c055e8bf22"
+  },
+  "word/media/image3.png": {
+    "size": 337417,
+    "sha256": "a090c2702cd79324a0ab54838a77a82c7add1d41f64eb17c38125420fe4882df"
+  },
+  "word/media/image1.png": {
+    "size": 120934,
+    "sha256": "e27f1f109b096632dcc085b297af2082b6c1edf4ec213b6110dcfdef5a62ccb9"
+  },
+  "word/media/image5.png": {
+    "size": 280073,
+    "sha256": "94c228d9a2d90792a645d05d7f9989eb0305c5abca7fae74b20e8c49e902f3ca"
+  },
+  "word/media/image4.png": {
+    "size": 393480,
+    "sha256": "c62c6acd50247ee43b044311400d88cfd596b20a1e8c6938ef824bf64391d1ef"
+  },
+  "word/media/image6.png": {
+    "size": 139298,
+    "sha256": "1b3dca03106cc515d60c4917e1e223f64b4170542c7ab77f243bf9a86451993e"
+  },
+  "word/fonts/CambriaMath-regular.ttf": {
+    "size": 922744,
+    "sha256": "ee8d47e02278a325b7decca1809e6929e99d3b5ab53ead4e7d0dc6fc5044b5cd"
+  },
+  "[Content_Types].xml": {
+    "size": 1988,
+    "sha256": "4ee4046c7ba2dac0ad3a68e98d349363d9cbd6046a9db8b4b61c919c644bb921"
+  }
+}

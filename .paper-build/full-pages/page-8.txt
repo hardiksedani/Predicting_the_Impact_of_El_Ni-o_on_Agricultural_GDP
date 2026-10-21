@@ -1,0 +1,14 @@
+ 
+and a solution,” BMC Bioinformatics, vol. 8, no. 1, Art. no. 25, 2007, 
+doi: 10.1186/1471-2105-8-25. 
+[46] A. Altmann, L. Toloşi, O. Sander, and T. Lengauer, “Permutation 
+importance: a corrected feature importance measure,” Bioinformatics, 
+vol. 26, no. 10, pp. 1340–1347, 2010, doi: 
+10.1093/bioinformatics/btq134. 
+[47] G. Shmueli, “To Explain or to Predict?,” Statistical Science, vol. 25, 
+no. 3, pp. 289–310, 2010, doi: 10.1214/10-sts330. 
+[48] C. Rudin, “Stop explaining black box machine learning models for 
+high stakes decisions and use interpretable models instead,” Nature 
+Machine Intelligence, vol. 1, no. 5, pp. 206–215, 2019, doi: 
+10.1038/s42256-019-0048-x.
+ 

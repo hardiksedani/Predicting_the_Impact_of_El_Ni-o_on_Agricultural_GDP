@@ -1,0 +1,88 @@
+ 
+TABLE III 
+MODEL ERRORS ON 105 HELD-OUT ROWS 
+Model MAE¹ RMSE¹ R² MAPE % 
+OLS 10,049.97 17,410.41 0.8783 33.51 
+Random Forest 12,556.09 21,343.40 0.8172 60.82 
+Gradient Boosting 11,023.36 18,086.89 0.8687 62.83 
+XGBoost 11,267.99 18,752.05 0.8589 70.74 
+Extra Trees 12,105.21 18,388.83 0.8643 71.66 
+Fig. 1. ¹ Monetary errors are in INR crore. 
+The four ensembles do not obtain a clear advantage from 
+their additional flexibility. Random Forest has the largest 
+RMSE, while Extra Trees has a lower RMSE than XGBoost 
+but a higher MAPE. These differences illustrate why a 
+ranking based on one error metric is incomplete. Large states 
+contribute strongly to squared error, whereas smaller states 
+can dominate relative error. A model intended for state -
+specific use should be assessed against the relevant error 
+tolerance rather than chosen solely from the poole d 
+leaderboard. 
+B. What the Baselines Reveal 
+The state-mean benchmark has RMSE of INR 17,552.79 
+crore, only slightly above the linear model. The linear model's 
+RMSE improvement over that benchmark is approximately 
+0.81%, and its MAE is slightly worse. The persistence 
+benchmark is substantially stronger: RMSE is INR 10,890.73 
+crore, MAE is INR 5,343.19 crore, and R² is 0.9524. Its 
+RMSE is approximately 37.45% lower than the linear 
+model's. Table IV and Fig. 3 place the model results beside 
+these benchmarks. 
+TABLE IV 
+TRAINING-ONLY HISTORICAL BENCHMARKS 
+Predictor MAE¹ RMSE¹ R² 
+State mean 9,911.99 17,552.79 0.8763 
+Last value 5,343.19 10,890.73 0.9524 
+OLS comparison 10,049.97 17,410.41 0.8783 
+Fig. 2. ¹ Monetary errors are in INR crore. 
+ 
+Fig. 3. RMSE comparison including training -only baselines. Last value denotes 
+fixed persistence from FY 2020–21. 
+This comparison changes the interpretation of the 
+apparent model fit. The climate -and-state regressors capture 
+much of the difference between states, but they do not 
+outperform the latest known state level. Historical averages 
+can lag a changing economic series; a recent observation may 
+therefore provide more useful information than the present 
+weather features. This is consistent with the result, but the 
+experiment does not isolate the contribution of technological 
+change, cropping patterns, or other omitted economic drivers. 
+The persistence result is also relevant to application 
+design. “Best model” in the stored five -model comparison 
+means the lowest RMSE within that particular candidate list. 
+Once an additional benchmark is evaluated, the label must 
+not be generalized into “ best available forecast.” A 
+subsequent model -selection protocol should include 
+persistence as a formal candidate and reserve a new 
+evaluation period if the current results are used to guide 
+feature or hyperparameter changes. 
+C. Temporal and State-Level Error Patterns 
+Figure 4 compares the linear model's predictions with 
+observed GSVA. The wide range of state economic levels 
+accounts for much of the visual spread. Large -state 
+underprediction contributes substantial absolute error: over 
+the held -out observations, Uttar P radesh has MAE of 
+approximately INR 59,135.75 crore, Madhya Pradesh INR 
+43,012.03 crore, and Maharashtra INR 27,432.86 crore. 
+These are prediction errors, not measured climate losses. 
+Differences in scale mean that a smaller state's lower absolute 
+error need not indicate a better relative prediction. 
+ 
+Fig. 4. Observed and predicted crop GSVA for the linear model. The diagonal 
+represents exact prediction. 
+Annual linear -model RMSE rises from INR 13,072.53 
+crore in 2021–22 to INR 23,158.59 crore in 2024 –25. Table 
+V and Fig. 5 show the progression. Increasing error with 
+distance from the training period is consistent with a model 
+that does not fully track evolving output levels. However, the 
+state composition also changes: the final year contains 22 
+observations rather than 28. The annual comparison therefore 
+cannot attribute all deterioration to elapsed time alone. 
+TABLE V 
+ANNUAL HELD-OUT PERFORMANCE OF OLS 
+FY n MAE¹ RMSE¹ R² 
+2021–22 28 7,034.36 13,072.53 0.9237 
+2022–23 28 9,439.80 15,284.48 0.9022 
+2023–24 27 10,863.91 17,953.27 0.8686 
+2024–25 22 13,665.68 23,158.59 0.8130 
+Fig. 3. ¹ Monetary errors are in INR crore. 

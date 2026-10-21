@@ -1,0 +1,96 @@
+ 
+price-base tables are not concatenated with this series. 
+Keeping a single base avoids treating a change in accounting 
+units as an economic change, although revisions and 
+differences in underlying state estimates can still affect 
+comparability. 
+Historical NOAA Climate Prediction Center ONI 
+observations provide the ENSO input. Within each financial 
+year, the pipeline averages the ten three -month seasons fully 
+contained between April and March, from AMJ through JFM. 
+These overlapping seasons summar ize the same evolving 
+Pacific phenomenon and are not ten independent 
+observations. The financial -year ONI value is shared by all 
+states in that year. Table I summarizes the variables; Fig. 1 
+shows their path through the system. 
+TABLE I 
+VARIABLES AND SOURCE ALIGNMENT 
+Variable Source and construction Unit 
+Rainfall IMD daily 0.25° grid; FY sum mm 
+Temperature IMD daily 1° grid; FY mean °C 
+ONI NOAA; 10 complete seasons per FY °C 
+Crop GSVA RBI/NSO Table 30; 2011–12 prices INR crore 
+State 28 one-hot indicators Binary 
+ 
+Fig. 1. Data preparation, chronological evaluation, and application 
+workflow. 
+C. Harmonization and Quality Control 
+Annual rainfall is the sum of available valid daily 
+observations in the financial year. Daily mean temperature is 
+calculated from the maximum and minimum temperatures, 
+and those daily means are averaged over the year. A 95% 
+daily-coverage criterion screens  the climate aggregates. The 
+retained row records rainfall coverage, temperature coverage, 
+expected days, and the selected cells. This design makes 
+missingness visible rather than hiding it behind an annual 
+number. 
+𝑅ₛᵧ =  𝛴 𝑃ₛ𝑑 ,   𝑇ₛᵧ =  (1 / |𝐷|) 𝛴 (𝑇𝑚𝑎𝑥ₛ𝑑 +  𝑇𝑚𝑖𝑛ₛ𝑑) / 2    (1) 
+In (1), D denotes valid days, P is daily rainfall, and Tmax 
+and Tmin are daily temperatures. The rainfall total is a sum 
+over valid days, not an automatic rescaling to compensate for 
+every missing day. A high coverage threshold reduces that 
+discrepancy but  cannot guarantee that missing observations 
+are meteorologically random. Likewise, a representative 
+point may differ materially from the climate experienced 
+across an entire state, particularly where elevation, coastlines, 
+or rainfall gradients are pronounced. 
+The complete panel has rainfall values from 188.53 to 
+4,301.28 mm and mean temperatures from 19.182 to 29.854 
+°C. Financial-year ONI ranges from −0.720 to 1.945 °C. Crop 
+GSVA ranges from INR 729.65 to 214,070.82 crore. Quality 
+flags retained for Assam in 2 022–23, Manipur in 2017 –18, 
+and Telangana in 2019 –20 remain available for inspection. 
+They are not silently deleted to improve reported accuracy. 
+The current results use the complete -case panel with those 
+flags retained; a flag -exclusion sensitivity analys is has not 
+been used to claim robustness. 
+ 
+Fig. 2. Complete observations by financial year. The final four years form 
+the holdout. 
+IV. METHODOLOGY 
+A. Feature Representation and Chronological Split 
+Each observation contains rainfall, mean temperature, 
+ONI, and a one -hot state vector. The final input has 31 
+columns: three climate variables and 28 state indicators. The 
+year is used to construct the split but is not itself a predictive 
+feature. All states present in the test set occur in training. The 
+first ten financial years, 2011 –12 through 2020 –21, supply 
+280 training rows. The final four years, 2021 –22 through 
+2024–25, supply 105 test rows. No random redistribution of 
+state-years is used for the reported comparison. 
+The linear specification can be written as (2), where a 
+state-specific level and three common climate slopes describe 
+the prediction. The stored implementation uses an intercept 
+and all 28 indicator columns. This representation is 
+redundant, so individual intercept and dummy coefficients 
+are not uniquely interpretable as separate structural effects. 
+Predictions remain the quantities evaluated. In addition, the 
+shared slopes assume the same linear response across states, 
+an assumption that may be restrictive for different crop mixes 
+and irrigation systems. 
+ŷₛᵧ =  𝛼ₛ +  𝛽𝑅 𝑅ₛᵧ +  𝛽𝑇 𝑇ₛᵧ +  𝛽𝑂 𝑂𝑁𝐼ᵧ    (2) 
+The split uses observed climate from the held -out years. 
+It therefore evaluates retrospective estimation conditional on 
+realized weather, not an operational forecast issued before 
+those years begin. A usable advance forecast would require 
+weather and ENSO inputs available at the issue date, together 
+with a treatment of their uncertainty. This distinction prevents 
+a chronological split from being mistaken for proof that the 
+full information set was available in advance. 
+B. Model Configurations 
+Random Forest and Extra Trees each contain 150 trees, 
+with maximum depth 10, minimum split size 3, and minimum 
+leaf size 2. Random Forest uses bootstrap sampling; Extra 
+Trees does not. Gradient Boosting and XGBoost use 150 
+estimators, learning rate 0.08, m aximum depth 4, and row 
+subsampling of 0.85. XGBoost additionally uses column 

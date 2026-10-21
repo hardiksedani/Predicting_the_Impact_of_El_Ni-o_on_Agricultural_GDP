@@ -1,0 +1,123 @@
+ 
+temperature exposure identifies effects that a mean 
+temperature cannot fully represent [11]. Indian wheat 
+research examines extreme heat during senescence [12], and 
+rice research considers monsoon and temperature 
+relationships [13]. These studies motivate better seasonal 
+features for subsequent versions of the system. They do not 
+supply numerical loss coefficients for the current GSVA 
+model, whose outcome, spatial scale, and input construction 
+differ. 
+Economic research using weather variation distinguishes 
+statistical association from the identification of an economic 
+response [14]. The distinction is especially relevant when 
+output trends, irrigation, crop choice, and technology are 
+incompletely observ ed. The goal here is a transparent 
+comparison of predictive specifications. The fitted 
+relationships are not interpreted as causal damage functions, 
+and a model -generated difference between two weather 
+inputs is not presented as an observed economic loss. 
+B. Drought Vulnerability and Spatial Assessment 
+Drought research distinguishes meteorological deficits 
+from agricultural and socioeconomic consequences [15]. 
+Agricultural vulnerability assessments consider the systems 
+exposed to a hazard, including their sensitivity and capacity 
+to respond [16]. Survey evidence from Maharashtra 
+documents farmers' experiences of drought impacts and 
+adaptation [17]. District -scale studies further examine how 
+exposure, sensitivity, and adaptive capacity vary across 
+Maharashtra [18]. This literature explains why rainfall alo ne 
+is an incomplete indicator of agricultural harm. 
+Several Indian studies combine indicators into spatial 
+vulnerability assessments. Analytical hierarchy methods 
+have been applied to disaster vulnerability [19] and, in fuzzy 
+form, to drought vulnerability in Odisha [20]. Composite 
+assessments have also bee n developed for Tamil Nadu [21], 
+agricultural drought mapping [22], and hazard -specific 
+evaluation under the IPCC framework [23]. A study of 
+Vidarbha provides a regional example of drought 
+vulnerability assessment [24]. These approaches address 
+relative vu lnerability rather than prediction of a monetary 
+outcome. Their mapped categories should therefore not be 
+treated as labels for the regression task used in this paper. 
+The broader conceptual literature emphasizes that 
+vulnerability depends on the system, stressor, and assessment 
+objective [25], [26], [27]. Principal component analysis has 
+supported information -rich vulnerability mapping [28], but 
+its role is to summarize  variation in the input matrix [29]. 
+Research on composite indicators also emphasizes sensitivity 
+analysis when assessing the reliability of rankings [30]. This 
+project does not compute a PCA vulnerability index. It retains 
+the useful emphasis on traceable  inputs and clear 
+interpretation while evaluating predicted crop GSVA directly 
+against held-out economic observations. 
+C. Machine Learning and Evaluation 
+Reviews of agricultural machine learning document 
+varied tasks, input types, and modeling approaches [31], [32]. 
+The present comparison uses established ensemble families: 
+Random Forest [33], Extra Trees [34], gradient boosting [35], 
+and XGBoost [36]. Thei r flexibility permits interactions and 
+nonlinear splits, but the relatively small panel does not ensure 
+that this flexibility improves performance. Ordinary least 
+squares is therefore included as a transparent comparator. 
+Time-structured data require evaluation designs that 
+respect their dependence structure [37], [38]. Error estimates 
+can also become optimistic when model selection and 
+performance assessment use the same data repeatedly [39]. 
+Accordingly, the reported spli t places earlier financial years 
+in training and later years in testing. The comparison uses the 
+saved configurations, without claiming an exhaustive 
+hyperparameter search. The holdout establishes a 
+retrospective comparison for known states; it does not 
+establish transfer to unseen states, future ENSO events, or a 
+real-time forecast made before weather observations are 
+available. 
+III. STUDY AREA AND DATA 
+A. Spatial and Temporal Scope 
+The study covers 28 Indian states over 14 financial years, 
+from 2011–12 through 2024–25. A financial year is identified 
+by its starting calendar year and runs from April to March. 
+The candidate panel therefore contains 392 state -year 
+combinations. Seven la ck an economic target, leaving 385 
+complete observations. Union territories are outside the 
+model's state vocabulary. The panel includes diverse crop 
+economies, but each state is represented by a single weather 
+sampling location rather than an area -weighted climate 
+surface. 
+The excluded economic observations are Goa for 2024 –
+25, Gujarat for 2023 –24 and 2024 –25, and Manipur, 
+Mizoram, Nagaland, and Sikkim for 2024–25. Missing labels 
+are not filled with model predictions or assumed zeros. 
+Consequently, the final two test years h ave fewer states than 
+the earlier test years. The coverage pattern is shown in Fig. 2 
+and must be considered when comparing annual errors: 
+changes in the evaluated state mix accompany changes in the 
+year. 
+The panel is balanced during training, with ten 
+observations for every state. Its incompleteness is 
+concentrated in the evaluation period: the test set contains 
+105 of 112 possible state -years. This distinction matters 
+because the fitted state indicators a re learned from equal 
+numbers of training years, while pooled test metrics weight 
+states according to their available observations. Gujarat 
+contributes two test rows and five other states contribute 
+three, compared with four for the remaining states. No 
+weighting correction is applied to make these contributions 
+equal. The reported metrics therefore describe the observed 
+complete-case holdout, with its actual coverage. 
+B. Climate and Economic Sources 
+Daily rainfall is taken from the IMD 0.25° gridded 
+product, whose development is documented by Pai et al. [40]. 
+Daily maximum and minimum temperatures use the IMD 1° 
+gridded product, with the gridded -temperature methodology 
+described by Srivastava et al. [41]. For each state, the pipeline 
+selects the nearest cell to a configured representative 
+coordinate. Rainfall and temperature can therefore use 
+different grid -cell centers. Their coordinates and valid -day 
+counts remain in the prepared panel for audit. 
+The target comes from the locally retained RBI table titled 
+“Gross State Value Added by Economic Activity —
+Agriculture (Constant Prices),” Table 30, pages 85–86, based 
+on NSO/MoSPI data. Its note specifies that the data pertain to 
+crops. The source reports INR lakh at the 2011–12 price base; 
+the pipeline divides values by 100 to obtain INR crore. Older 

@@ -1,0 +1,3445 @@
+{
+  "kumar2004": {
+    "DOI": "10.1002/joc.1081",
+    "title": [
+      "Climate impacts on Indian agriculture"
+    ],
+    "author": [
+      {
+        "given": "K.",
+        "family": "Krishna Kumar",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "K.",
+        "family": "Rupa Kumar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "R. G.",
+        "family": "Ashrit",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "N. R.",
+        "family": "Deshpande",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J. W.",
+        "family": "Hansen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "International Journal of Climatology"
+    ],
+    "volume": "24",
+    "issue": "11",
+    "page": "1375-1393",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2004,
+          8,
+          26
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Agriculture (arguably the backbone of India's economy) is highly dependent on the spatial and temporal distribution of monsoon rainfall. This paper presents an analysis of crop–climate relationships for India, using historic production statistics for major crops (rice, wheat, sorghum, groundnut and sugarcane) and for aggregate food grain, cereal, pulses and oilseed production. Correlation analysis provides an indication of the influence of monsoon rainfall and some of its potential predictors (Pacific and Indian Ocean sea‐surface temperatures, Darwin sea‐level pressure) on crop production. All‐India annual total production (except sorghum and sugarcane), and production in the monsoon (except sorghum) and post‐monsoon seasons (except rice and sorghum) were significantly correlated to all‐India summer monsoon rainfall. Monsoon season crops (except sorghum) were strongly associated with the three potential monsoon predictors. Results using state‐level crop production statistics and subdivisional monsoon rainfall were generally consistent with the all‐India results, but demonstrated some surprising spatial variations. Whereas the impact of subdivisional monsoon rainfall is strong in most of the country, the influence of concurrent predictors related to El Niño–southern oscillation and the Indian Ocean sea‐surface temperatures at a long lead time seem greatest in the western to central peninsula. Copyright © 2004 Royal Meteorological Society</jats:p>",
+    "URL": "https://doi.org/10.1002/joc.1081",
+    "publisher": "Wiley"
+  },
+  "rasmusson1983": {
+    "DOI": "10.1175/1520-0493(1983)111<0517:trbeep>2.0.co;2",
+    "title": [
+      "The Relationship Between Eastern Equatorial Pacific Sea Surface Temperatures and Rainfall over India and Sri Lanka"
+    ],
+    "author": [
+      {
+        "given": "Eugene M.",
+        "family": "Rasmusson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas H.",
+        "family": "Carpenter",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Monthly Weather Review"
+    ],
+    "volume": "111",
+    "issue": "3",
+    "page": "517-528",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          1983,
+          3
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1175/1520-0493(1983)111<0517:trbeep>2.0.co;2",
+    "publisher": "American Meteorological Society"
+  },
+  "kumar1999": {
+    "DOI": "10.1126/science.284.5423.2156",
+    "title": [
+      "On the Weakening Relationship Between the Indian Monsoon and ENSO"
+    ],
+    "author": [
+      {
+        "given": "K. Krishna",
+        "family": "Kumar",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "International Research Institute (IRI) for Climate Prediction, Lamont-Doherty Earth Observatory (LDEO) of Columbia University, Post Office Box 1000, Route 9W, Palisades, NY 10964–8000, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Balaji",
+        "family": "Rajagopalan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "LDEO of Columbia University, Post Office Box 1000, Route 9W, Palisades, NY 10964–8000, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mark A.",
+        "family": "Cane",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "LDEO of Columbia University, Post Office Box 1000, Route 9W, Palisades, NY 10964–8000, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Science"
+    ],
+    "volume": "284",
+    "issue": "5423",
+    "page": "2156-2159",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          1999,
+          6,
+          25
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Analysis of the 140-year historical record suggests that the inverse relationship between the El Niño–Southern Oscillation (ENSO) and the Indian summer monsoon (weak monsoon arising from warm ENSO event) has broken down in recent decades. Two possible reasons emerge from the analyses. A southeastward shift in the Walker circulation anomalies associated with ENSO events may lead to a reduced subsidence over the Indian region, thus favoring normal monsoon conditions. Additionally, increased surface temperatures over Eurasia in winter and spring, which are a part of the midlatitude continental warming trend, may favor the enhanced land-ocean thermal gradient conducive to a strong monsoon. These observations raise the possibility that the Eurasian warming in recent decades helps to sustain the monsoon rainfall at a normal level despite strong ENSO events.</jats:p>",
+    "URL": "https://doi.org/10.1126/science.284.5423.2156",
+    "publisher": "American Association for the Advancement of Science (AAAS)"
+  },
+  "kumar2006": {
+    "DOI": "10.1126/science.1131152",
+    "title": [
+      "Unraveling the Mystery of Indian Monsoon Failure During El Niño"
+    ],
+    "author": [
+      {
+        "given": "K. Krishna",
+        "family": "Kumar",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Indian Institute of Tropical Meteorology, Pune, 411008, India."
+          },
+          {
+            "name": "Department of Civil Environmental and Architectural Engineering, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "Cooperative Institute for Research in Environmental Sciences, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "National Oceanic and Atmospheric Administration, Earth System Research Laboratory, Boulder, CO 80305, USA."
+          },
+          {
+            "name": "Lamont-Doherty Earth Observatory, Columbia University, Palisades, NY 10964, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Balaji",
+        "family": "Rajagopalan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Indian Institute of Tropical Meteorology, Pune, 411008, India."
+          },
+          {
+            "name": "Department of Civil Environmental and Architectural Engineering, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "Cooperative Institute for Research in Environmental Sciences, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "National Oceanic and Atmospheric Administration, Earth System Research Laboratory, Boulder, CO 80305, USA."
+          },
+          {
+            "name": "Lamont-Doherty Earth Observatory, Columbia University, Palisades, NY 10964, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Martin",
+        "family": "Hoerling",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Indian Institute of Tropical Meteorology, Pune, 411008, India."
+          },
+          {
+            "name": "Department of Civil Environmental and Architectural Engineering, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "Cooperative Institute for Research in Environmental Sciences, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "National Oceanic and Atmospheric Administration, Earth System Research Laboratory, Boulder, CO 80305, USA."
+          },
+          {
+            "name": "Lamont-Doherty Earth Observatory, Columbia University, Palisades, NY 10964, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gary",
+        "family": "Bates",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Indian Institute of Tropical Meteorology, Pune, 411008, India."
+          },
+          {
+            "name": "Department of Civil Environmental and Architectural Engineering, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "Cooperative Institute for Research in Environmental Sciences, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "National Oceanic and Atmospheric Administration, Earth System Research Laboratory, Boulder, CO 80305, USA."
+          },
+          {
+            "name": "Lamont-Doherty Earth Observatory, Columbia University, Palisades, NY 10964, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mark",
+        "family": "Cane",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Indian Institute of Tropical Meteorology, Pune, 411008, India."
+          },
+          {
+            "name": "Department of Civil Environmental and Architectural Engineering, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "Cooperative Institute for Research in Environmental Sciences, University of Colorado, Boulder, CO 80309, USA."
+          },
+          {
+            "name": "National Oceanic and Atmospheric Administration, Earth System Research Laboratory, Boulder, CO 80305, USA."
+          },
+          {
+            "name": "Lamont-Doherty Earth Observatory, Columbia University, Palisades, NY 10964, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Science"
+    ],
+    "volume": "314",
+    "issue": "5796",
+    "page": "115-119",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          10,
+          6
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The 132-year historical rainfall record reveals that severe droughts in India have always been accompanied by El Niño events. Yet El Niño events have not always produced severe droughts. We show that El Niño events with the warmest sea surface temperature (SST) anomalies in the central equatorial Pacific are more effective in focusing drought-producing subsidence over India than events with the warmest SSTs in the eastern equatorial Pacific. The physical basis for such different impacts is established using atmospheric general circulation model experiments forced with idealized tropical Pacific warmings. These findings have important implications for Indian monsoon forecasting.</jats:p>",
+    "URL": "https://doi.org/10.1126/science.1131152",
+    "publisher": "American Association for the Advancement of Science (AAAS)"
+  },
+  "gadgil2003": {
+    "DOI": "10.1146/annurev.earth.31.100901.141251",
+    "title": [
+      "The Indian Monsoon and Its Variability"
+    ],
+    "author": [
+      {
+        "given": "Sulochana",
+        "family": "Gadgil",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Centre for Atmospheric and Oceanic Sciences, Indian Institute of Science, Bangalore 560 012, Karnataka, India;"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Annual Review of Earth and Planetary Sciences"
+    ],
+    "volume": "31",
+    "issue": "1",
+    "page": "429-467",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          5
+        ]
+      ]
+    },
+    "abstract": "<jats:p>▪ Abstract  For over 300 years, the monsoon has been viewed as a gigantic land-sea breeze. It is shown in this paper that satellite and conventional observations support an alternative hypothesis, which considers the monsoon as a manifestation of seasonal migration of the intertropical convergence zone (ITCZ). With the focus on the Indian monsoon, the mean seasonal pattern is described, and why it is difficult to simulate it is discussed. Some facets of the intraseasonal variation, such as active-weak cycles; break monsoon; and a special feature of intraseasonal variation over the region, namely, poleward propagations of the ITCZ at intervals of 2–6 weeks, are considered. Vertical moist stability is shown to be a key parameter in the variation of monthly convection over ocean and land as well as poleward propagations. Special features of the Bay of Bengal and the monsoon brought out by observations during a national observational experiment in 1999 are briefly described.</jats:p>",
+    "URL": "https://doi.org/10.1146/annurev.earth.31.100901.141251",
+    "publisher": "Annual Reviews"
+  },
+  "ashok2001": {
+    "DOI": "10.1029/2001gl013294",
+    "title": [
+      "Impact of the Indian Ocean dipole on the relationship between the Indian monsoon rainfall and ENSO"
+    ],
+    "author": [
+      {
+        "given": "Karumuri",
+        "family": "Ashok",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhaoyong",
+        "family": "Guan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Toshio",
+        "family": "Yamagata",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Geophysical Research Letters"
+    ],
+    "volume": "28",
+    "issue": "23",
+    "page": "4499-4502",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2001,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The influence of the recently discovered Indian Ocean Dipole (IOD) on the interannual variability of the Indian summer monsoon rainfall (ISMR) has been investigated for the period 1958‐1997. The IOD and the El Niño/Southern Oscillation (ENSO) have complementarily affected the ISMR during the last four decades. Whenever the ENSO‐ISMR correlation is low (high), the IOD‐ISMR correlation is high (low). The IOD plays an important role as a modulator of the Indian monsoon rainfall, and influences the correlation between the ISMR and ENSO. We have discovered that the ENSO‐induced anomalous circulation over the Indian region is either countered or supported by the IOD‐induced anomalous meridional circulation cell, depending upon the phase and amplitude of the two major tropical phenomena in the Indo‐Pacific sector.</jats:p>",
+    "URL": "https://doi.org/10.1029/2001gl013294",
+    "publisher": "American Geophysical Union (AGU)"
+  },
+  "saji1999": {
+    "DOI": "10.1038/43854",
+    "title": [
+      "A dipole mode in the tropical Indian Ocean"
+    ],
+    "author": [
+      {
+        "given": "N. H.",
+        "family": "Saji",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "B. N.",
+        "family": "Goswami",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "P. N.",
+        "family": "Vinayachandran",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "T.",
+        "family": "Yamagata",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Nature"
+    ],
+    "volume": "401",
+    "issue": "6751",
+    "page": "360-363",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          1999,
+          9
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1038/43854",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "ashok2007": {
+    "DOI": "10.1029/2006jc003798",
+    "title": [
+      "El Niño Modoki and its possible teleconnection"
+    ],
+    "author": [
+      {
+        "given": "Karumuri",
+        "family": "Ashok",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Frontier Research Center for Global Change/JAMSTEC  Yokohama, Kanagawa Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Swadhin K.",
+        "family": "Behera",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Frontier Research Center for Global Change/JAMSTEC  Yokohama, Kanagawa Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Suryachandra A.",
+        "family": "Rao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Frontier Research Center for Global Change/JAMSTEC  Yokohama, Kanagawa Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hengyi",
+        "family": "Weng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Frontier Research Center for Global Change/JAMSTEC  Yokohama, Kanagawa Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Toshio",
+        "family": "Yamagata",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Frontier Research Center for Global Change/JAMSTEC  Yokohama, Kanagawa Japan"
+          },
+          {
+            "name": "Department of Earth and Planetary Science, Graduate School of Science University of Tokyo  Tokyo Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of Geophysical Research: Oceans"
+    ],
+    "volume": "112",
+    "issue": "C11",
+    "page": null,
+    "article-number": "2006JC003798",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          11
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Using observed data sets mainly for the period 1979–2005, we find that anomalous warming events different from conventional El Niño events occur in the central equatorial Pacific. This unique warming in the central equatorial Pacific associated with a horseshoe pattern is flanked by a colder sea surface temperature anomaly (SSTA) on both sides along the equator. empirical orthogonal function (EOF) analysis of monthly tropical Pacific SSTA shows that these events are represented by the second mode that explains 12% of the variance. Since a majority of such events are not part of El Niño evolution, the phenomenon is named as El Niño Modoki (pseudo‐El Niño) (“Modoki” is a classical Japanese word, which means “a similar but different thing”). The El Niño Modoki involves ocean‐atmosphere coupled processes which include a unique tripolar sea level pressure pattern during the evolution, analogous to the Southern Oscillation in the case of El Niño. Hence the total entity is named as El Niño–Southern Oscillation (ENSO) Modoki. The ENSO Modoki events significantly influence the temperature and precipitation over many parts of the globe. Depending on the season, the impacts over regions such as the Far East including Japan, New Zealand, western coast of United States, etc., are opposite to those of the conventional ENSO. The difference maps between the two periods of 1979–2004 and 1958–1978 for various oceanic/atmospheric variables suggest that the recent weakening of equatorial easterlies related to weakened zonal sea surface temperature gradient led to more flattening of the thermocline. This appears to be a cause of more frequent and persistent occurrence of the ENSO Modoki event during recent decades.</jats:p>",
+    "URL": "https://doi.org/10.1029/2006jc003798",
+    "publisher": "American Geophysical Union (AGU)"
+  },
+  "index2021": {
+    "DOI": "10.1088/1748-9326/abe9ed",
+    "title": [
+      "Defining El Niño indices in a warming climate"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6898-9535",
+        "authenticated-orcid": false,
+        "given": "Geert Jan",
+        "family": "van Oldenborgh",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4378-2263",
+        "authenticated-orcid": false,
+        "given": "Harry",
+        "family": "Hendon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7901-0337",
+        "authenticated-orcid": false,
+        "given": "Timothy",
+        "family": "Stockdale",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7095-9706",
+        "authenticated-orcid": false,
+        "given": "Michelle",
+        "family": "L’Heureux",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7645-5720",
+        "authenticated-orcid": false,
+        "given": "Erin",
+        "family": "Coughlan de Perez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6064-9675",
+        "authenticated-orcid": false,
+        "given": "Roop",
+        "family": "Singh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0319-5627",
+        "authenticated-orcid": false,
+        "given": "Maarten",
+        "family": "van Aalst",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Environmental Research Letters"
+    ],
+    "volume": "16",
+    "issue": "4",
+    "page": "044003",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          3,
+          11
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Extreme weather and climate events associated with El Niño and La Niña cause massive societal impacts. Therefore, observations and forecasts are used around the world to prepare for such events. However, global warming has caused warm El Niño events to seem bigger than they are, while cold La Niña events seem smaller, in the commonly used Niño3.4 index (sea surface temperature (SST) anomalies over 5\n                    <jats:sup>∘</jats:sup>\n                    S–5\n                    <jats:sup>∘</jats:sup>\n                    N, 120–170\n                    <jats:sup>∘</jats:sup>\n                    W). We propose a simple and elegant adjustment, defining a relative Niño3.4 index as the difference between the original SST anomaly and the anomaly over all tropical oceans (20\n                    <jats:sup>∘</jats:sup>\n                    S–20\n                    <jats:sup>∘</jats:sup>\n                    N). This relative index describes the onset of convection better, is not contaminated by global warming and can be monitored and forecast in real-time. We show that the relative Niño3.4 index is better in line with effects on rainfall and would be more useful for preparedness for El Niño and La Niña in a changing climate and for El Niño—Southern Oscillation research.\n                  </jats:p>",
+    "URL": "https://doi.org/10.1088/1748-9326/abe9ed",
+    "publisher": "IOP Publishing"
+  },
+  "pai2014": {
+    "DOI": "10.54302/mausam.v65i1.851",
+    "title": [
+      "Development of a new high spatial resolution (0.25° × 0.25°) long period  (1901-2010) daily gridded rainfall data set over India and its  comparison with existing data sets over the region"
+    ],
+    "author": [
+      {
+        "given": "D.S",
+        "family": "Pai",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "M",
+        "family": "Rajeevan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "O.P",
+        "family": "Sreejith",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "B.",
+        "family": "Mukhopadhyay",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "N.S",
+        "family": "Satbha",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "MAUSAM"
+    ],
+    "volume": "65",
+    "issue": "1",
+    "page": "1-18",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          1,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:p>ABSTRACT. The study discusses development of a new daily gridded rainfall data set (IMD4) at a high spatial resolution (0.25° × 0.25°, latitude × longitude) covering a longer period of 110 years (1901-2010) over the Indian main land.  A comparison of IMD4 with 4 other existing daily gridded rainfall data sets of different spatial resolutions and time periods has also been discussed. For preparing the new gridded data, daily rainfall records from 6955 rain gauge stations in India were used, highest  number of stations used by any studies so far for such a purpose. The gridded data set was developed after making quality control of basic rain-gauge stations. The comparison of IMD4 with other data sets suggested that the climatological and variability features of rainfall over India derived from IMD4 were comparable with the existing gridded daily rainfall data sets. In addition, the spatial rainfall distribution like heavy rainfall areas in the orographic regions of the west coast and over northeast, low rainfall in the lee ward side of the Western Ghats etc. were more realistic and better presented in IMD4 due to its higher spatial resolution and to the higher density of rainfall stations used for its development.</jats:p>",
+    "URL": "https://doi.org/10.54302/mausam.v65i1.851",
+    "publisher": "India Meteorological Department"
+  },
+  "srivastava2009": {
+    "DOI": "10.1002/asl.232",
+    "title": [
+      "Development of a high resolution daily gridded temperature data set (1969–2005) for the Indian region"
+    ],
+    "author": [
+      {
+        "given": "A. K.",
+        "family": "Srivastava",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "M.",
+        "family": "Rajeevan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "S. R.",
+        "family": "Kshirsagar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Atmospheric Science Letters"
+    ],
+    "volume": "10",
+    "issue": "4",
+    "page": "249-254",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          10
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>A high resolution daily gridded temperature data set for the Indian region was developed using temperature data of 395 quality controlled stations for the period 1969–2005. A modified version of the Shepard's angular distance weighting algorithm was used for interpolating the station temperature data into 1° latitude × 1° longitude grids. Using the cross validation, errors were estimated and found less than 0.5 °C. The data set was also compared with another high resolution data set and found comparable. Mean frequency of cold and heat waves, temperature anomalies associated with the monsoon breaks have been presented. Copyright © 2009 Royal Meteorological Society</jats:p>",
+    "URL": "https://doi.org/10.1002/asl.232",
+    "publisher": "Wiley"
+  },
+  "mishra2010": {
+    "DOI": "10.1016/j.jhydrol.2010.07.012",
+    "title": [
+      "A review of drought concepts"
+    ],
+    "author": [
+      {
+        "given": "Ashok K.",
+        "family": "Mishra",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vijay P.",
+        "family": "Singh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of Hydrology"
+    ],
+    "volume": "391",
+    "issue": "1-2",
+    "page": "202-216",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          9
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.jhydrol.2010.07.012",
+    "publisher": "Elsevier BV"
+  },
+  "wilhelmi2002": {
+    "DOI": "10.1023/a:1013388814894",
+    "title": [
+      "Assessing Vulnerability to Agricultural Drought: A Nebraska Case Study"
+    ],
+    "author": [
+      {
+        "given": "Olga V.",
+        "family": "Wilhelmi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Donald A.",
+        "family": "Wilhite",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Natural Hazards"
+    ],
+    "volume": "25",
+    "issue": "1",
+    "page": "37-58",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2002,
+          1
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1023/a:1013388814894",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "udmale2014": {
+    "DOI": "10.1016/j.ijdrr.2014.09.011",
+    "title": [
+      "Farmers׳ perception of drought impacts, local adaptation and administrative mitigation measures in Maharashtra State, India"
+    ],
+    "author": [
+      {
+        "given": "Parmeshwar",
+        "family": "Udmale",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yutaka",
+        "family": "Ichikawa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sujata",
+        "family": "Manandhar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hiroshi",
+        "family": "Ishidaira",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anthony S.",
+        "family": "Kiem",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "International Journal of Disaster Risk Reduction"
+    ],
+    "volume": "10",
+    "issue": null,
+    "page": "250-269",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          12
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.ijdrr.2014.09.011",
+    "publisher": "Elsevier BV"
+  },
+  "swami2021": {
+    "DOI": "10.1016/j.ecolind.2020.107206",
+    "title": [
+      "Dynamics of exposure, sensitivity, adaptive capacity and agricultural vulnerability at district scale for Maharashtra, India"
+    ],
+    "author": [
+      {
+        "given": "Deepika",
+        "family": "Swami",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Devanathan",
+        "family": "Parthasarathy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Ecological Indicators"
+    ],
+    "volume": "121",
+    "issue": null,
+    "page": "107206",
+    "article-number": "107206",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          2
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.ecolind.2020.107206",
+    "publisher": "Elsevier BV"
+  },
+  "chakraborty2016": {
+    "DOI": "10.1080/19475705.2014.897656",
+    "title": [
+      "Mapping disaster vulnerability in India using analytical hierarchy process"
+    ],
+    "author": [
+      {
+        "given": "Anusheema",
+        "family": "Chakraborty",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "P.K.",
+        "family": "Joshi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Geomatics, Natural Hazards and Risk"
+    ],
+    "volume": "7",
+    "issue": "1",
+    "page": "308-325",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          3,
+          24
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1080/19475705.2014.897656",
+    "publisher": "Informa UK Limited"
+  },
+  "saha2021": {
+    "DOI": "10.1080/19475705.2020.1861114",
+    "title": [
+      "Spatial assessment of drought vulnerability using fuzzy-analytical hierarchical process: a case study at the Indian state of Odisha"
+    ],
+    "author": [
+      {
+        "given": "Sunil",
+        "family": "Saha",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Geography, University of Gour Banga, Malda, West Bengal, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Barnali",
+        "family": "Kundu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Geography, University of Gour Banga, Malda, West Bengal, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gopal Chandra",
+        "family": "Paul",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Geography, University of Gour Banga, Malda, West Bengal, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kaustuv",
+        "family": "Mukherjee",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Geography, Chandidas Mahavidyalaya, Birbhum, West Bengal, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9863-2054",
+        "authenticated-orcid": false,
+        "given": "Biswajeet",
+        "family": "Pradhan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre for Advanced Modeling and Geospatial Information Systems (CAMGIS), Faculty of Engineering and Information Technology, University of Technology Sydney, New South Wales, Australia"
+          },
+          {
+            "name": "Department of Energy and Mineral Resources Engineering, Sejong University, Choongmu-gwan, Gwangjin-gu, Seoul, Republic of Korea"
+          },
+          {
+            "name": "Earth Observation Center, Institute of Climate Change, Universiti Kebangsaan Malaysia 43600 UKM, Bangi, Selangor, Malaysia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Abhirup",
+        "family": "Dikshit",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre for Advanced Modeling and Geospatial Information Systems (CAMGIS), Faculty of Engineering and Information Technology, University of Technology Sydney, New South Wales, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Khairul Nizam",
+        "family": "Abdul Maulud",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Earth Observation Center, Institute of Climate Change, Universiti Kebangsaan Malaysia 43600 UKM, Bangi, Selangor, Malaysia"
+          },
+          {
+            "name": "Department of Civil Engineering, Faculty of Engineering and Built Environment, Universiti Kebangsaan Malaysia, 43600 UKM Bangi, Selangor, Malaysia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Abdullah M.",
+        "family": "Alamri",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Geology and Geophysics, College of Science, King Saud University, Riyadh, Saudi Arabia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Geomatics, Natural Hazards and Risk"
+    ],
+    "volume": "12",
+    "issue": "1",
+    "page": "123-153",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          1,
+          1
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1080/19475705.2020.1861114",
+    "publisher": "Informa UK Limited"
+  },
+  "balaganesh2020": {
+    "DOI": "10.1016/j.ecolind.2020.106197",
+    "title": [
+      "Development of composite vulnerability index and district level mapping of climate change induced drought in Tamil Nadu, India"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8708-8436",
+        "authenticated-orcid": false,
+        "given": "G.",
+        "family": "Balaganesh",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ravinder",
+        "family": "Malhotra",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5336-6415",
+        "authenticated-orcid": false,
+        "given": "R.",
+        "family": "Sendhil",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Smita",
+        "family": "Sirohi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7256-8138",
+        "authenticated-orcid": false,
+        "given": "Sanjit",
+        "family": "Maiti",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "K.",
+        "family": "Ponnusamy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5786-3817",
+        "authenticated-orcid": false,
+        "given": "Adesh Kumar",
+        "family": "Sharma",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Ecological Indicators"
+    ],
+    "volume": "113",
+    "issue": null,
+    "page": "106197",
+    "article-number": "106197",
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          6
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.ecolind.2020.106197",
+    "publisher": "Elsevier BV"
+  },
+  "murthy2015": {
+    "DOI": "10.1016/j.ijdrr.2015.01.004",
+    "title": [
+      "Geospatial analysis of agricultural drought vulnerability using a composite index based on exposure, sensitivity and adaptive capacity"
+    ],
+    "author": [
+      {
+        "given": "C.S.",
+        "family": "Murthy",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "B.",
+        "family": "Laxman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "M.V.R.",
+        "family": "Sesha Sai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "International Journal of Disaster Risk Reduction"
+    ],
+    "volume": "12",
+    "issue": null,
+    "page": "163-171",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          6
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.ijdrr.2015.01.004",
+    "publisher": "Elsevier BV"
+  },
+  "sharma2019": {
+    "DOI": "10.1088/2515-7620/ab24ed",
+    "title": [
+      "Applying IPCC 2014 framework for hazard-specific vulnerability assessment under climate change"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-4852-0115",
+        "authenticated-orcid": false,
+        "given": "Jagmohan",
+        "family": "Sharma",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2937-368X",
+        "authenticated-orcid": false,
+        "given": "Nijavalli H",
+        "family": "Ravindranath",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Environmental Research Communications"
+    ],
+    "volume": "1",
+    "issue": "5",
+    "page": "051004",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          6,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>The Intergovernmental Panel on Climate Change (IPCC), Working Group II Report (2014) presents vulnerability as a pre-existing characteristic property of a system. Accordingly, indicators for ‘sensitivity’ and ‘adaptive capacity’, which are internal properties of a system, are employed to assess it. Comparatively, the IPCC 2007 report includes ‘exposure’, an external factor, as the third component of vulnerability. We have compared the construct of vulnerability presented in IPCC 2007 and 2014 reports. It is argued that the results of vulnerability assessment obtained by adopting IPCC 2014 framework are practically more useful for reducing current vulnerability in preparedness to deal with an uncertain future. In the process, we have articulated the novel concepts of ‘selecting hazard-relevant vulnerability indicators’ and ‘assessing hazard-specific vulnerability’. Use of these concepts improves the contextualization of an assessment and thereby the acceptability of assessment results by the stakeholders.</jats:p>",
+    "URL": "https://doi.org/10.1088/2515-7620/ab24ed",
+    "publisher": "IOP Publishing"
+  },
+  "nair2022": {
+    "DOI": "10.1007/s12517-022-09623-0",
+    "title": [
+      "Drought vulnerability assessment across Vidarbha region, Maharashtra, India"
+    ],
+    "author": [
+      {
+        "given": "Saranya Chandramohanan",
+        "family": "Nair",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ashwini",
+        "family": "Mirajkar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Arabian Journal of Geosciences"
+    ],
+    "volume": "15",
+    "issue": "4",
+    "page": null,
+    "article-number": "355",
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          2
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1007/s12517-022-09623-0",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "cutter2003": {
+    "DOI": "10.1111/1540-6237.8402002",
+    "title": [
+      "Social Vulnerability to Environmental Hazards\n                    <sup>*</sup>"
+    ],
+    "author": [
+      {
+        "given": "Susan L.",
+        "family": "Cutter",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bryan J.",
+        "family": "Boruff",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "W. Lynn",
+        "family": "Shirley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Social Science Quarterly"
+    ],
+    "volume": "84",
+    "issue": "2",
+    "page": "242-261",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          5,
+          19
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n                    <jats:bold>Objective.</jats:bold>\n                    County‐level socioeconomic and demographic data were used to construct an index of social vulnerability to environmental hazards, called the Social Vulnerability Index (SoVI) for the United States based on 1990 data.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Methods.</jats:bold>\n                    Using a factor analytic approach, 42 variables were reduced to 11 independent factors that accounted for about 76 percent of the variance. These factors were placed in an additive model to compute a summary score—the Social Vulnerability Index.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Results.</jats:bold>\n                    There are some distinct spatial patterns in the SoVI, with the most vulnerable counties clustered in metropolitan counties in the east, south Texas, and the Mississippi Delta region.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Conclusion.</jats:bold>\n                    Those factors that contribute to the overall score often are different for each county, underscoring the interactive nature of social vulnerability—some components increase vulnerability; others moderate the effects.\n                  </jats:p>",
+    "URL": "https://doi.org/10.1111/1540-6237.8402002",
+    "publisher": "Wiley"
+  },
+  "abson2012": {
+    "DOI": "10.1016/j.apgeog.2012.08.004",
+    "title": [
+      "Using Principal Component Analysis for information-rich socio-ecological vulnerability mapping in Southern Africa"
+    ],
+    "author": [
+      {
+        "given": "David J.",
+        "family": "Abson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew J.",
+        "family": "Dougill",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lindsay C.",
+        "family": "Stringer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Applied Geography"
+    ],
+    "volume": "35",
+    "issue": "1-2",
+    "page": "515-524",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          11
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.apgeog.2012.08.004",
+    "publisher": "Elsevier BV"
+  },
+  "adger2006": {
+    "DOI": "10.1016/j.gloenvcha.2006.02.006",
+    "title": [
+      "Vulnerability"
+    ],
+    "author": [
+      {
+        "given": "W. Neil",
+        "family": "Adger",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Global Environmental Change"
+    ],
+    "volume": "16",
+    "issue": "3",
+    "page": "268-281",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          8
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.gloenvcha.2006.02.006",
+    "publisher": "Elsevier BV"
+  },
+  "fussel2007": {
+    "DOI": "10.1016/j.gloenvcha.2006.05.002",
+    "title": [
+      "Vulnerability: A generally applicable conceptual framework for climate change research"
+    ],
+    "author": [
+      {
+        "given": "Hans-Martin",
+        "family": "Füssel",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Global Environmental Change"
+    ],
+    "volume": "17",
+    "issue": "2",
+    "page": "155-167",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          5
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.gloenvcha.2006.05.002",
+    "publisher": "Elsevier BV"
+  },
+  "handbook2008": {
+    "DOI": "10.1111/j.1467-985X.2005.00350.x",
+    "title": [
+      "Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators"
+    ],
+    "author": [
+      {
+        "given": "Michaela",
+        "family": "Saisana"
+      },
+      {
+        "given": "Andrea",
+        "family": "Saltelli"
+      },
+      {
+        "given": "Stefano",
+        "family": "Tarantola"
+      }
+    ],
+    "container-title": [
+      "Journal of the Royal Statistical Society: Series A (Statistics in Society)"
+    ],
+    "volume": "168",
+    "issue": "2",
+    "page": "307-323",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          3
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1111/j.1467-985X.2005.00350.x",
+    "verified_publisher_url": "https://academic.oup.com/jrsssa/article-abstract/168/2/307/7084307"
+  },
+  "jolliffe2016": {
+    "DOI": "10.1098/rsta.2015.0202",
+    "title": [
+      "Principal component analysis: a review and recent developments"
+    ],
+    "author": [
+      {
+        "given": "Ian T.",
+        "family": "Jolliffe",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "College of Engineering, Mathematics and Physical Sciences, University of Exeter, Exeter, UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jorge",
+        "family": "Cadima",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Secção de Matemática (DCEB), Instituto Superior de Agronomia, Universidade de Lisboa, Tapada da Ajuda, Lisboa 1340-017, Portugal"
+          },
+          {
+            "name": "Centro de Estatística e Aplicações da Universidade de Lisboa (CEAUL), Lisboa, Portugal"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences"
+    ],
+    "volume": "374",
+    "issue": "2065",
+    "page": "20150202",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          13
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n                    Large datasets are increasingly common and are often difficult to interpret. Principal component analysis (PCA) is a technique for reducing the dimensionality of such datasets, increasing interpretability but at the same time minimizing information loss. It does so by creating new uncorrelated variables that successively maximize variance. Finding such new variables, the principal components, reduces to solving an eigenvalue/eigenvector problem, and the new variables are defined by the dataset at hand, not\n                    <jats:italic>a priori</jats:italic>\n                    , hence making PCA an adaptive data analysis technique. It is adaptive in another sense too, since variants of the technique have been developed that are tailored to various different data types and structures. This article will begin by introducing the basic ideas of PCA, discussing what it can and cannot do. It will then describe some variants of PCA and their application.\n                  </jats:p>",
+    "URL": "https://doi.org/10.1098/rsta.2015.0202",
+    "publisher": "The Royal Society"
+  },
+  "lobell2011": {
+    "DOI": "10.1126/science.1204531",
+    "title": [
+      "Climate Trends and Global Crop Production Since 1980"
+    ],
+    "author": [
+      {
+        "given": "David B.",
+        "family": "Lobell",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Environmental Earth System Science and Program on Food Security and the Environment, Stanford University, Stanford, CA 94305, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wolfram",
+        "family": "Schlenker",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Economics and School of International and Public Affairs, Columbia University, New York, NY 10027, USA."
+          },
+          {
+            "name": "National Bureau of Economic Research, New York, NY 10016, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Justin",
+        "family": "Costa-Roberts",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Environmental Earth System Science and Program on Food Security and the Environment, Stanford University, Stanford, CA 94305, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Science"
+    ],
+    "volume": "333",
+    "issue": "6042",
+    "page": "616-620",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          7,
+          29
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Climate change has decreased global maize and wheat production, while soybean and rice production have remained stable.</jats:p>",
+    "URL": "https://doi.org/10.1126/science.1204531",
+    "publisher": "American Association for the Advancement of Science (AAAS)"
+  },
+  "schlenker2009": {
+    "DOI": "10.1073/pnas.0906865106",
+    "title": [
+      "Nonlinear temperature effects indicate severe damages to U.S. crop yields under climate change"
+    ],
+    "author": [
+      {
+        "given": "Wolfram",
+        "family": "Schlenker",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Economics and School of International and Public Affairs, Columbia University, New York, NY 10027; and"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael J.",
+        "family": "Roberts",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Agricultural and Resource Economics, North Carolina State University, Raleigh, NC 27695"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the National Academy of Sciences"
+    ],
+    "volume": "106",
+    "issue": "37",
+    "page": "15594-15598",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          9,
+          15
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The United States produces 41% of the world's corn and 38% of the world's soybeans. These crops comprise two of the four largest sources of caloric energy produced and are thus critical for world food supply. We pair a panel of county-level yields for these two crops, plus cotton (a warmer-weather crop), with a new fine-scale weather dataset that incorporates the whole distribution of temperatures within each day and across all days in the growing season. We find that yields increase with temperature up to 29° C for corn, 30° C for soybeans, and 32° C for cotton but that temperatures above these thresholds are very harmful. The slope of the decline above the optimum is significantly steeper than the incline below it. The same nonlinear and asymmetric relationship is found when we isolate either time-series or cross-sectional variations in temperatures and yields. This suggests limited historical adaptation of seed varieties or management practices to warmer temperatures because the cross-section includes farmers' adaptations to warmer climates and the time-series does not. Holding current growing regions fixed, area-weighted average yields are predicted to decrease by 30–46% before the end of the century under the slowest (B1) warming scenario and decrease by 63–82% under the most rapid warming scenario (A1FI) under the Hadley III model.</jats:p>",
+    "URL": "https://doi.org/10.1073/pnas.0906865106",
+    "publisher": "National Academy of Sciences"
+  },
+  "wheat2012": {
+    "DOI": "10.1038/nclimate1356",
+    "title": [
+      "Extreme heat effects on wheat senescence in India"
+    ],
+    "author": [
+      {
+        "given": "David B.",
+        "family": "Lobell",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adam",
+        "family": "Sibley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J.",
+        "family": "Ivan Ortiz-Monasterio",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Nature Climate Change"
+    ],
+    "volume": "2",
+    "issue": "3",
+    "page": "186-189",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          1,
+          29
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1038/nclimate1356",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "rice2012": {
+    "DOI": "10.1007/s10584-011-0208-4",
+    "title": [
+      "Climate change, the monsoon, and rice yield in India"
+    ],
+    "author": [
+      {
+        "given": "Maximilian",
+        "family": "Auffhammer",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "V.",
+        "family": "Ramanathan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jeffrey R.",
+        "family": "Vincent",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Climatic Change"
+    ],
+    "volume": "111",
+    "issue": "2",
+    "page": "411-424",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          9,
+          2
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1007/s10584-011-0208-4",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "dell2014": {
+    "DOI": "10.1257/jel.52.3.740",
+    "title": [
+      "What Do We Learn from the Weather? The New Climate-Economy Literature"
+    ],
+    "author": [
+      {
+        "given": "Melissa",
+        "family": "Dell",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Harvard University."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benjamin F.",
+        "family": "Jones",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Northwestern University."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benjamin A.",
+        "family": "Olken",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Massachusetts Institute of Technology."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of Economic Literature"
+    ],
+    "volume": "52",
+    "issue": "3",
+    "page": "740-798",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          9,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:p>A rapidly growing body of research applies panel methods to examine how temperature, precipitation, and windstorms influence economic outcomes. These studies focus on changes in weather realizations over time within a given spatial area and demonstrate impacts on agricultural output, industrial output, labor productivity, energy demand, health, conflict, and economic growth, among other outcomes. By harnessing exogenous variation over time within a given spatial unit, these studies help credibly identify (i) the breadth of channels linking weather and the economy, (ii) heterogeneous treatment effects across different types of locations, and (iii) nonlinear effects of weather variables. This paper reviews the new literature with two purposes. First, we summarize recent work, providing a guide to its methodologies, datasets, and findings. Second, we consider applications of the new literature, including insights for the “damage function” within models that seek to assess the potential economic effects of future climate change. (JEL C51, D72, O13, Q51, Q54)</jats:p>",
+    "URL": "https://doi.org/10.1257/jel.52.3.740",
+    "publisher": "American Economic Association"
+  },
+  "rf2001": {
+    "DOI": "10.1023/a:1010933404324",
+    "title": [
+      "Random Forests"
+    ],
+    "author": [
+      {
+        "given": "Leo",
+        "family": "Breiman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Machine Learning"
+    ],
+    "volume": "45",
+    "issue": "1",
+    "page": "5-32",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2001,
+          10
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1023/a:1010933404324",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "et2006": {
+    "DOI": "10.1007/s10994-006-6226-1",
+    "title": [
+      "Extremely randomized trees"
+    ],
+    "author": [
+      {
+        "given": "Pierre",
+        "family": "Geurts",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Damien",
+        "family": "Ernst",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Louis",
+        "family": "Wehenkel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Machine Learning"
+    ],
+    "volume": "63",
+    "issue": "1",
+    "page": "3-42",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          3,
+          2
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1007/s10994-006-6226-1",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "gb2001": {
+    "DOI": "10.1214/aos/1013203451",
+    "title": [
+      "Greedy function approximation: A gradient boosting machine."
+    ],
+    "author": [
+      {
+        "given": "Jerome H.",
+        "family": "Friedman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The Annals of Statistics"
+    ],
+    "volume": "29",
+    "issue": "5",
+    "page": null,
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2001,
+          10,
+          1
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1214/aos/1013203451",
+    "publisher": "Institute of Mathematical Statistics"
+  },
+  "xgb2016": {
+    "DOI": "10.1145/2939672.2939785",
+    "title": [
+      "XGBoost"
+    ],
+    "author": [
+      {
+        "given": "Tianqi",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Washington, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carlos",
+        "family": "Guestrin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Washington, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "785-794",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          13
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1145/2939672.2939785",
+    "publisher": "ACM"
+  },
+  "bergmeir2012": {
+    "DOI": "10.1016/j.ins.2011.12.028",
+    "title": [
+      "On the use of cross-validation for time series predictor evaluation"
+    ],
+    "author": [
+      {
+        "given": "Christoph",
+        "family": "Bergmeir",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "José M.",
+        "family": "Benítez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Information Sciences"
+    ],
+    "volume": "191",
+    "issue": null,
+    "page": "192-213",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          5
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.ins.2011.12.028",
+    "publisher": "Elsevier BV"
+  },
+  "roberts2017": {
+    "DOI": "10.1111/ecog.02881",
+    "title": [
+      "Cross‐validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure"
+    ],
+    "author": [
+      {
+        "given": "David R.",
+        "family": "Roberts",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Volker",
+        "family": "Bahn",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biological Sciences Wright State Univ. Dayton OH USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Simone",
+        "family": "Ciuti",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mark S.",
+        "family": "Boyce",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biological Sciences Univ. of Alberta Edmonton AB Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jane",
+        "family": "Elith",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gurutzeta",
+        "family": "Guillera‐Arroita",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Severin",
+        "family": "Hauenstein",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "José J.",
+        "family": "Lahoz‐Monfort",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Boris",
+        "family": "Schröder",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Inst. of Geoecology, Div. of Landscape Ecology and Environmental Systems Analysis, Technische Univ. Braunschweig, Braunschweig, Germany, and: Berlin‐Brandenburg Inst. of Advanced Biodiversity Research (BBIB) Berlin Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wilfried",
+        "family": "Thuiller",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Lab. d’Écologie Alpine, Univ. Joseph Fourier Grenoble France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David I.",
+        "family": "Warton",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Mathematics and Statistics and Evolution and Ecology Research Centre, The Univ. of New South Wales Sydney Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brendan A.",
+        "family": "Wintle",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Florian",
+        "family": "Hartig",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          },
+          {
+            "name": "Theoretical Ecology, Univ. of Regensburg Regensburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carsten F.",
+        "family": "Dormann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Ecography"
+    ],
+    "volume": "40",
+    "issue": "8",
+    "page": "913-929",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          3
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Ecological data often show temporal, spatial, hierarchical (random effects), or phylogenetic structure. Modern statistical approaches are increasingly accounting for such dependencies. However, when performing cross‐validation, these structures are regularly ignored, resulting in serious underestimation of predictive error. One cause for the poor performance of uncorrected (random) cross‐validation, noted often by modellers, are dependence structures in the data that persist as dependence structures in model residuals, violating the assumption of independence. Even more concerning, because often overlooked, is that structured data also provides ample opportunity for overfitting with non‐causal predictors. This problem can persist even if remedies such as autoregressive models, generalized least squares, or mixed models are used. Block cross‐validation, where data are split strategically rather than randomly, can address these issues. However, the blocking strategy must be carefully considered. Blocking in space, time, random effects or phylogenetic distance, while accounting for dependencies in the data, may also unwittingly induce extrapolations by restricting the ranges or combinations of predictor variables available for model training, thus overestimating interpolation errors. On the other hand, deliberate blocking in predictor space may also improve error estimates when extrapolation is the modelling goal. Here, we review the ecological literature on non‐random and blocked cross‐validation approaches. We also provide a series of simulations and case studies, in which we show that, for all instances tested, block cross‐validation is nearly universally more appropriate than random cross‐validation if the goal is predicting to new data or predictor space, or for selecting causal predictors. We recommend that block cross‐validation be used wherever dependence structures exist in a dataset, even if no correlation structure is visible in the fitted model residuals, or if the fitted models account for such correlations.</jats:p>",
+    "URL": "https://doi.org/10.1111/ecog.02881",
+    "publisher": "Wiley"
+  },
+  "varma2006": {
+    "DOI": "10.1186/1471-2105-7-91",
+    "title": [
+      "Bias in error estimation when using cross-validation for model selection"
+    ],
+    "author": [
+      {
+        "given": "Sudhir",
+        "family": "Varma",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Richard",
+        "family": "Simon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "BMC Bioinformatics"
+    ],
+    "volume": "7",
+    "issue": "1",
+    "page": null,
+    "article-number": "91",
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          2,
+          23
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>Cross-validation (CV) is an effective method for estimating the prediction error of a classifier. Some recent articles have proposed methods for optimizing classifiers by choosing classifier parameter values that minimize the CV error estimate. We have evaluated the validity of using the CV error estimate of the optimized classifier as an estimate of the true error expected on independent data.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>We used CV to optimize the classification parameters for two kinds of classifiers; Shrunken Centroids and Support Vector Machines (SVM). Random training datasets were created, with no difference in the distribution of the features between the two classes. Using these \"null\" datasets, we selected classifier parameter values that minimized the CV error estimate. 10-fold CV was used for Shrunken Centroids while Leave-One-Out-CV (LOOCV) was used for the SVM. Independent test data was created to estimate the true error. With \"null\" and \"non null\" (with differential expression between the classes) data, we also tested a nested CV procedure, where an inner CV loop is used to perform the tuning of the parameters while an outer CV is used to compute an estimate of the error.</jats:p>\n                    <jats:p>The CV error estimate for the classifier with the optimal parameters was found to be a substantially biased estimate of the true error that the classifier would incur on independent data. Even though there is no real difference between the two classes for the \"null\" datasets, the CV error estimate for the Shrunken Centroid with the optimal parameters was less than 30% on 18.5% of simulated training data-sets. For SVM with optimal parameters the estimated error rate was less than 30% on 38% of \"null\" data-sets. Performance of the optimized classifiers on the independent test set was no better than chance.</jats:p>\n                    <jats:p>The nested CV procedure reduces the bias considerably and gives an estimate of the error that is very close to that obtained on the independent testing set for both Shrunken Centroids and SVM classifiers for \"null\" and \"non-null\" data distributions.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>We show that using CV to compute an error estimate for a classifier that has itself been tuned using CV gives a significantly biased estimate of the true error. Proper use of CV for estimating true error of a classifier developed using a well defined algorithm requires that all steps of the algorithm, including classifier parameter tuning, be repeated in each CV loop. A nested CV procedure provides an almost unbiased estimate of the true error.</jats:p>\n                  </jats:sec>",
+    "URL": "https://doi.org/10.1186/1471-2105-7-91",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "hyndman2006": {
+    "DOI": "10.1016/j.ijforecast.2006.03.001",
+    "title": [
+      "Another look at measures of forecast accuracy"
+    ],
+    "author": [
+      {
+        "given": "Rob J.",
+        "family": "Hyndman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anne B.",
+        "family": "Koehler",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "International Journal of Forecasting"
+    ],
+    "volume": "22",
+    "issue": "4",
+    "page": "679-688",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          10
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.ijforecast.2006.03.001",
+    "publisher": "Elsevier BV"
+  },
+  "willmott2005": {
+    "DOI": "10.3354/cr030079",
+    "title": [
+      "Advantages of the mean absolute error (MAE) over the root mean square error (RMSE) in assessing average model performance"
+    ],
+    "author": [
+      {
+        "given": "CJ",
+        "family": "Willmott",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "K",
+        "family": "Matsuura",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Climate Research"
+    ],
+    "volume": "30",
+    "issue": null,
+    "page": "79-82",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.3354/cr030079",
+    "publisher": "Inter-Research Science Center"
+  },
+  "chai2014": {
+    "DOI": "10.5194/gmd-7-1247-2014",
+    "title": [
+      "Root mean square error (RMSE) or mean absolute error (MAE)? – Arguments against avoiding RMSE in the literature"
+    ],
+    "author": [
+      {
+        "given": "T.",
+        "family": "Chai",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7081-9992",
+        "authenticated-orcid": false,
+        "given": "R. R.",
+        "family": "Draxler",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Geoscientific Model Development"
+    ],
+    "volume": "7",
+    "issue": "3",
+    "page": "1247-1250",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          6,
+          30
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Abstract. Both the root mean square error (RMSE) and the mean absolute error (MAE) are regularly employed in model evaluation studies. Willmott and Matsuura (2005) have suggested that the RMSE is not a good indicator of average model performance and might be a misleading indicator of average error, and thus the MAE would be a better metric for that purpose. While some concerns over using RMSE raised by Willmott and Matsuura (2005) and Willmott et al. (2009) are valid, the proposed avoidance of RMSE in favor of MAE is not the solution. Citing the aforementioned papers, many researchers chose MAE over RMSE to present their model evaluation statistics when presenting or adding the RMSE measures could be more beneficial. In this technical note, we demonstrate that the RMSE is not ambiguous in its meaning, contrary to what was claimed by Willmott et al. (2009). The RMSE is more appropriate to represent model performance than the MAE when the error distribution is expected to be Gaussian. In addition, we show that the RMSE satisfies the triangle inequality requirement for a distance metric, whereas Willmott et al. (2009) indicated that the sums-of-squares-based statistics do not satisfy this rule. In the end, we discussed some circumstances where using the RMSE will be more beneficial. However, we do not contend that the RMSE is superior over the MAE. Instead, a combination of metrics, including but certainly not limited to RMSEs and MAEs, are often required to assess model performance.</jats:p>",
+    "URL": "https://doi.org/10.5194/gmd-7-1247-2014",
+    "publisher": "Copernicus GmbH"
+  },
+  "strobl2007": {
+    "DOI": "10.1186/1471-2105-8-25",
+    "title": [
+      "Bias in random forest variable importance measures: Illustrations, sources and a solution"
+    ],
+    "author": [
+      {
+        "given": "Carolin",
+        "family": "Strobl",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anne-Laure",
+        "family": "Boulesteix",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Achim",
+        "family": "Zeileis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Torsten",
+        "family": "Hothorn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "BMC Bioinformatics"
+    ],
+    "volume": "8",
+    "issue": "1",
+    "page": null,
+    "article-number": "25",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          1,
+          25
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1186/1471-2105-8-25",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "altmann2010": {
+    "DOI": "10.1093/bioinformatics/btq134",
+    "title": [
+      "Permutation importance: a corrected feature importance measure"
+    ],
+    "author": [
+      {
+        "given": "André",
+        "family": "Altmann",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computational Biology and Applied Algorithmics, Max Planck Institute for Informatics, Saarbrücken, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Laura",
+        "family": "Toloşi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computational Biology and Applied Algorithmics, Max Planck Institute for Informatics, Saarbrücken, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Oliver",
+        "family": "Sander",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computational Biology and Applied Algorithmics, Max Planck Institute for Informatics, Saarbrücken, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Lengauer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computational Biology and Applied Algorithmics, Max Planck Institute for Informatics, Saarbrücken, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Bioinformatics"
+    ],
+    "volume": "26",
+    "issue": "10",
+    "page": "1340-1347",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          4,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Motivation: In life sciences, interpretability of machine learning models is as important as their prediction accuracy. Linear models are probably the most frequently used methods for assessing feature relevance, despite their relative inflexibility. However, in the past years effective estimators of feature relevance have been derived for highly complex or non-parametric models such as support vector machines and RandomForest (RF) models. Recently, it has been observed that RF models are biased in such a way that categorical variables with a large number of categories are preferred.</jats:p>\n                  <jats:p>Results: In this work, we introduce a heuristic for normalizing feature importance measures that can correct the feature importance bias. The method is based on repeated permutations of the outcome vector for estimating the distribution of measured importance for each variable in a non-informative setting. The P-value of the observed importance provides a corrected measure of feature importance. We apply our method to simulated data and demonstrate that (i) non-informative predictors do not receive significant P-values, (ii) informative variables can successfully be recovered among non-informative variables and (iii) P-values computed with permutation importance (PIMP) are very helpful for deciding the significance of variables, and therefore improve model interpretability. Furthermore, PIMP was used to correct RF-based importance measures for two real-world case studies. We propose an improved RF model that uses the significant variables with respect to the PIMP measure and show that its prediction accuracy is superior to that of other existing models.</jats:p>\n                  <jats:p>Availability: R code for the method presented in this article is available at http://www.mpi-inf.mpg.de/∼altmann/download/PIMP.R</jats:p>\n                  <jats:p>Contact:  altmann@mpi-inf.mpg.de, laura.tolosi@mpi-inf.mpg.de</jats:p>\n                  <jats:p>Supplementary information:  Supplementary data are available at Bioinformatics online.</jats:p>",
+    "URL": "https://doi.org/10.1093/bioinformatics/btq134",
+    "publisher": "Oxford University Press (OUP)"
+  },
+  "shmueli2010": {
+    "DOI": "10.1214/10-sts330",
+    "title": [
+      "To Explain or to Predict?"
+    ],
+    "author": [
+      {
+        "given": "Galit",
+        "family": "Shmueli",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Statistical Science"
+    ],
+    "volume": "25",
+    "issue": "3",
+    "page": "289-310",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          8,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Statistical modeling is a powerful tool for developing and testing theories by way of causal explanation, prediction, and description. In many disciplines there is near-exclusive use of statistical modeling for causal explanation and the assumption that models with high explanatory power are inherently of high predictive power. Conflation between explanation and prediction is common, yet the distinction must be understood for progressing scientific knowledge. While this distinction has been recognized in the philosophy of science, the statistical literature lacks a thorough discussion of the many differences that arise in the process of modeling for an explanatory versus a predictive goal. The purpose of this article is to clarify the distinction between explanatory and predictive modeling, to discuss its sources, and to reveal the practical implications of the distinction to each step in the modeling process.</jats:p>",
+    "URL": "https://doi.org/10.1214/10-sts330",
+    "publisher": "Institute of Mathematical Statistics"
+  },
+  "rudin2019": {
+    "DOI": "10.1038/s42256-019-0048-x",
+    "title": [
+      "Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4283-2780",
+        "authenticated-orcid": false,
+        "given": "Cynthia",
+        "family": "Rudin",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Nature Machine Intelligence"
+    ],
+    "volume": "1",
+    "issue": "5",
+    "page": "206-215",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          13
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1038/s42256-019-0048-x",
+    "publisher": "Springer Science and Business Media LLC"
+  },
+  "cropml2020": {
+    "DOI": "10.1016/j.compag.2020.105709",
+    "title": [
+      "Crop yield prediction using machine learning: A systematic literature review"
+    ],
+    "author": [
+      {
+        "given": "Thomas",
+        "family": "van Klompenburg",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ayalew",
+        "family": "Kassahun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cagatay",
+        "family": "Catal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Computers and Electronics in Agriculture"
+    ],
+    "volume": "177",
+    "issue": null,
+    "page": "105709",
+    "article-number": "105709",
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          10
+        ]
+      ]
+    },
+    "abstract": null,
+    "URL": "https://doi.org/10.1016/j.compag.2020.105709",
+    "publisher": "Elsevier BV"
+  },
+  "agml2018": {
+    "DOI": "10.3390/s18082674",
+    "title": [
+      "Machine Learning in Agriculture: A Review"
+    ],
+    "author": [
+      {
+        "given": "Konstantinos",
+        "family": "Liakos",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute for Bio-Economy and Agri-Technology (IBO), Centre of Research and Technology—Hellas (CERTH), 6th km Charilaou-Thermi Rd, GR 57001 Thessaloniki, Greece"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Patrizia",
+        "family": "Busato",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Agriculture, Forestry and Food Sciences (DISAFA), Faculty of Agriculture, University of Turin, Largo Braccini 2, 10095 Grugliasco, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dimitrios",
+        "family": "Moshou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Bio-Economy and Agri-Technology (IBO), Centre of Research and Technology—Hellas (CERTH), 6th km Charilaou-Thermi Rd, GR 57001 Thessaloniki, Greece"
+          },
+          {
+            "name": "Agricultural Engineering Laboratory, Faculty of Agriculture, Aristotle University of Thessaloniki, 54124 Thessaloniki, Greece"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4297-4837",
+        "authenticated-orcid": false,
+        "given": "Simon",
+        "family": "Pearson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Lincoln Institute for Agri-food Technology (LIAT), University of Lincoln, Brayford Way, Brayford Pool, Lincoln LN6 7TS, UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7058-5986",
+        "authenticated-orcid": false,
+        "given": "Dionysis",
+        "family": "Bochtis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Bio-Economy and Agri-Technology (IBO), Centre of Research and Technology—Hellas (CERTH), 6th km Charilaou-Thermi Rd, GR 57001 Thessaloniki, Greece"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Sensors"
+    ],
+    "volume": "18",
+    "issue": "8",
+    "page": "2674",
+    "article-number": null,
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          14
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Machine learning has emerged with big data technologies and high-performance computing to create new opportunities for data intensive science in the multi-disciplinary agri-technologies domain. In this paper, we present a comprehensive review of research dedicated to applications of machine learning in agricultural production systems. The works analyzed were categorized in (a) crop management, including applications on yield prediction, disease detection, weed detection crop quality, and species recognition; (b) livestock management, including applications on animal welfare and livestock production; (c) water management; and (d) soil management. The filtering and classification of the presented articles demonstrate how agriculture will benefit from machine learning technologies. By applying machine learning to sensor data, farm management systems are evolving into real time artificial intelligence enabled programs that provide rich recommendations and insights for farmer decision support and action.</jats:p>",
+    "URL": "https://doi.org/10.3390/s18082674",
+    "publisher": "MDPI AG"
+  }
+}

@@ -1,0 +1,106 @@
+ 
+Machine Learning Assessment of El Niño 
+Teleconnections and Crop Value Added in India 
+Prof. Pankaj Deshmukh 
+Dept. of Artificial Intelligence and Data Science 
+K. J. Somaiya Institute of Technology 
+Mumbai, India 
+pankaj@somaiya.edu 
+Altair Patel 
+Dept. of Artificial Intelligence and Data Science 
+K. J. Somaiya Institute of Technology 
+Mumbai, India 
+altair.patel@somaiya.edu 
+Hardik Sedani 
+Dept. of Artificial Intelligence and Data Science 
+K. J. Somaiya Institute of Technology 
+Mumbai, India 
+hardik.sedani@somaiya.edu 
+Abstract—This study examines whether annual climate 
+variables and state identity can estimate crop gross state value 
+added (GSVA) across India. A panel of 385 complete observations 
+covers 28 states from financial year 2011 –12 to 2024 –25. Daily 
+gridded rain fall and temperature from the India Meteorological 
+Department are aligned with the Oceanic Niño Index and 
+RBI/NSO crop GSVA at constant 2011–12 prices. Five regressors 
+are trained on 280 observations through 2020 –21 and evaluated 
+on 105 later observations.  Ordinary least squares produces the 
+lowest test root mean squared error among the fitted models, at 
+INR 17,410.41 crore, with R² = 0.8783. However, carrying forward 
+each state's final training -year GSVA reduces the error to INR 
+10,890.73 crore. Permuting climate inputs produces small changes 
+in linear -model error, suggesting limited additional predictive 
+information in this specification. A working web application 
+exposes the harmonized panel, model comparisons, predictions, 
+and conditional scenarios. The results establish a reproducible 
+state-level assessment while showing that strong pooled fit does not 
+establish reliable climate attribution or improvement over a simple 
+persistence benchmark. 
+Keywords—El Niño, Indian agriculture, crop GSVA, panel 
+data, machine learning, chronological evaluation 
+I. INTRODUCTION 
+Climate variability affects agricultural production 
+through water availability, temperature exposure, and the 
+timing of crop development. Evidence from India links 
+agricultural outcomes to seasonal climate, but the 
+relationship depends on the crop, region,  and period studied 
+[1]. The El Niño–Southern Oscillation (ENSO) adds a large-
+scale source of variation: Pacific sea -surface temperature 
+anomalies are associated with changes in Indian rainfall [2]. 
+This association has varied over time [3], and the location and 
+evolution of Pacific warming matter for interpreting monsoon 
+failure [4]. A state -level economic application therefore 
+needs to test its own predictive performance rather than 
+assume that an ENSO signal automatically translates into 
+accurate estimates of crop value added. 
+The Indian monsoon contains substantial spatial and 
+temporal variability [5]. Indian Ocean conditions can modify 
+the monsoon–ENSO association [6], while the Indian Ocean 
+Dipole provides a distinct source of climate variability [7]. 
+Different Pacific warmin g patterns also have different 
+teleconnections [8]. These findings motivate the inclusion of 
+local rainfall and temperature alongside an ENSO index. 
+They also caution against assigning every low-output year to 
+El Niño. In the present model, rainfall, temperature, and the 
+Oceanic Niño Index (ONI) are explanatory inputs to a 
+prediction system; none is treated as an experimentally 
+isolated cause. 
+The economic outcome considered here is crop gross state 
+value added, expressed in INR crore at constant 2011 –12 
+prices. This measure differs from crop yield, farm profit, 
+household income, and the value of all agriculture and allied 
+activities. It provide s a common monetary scale for 
+comparing state observations, while retaining large 
+differences in the size and composition of their crop sectors. 
+These differences make state identity useful for pooled 
+prediction, but they also create a risk: a model can ob tain a 
+high R² by separating large and small state economies without 
+accurately tracking changes within a state. 
+This study addresses three questions. First, how do a 
+linear model and four tree ensembles compare on a later -
+period holdout? Second, do these models improve on state -
+specific historical benchmarks? Third, how much does the 
+fitted linear model depend on th e climate inputs when state 
+identity is held fixed? The work combines official -data 
+harmonization, a reproducible comparison of saved models, 
+and an application that makes the results inspectable. The 
+central finding is that the linear model leads the five  fitted 
+regressors, yet a simple last -observed-value benchmark 
+performs substantially better. This result determines the 
+limits placed on the application's prediction and scenario 
+outputs. 
+II. RELATED WORK 
+A. ENSO and Agricultural Outcomes 
+Research on ENSO and the monsoon supplies physical 
+context, but the choice of index remains consequential. Work 
+on ENSO indices in a warming climate shows why index 
+definitions and background warming require attention [9]. 
+The present analysis retains the historical ONI series used by 
+the implemented pipeline. It does not substitute a relative 
+index after model fitting or equate an annual ONI average 
+with a categorical declaration of an El Niño episode. Such a 
+substitution would alter the inputs and require a new training 
+and evaluation cycle. 
+Climate–crop studies also show why annual averages can 
+be restrictive. Global production research connects changes 
+in climate with crop output [10], while work on nonlinear 

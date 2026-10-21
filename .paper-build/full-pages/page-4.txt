@@ -1,0 +1,123 @@
+ 
+subsampling of 0.85 and a squared-error regression objective. 
+Stochastic configurations use random seed 42. Table II 
+records the principal settings of the saved run. 
+TABLE II 
+SAVED MODEL CONFIGURATIONS 
+Model Principal settings 
+OLS Intercept; 31 input columns 
+Random Forest 150 trees; depth 10; split 3; leaf 2; bootstrap 
+Extra Trees 150 trees; depth 10; split 3; leaf 2; no bootstrap 
+Gradient Boosting 150 stages; depth 4; rate 0.08; subsample 0.85 
+XGBoost 150 trees; depth 4; rate 0.08; row/column sampling 
+0.85 
+These configurations provide a controlled comparison of 
+the implemented model families. They are not presented as 
+the optimal configurations for every state or time period. No 
+scaling is applied to the input features. For tree models, state 
+indicators and continuous weather variables offer different 
+kinds of partitions; for the linear model, coefficient 
+magnitudes also depend on the units in which those inputs are 
+expressed. Consequently, raw coefficient size and tree 
+impurity reduction are not directly com parable measures of 
+climate influence. 
+The different learning rules also suggest different failure 
+modes. Bagged trees combine partitions learned from 
+resampled observations, while extremely randomized trees 
+introduce additional randomness in split selection. Boosting 
+adds successive corrections to the fitted function. In this small 
+panel, a flexible method can fit state –weather combinations 
+that occur only a few times in training. Conversely, the 
+common slopes of the linear specification may miss a 
+localized or threshold response. The evaluatio n does not 
+assume either behavior in advance. It compares their resulting 
+predictions on exactly the same later observations, using a 
+common economic unit and consistent feature order. 
+C. Baselines and Error Measures 
+Two additional benchmarks test whether model 
+complexity adds value. The state-mean baseline predicts each 
+state's average GSVA over the training period. The 
+persistence baseline predicts the state's final training -year 
+value, from 2020 –21, for every held -out year. Both use 
+training data only. Persistence is deliberately fixed across the 
+full four -year holdout and is not updated using newly 
+observed test targets. This makes the comparison 
+conservative with respect to a practical rolling forecast that 
+could incorporate additional annual observations. 
+ŷ𝑚𝑒𝑎𝑛ₛᵧ =  𝜇ₛ ,              ŷ𝑙𝑎𝑠𝑡ₛᵧ =  𝑦ₛ, ₂₀₂₀    (3) 
+In (3), μs is the training mean for state s and ys,2020 is its 
+last training observation. The benchmarks capture different 
+features of the target: the mean represents a long -run state 
+level, whereas persistence preserves the most recent known 
+level. Their comparison helps reveal whether a fitted model 
+is mainly reproducing historical differences between states or 
+improving on the recent state trajectory. 
+MAE, RMSE, R², and MAPE are calculated over the 
+same held-out rows. MAE and RMSE retain the INR -crore 
+scale; RMSE gives more weight to large errors. The literature 
+discusses complementary reasons to report both rather than 
+rely on one summary alone [42], [ 43]. MAPE provides a 
+relative-error view, but can give small -valued observations 
+disproportionate influence [44]. No near -zero correction is 
+needed for the positive targets in this panel, although large 
+differences in state scale remain important. 
+𝑀𝐴𝐸 =  𝛴 |𝑦ᵢ −  ŷᵢ| / 𝑛 ;    𝑅𝑀𝑆𝐸 =  √[𝛴 (𝑦ᵢ −  ŷᵢ)² / 𝑛]    (4) 
+The pooled R² denominator uses the mean of all held -out 
+targets. It therefore includes the large between-state variation 
+in GSVA. A high pooled value does not imply equally strong 
+performance within each state. The report supplements 
+pooled metrics with an nual errors and a predicted -versus-
+observed plot. It does not average unstable state -level R² 
+estimates based on only two to four observations into a claim 
+about national forecasting skill. 
+D. Climate Diagnostic and Reproducibility 
+Impurity-based importance can be affected by predictor 
+characteristics and the fitting procedure [45]. Permutation 
+provides another way to examine dependence on an input 
+[46]. Here, the saved linear model is evaluated after 
+separately shuffling rainfall or temperature within each state's 
+test observations. ONI is permuted by test year, with the same 
+reassigned annual value applied to every state in that year. 
+This preserves its shared annual structure. State identity is 
+unchanged, and each diagnostic uses 20 repeats with seed 42. 
+𝛥𝑅𝑀𝑆𝐸ⱼ =  𝑚𝑒𝑎𝑛ᵦ[𝑅𝑀𝑆𝐸(𝑦, 𝑓(𝑋𝑝𝑒𝑟𝑚ⱼᵦ))] −  𝑅𝑀𝑆𝐸(𝑦, 𝑓(𝑋))    (5) 
+Equation (5) defines the average change in RMSE after 
+permutation. A positive value means that disrupting the input 
+worsens error; a negative value means the disrupted values 
+happen to improve it. The diagnostic is descriptive. It does 
+not establish causal ity, and correlated predictors can 
+substitute for one another. With only four held-out years, the 
+ONI result is based on a particularly small set of distinct 
+annual values. Confidence intervals and significance tests are 
+therefore not inferred from the sign of these changes. 
+The evaluated run is identified as 
+run_20261001_192910_2ff9dde9. Its stored metadata 
+records the split, feature order, target definition, panel hash, 
+and hashes of the five serialized model artifacts. 
+Recomputing predictions from those artifacts reproduces  the 
+saved RMSE values to their reported precision. The baseline 
+and permutation diagnostics use the same panel and held-out 
+rows. These checks connect the numerical results to a specific 
+dataset and fitted model set, rather than to an unrecorded 
+rerun with altered inputs. 
+E. Application Architecture and Scenarios 
+The application combines a Next.js/React frontend with a 
+FastAPI backend. The interface exposes historical state -year 
+records, charts, model comparisons, prediction forms, and 
+conditional climate scenarios. Backend services assemble 
+compatible features, lo ad trained artifacts, and return results 
+with their model context. SQLite and local files support the 
+local configuration; Firestore and cloud storage are optional 
+integrations. The scientific evaluation concerns the saved 
+model run and is separate from th e availability of these 
+deployment options. 
+A scenario changes selected climate inputs while 
+retaining the chosen state. Its model -implied difference is 
+defined in (6), where x represents the baseline inputs and x* 
+the altered inputs. The percentage change is relative to the 
+model's baseline predict ion, not necessarily to an observed 
+GSVA value. Such output describes the response of the fitted 
+function to a specified input change. It does not establish how 
+rainfall, temperature, and ENSO would jointly evolve in the 
+physical climate system. 
+𝛥ŷ =  𝑓(𝑥 ∗) −  𝑓(𝑥) ,       𝛥% =  100 𝛥ŷ / 𝑓(𝑥)    (6) 

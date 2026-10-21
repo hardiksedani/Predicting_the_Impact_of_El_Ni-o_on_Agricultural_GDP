@@ -1,0 +1,179 @@
+ 
+should move from representative points to documented state 
+or crop -area summaries. Rolling -origin validation would 
+show whether improvements persist across forecast origins, 
+while a separate state -transfer experiment could assess 
+generalization beyond the fitted state vocabulary. Each 
+extension should be compared with persistence using data 
+available at the intended prediction date. This sequence 
+would strengthen the connection between the application's 
+outputs and the agricultural questions it is intended to 
+support. 
+ACKNOWLEDGMENT 
+The authors acknowledge K. J. Somaiya Institute of 
+Technology for the academic setting of this project and the 
+public data providers whose climate and economic records 
+enable reproducible assessment. 
+REFERENCES 
+[1] K. Krishna Kumar, K. Rupa Kumar, R. G. Ashrit, N. R. Deshpande, 
+and J. W. Hansen, “Climate impacts on Indian agriculture,” 
+International Journal of Climatology, vol. 24, no. 11, pp. 1375–1393, 
+2004, doi: 10.1002/joc.1081. 
+[2] E. M. Rasmusson and T. H. Carpenter, “The Relationship Between 
+Eastern Equatorial Pacific Sea Surface Temperatures and Rainfall 
+over India and Sri Lanka,” Monthly Weather Review, vol. 111, no. 3, 
+pp. 517–528, 1983, doi: 10.1175/1520-
+0493(1983)111<0517:trbeep>2.0.co;2. 
+[3] K. K. Kumar, B. Rajagopalan, and M. A. Cane, “On the Weakening 
+Relationship Between the Indian Monsoon and ENSO,” Science, vol. 
+284, no. 5423, pp. 2156–2159, 1999, doi: 
+10.1126/science.284.5423.2156. 
+[4] K. K. Kumar, B. Rajagopalan, M. Hoerling, G. Bates, and M. Cane, 
+“Unraveling the Mystery of Indian Monsoon Failure During El 
+Niño,” Science, vol. 314, no. 5796, pp. 115–119, 2006, doi: 
+10.1126/science.1131152. 
+[5] S. Gadgil, “The Indian Monsoon and Its Variability,” Annual Review 
+of Earth and Planetary Sciences, vol. 31, no. 1, pp. 429–467, 2003, 
+doi: 10.1146/annurev.earth.31.100901.141251. 
+[6] K. Ashok, Z. Guan, and T. Yamagata, “Impact of the Indian Ocean 
+dipole on the relationship between the Indian monsoon rainfall and 
+ENSO,” Geophysical Research Letters, vol. 28, no. 23, pp. 4499–
+4502, 2001, doi: 10.1029/2001gl013294. 
+[7] N. H. Saji, B. N. Goswami, P. N. Vinayachandran, and T. Yamagata, 
+“A dipole mode in the tropical Indian Ocean,” Nature, vol. 401, no. 
+6751, pp. 360–363, 1999, doi: 10.1038/43854. 
+[8] K. Ashok, S. K. Behera, S. A. Rao, H. Weng, and T. Yamagata, “El 
+Niño Modoki and its possible teleconnection,” Journal of Geophysical 
+Research: Oceans, vol. 112, no. C11, Art. no. 2006JC003798, 2007, 
+doi: 10.1029/2006jc003798. 
+[9] G. J. van Oldenborgh et al., “Defining El Niño indices in a warming 
+climate,” Environmental Research Letters, vol. 16, no. 4, pp. 044003, 
+2021, doi: 10.1088/1748-9326/abe9ed. 
+[10] D. B. Lobell, W. Schlenker, and J. Costa-Roberts, “Climate Trends 
+and Global Crop Production Since 1980,” Science, vol. 333, no. 6042, 
+pp. 616–620, 2011, doi: 10.1126/science.1204531. 
+[11] W. Schlenker and M. J. Roberts, “Nonlinear temperature effects 
+indicate severe damages to U.S. crop yields under climate change,” 
+Proceedings of the National Academy of Sciences, vol. 106, no. 37, 
+pp. 15594–15598, 2009, doi: 10.1073/pnas.0906865106. 
+[12] D. B. Lobell, A. Sibley, and J. Ivan Ortiz-Monasterio, “Extreme heat 
+effects on wheat senescence in India,” Nature Climate Change, vol. 2, 
+no. 3, pp. 186–189, 2012, doi: 10.1038/nclimate1356. 
+[13] M. Auffhammer, V. Ramanathan, and J. R. Vincent, “Climate change, 
+the monsoon, and rice yield in India,” Climatic Change, vol. 111, no. 
+2, pp. 411–424, 2012, doi: 10.1007/s10584-011-0208-4. 
+[14] M. Dell, B. F. Jones, and B. A. Olken, “What Do We Learn from the 
+Weather? The New Climate-Economy Literature,” Journal of 
+Economic Literature, vol. 52, no. 3, pp. 740–798, 2014, doi: 
+10.1257/jel.52.3.740. 
+[15] A. K. Mishra and V. P. Singh, “A review of drought concepts,” 
+Journal of Hydrology, vol. 391, no. 1-2, pp. 202–216, 2010, doi: 
+10.1016/j.jhydrol.2010.07.012. 
+[16] O. V. Wilhelmi and D. A. Wilhite, “Assessing Vulnerability to 
+Agricultural Drought: A Nebraska Case Study,” Natural Hazards, vol. 
+25, no. 1, pp. 37–58, 2002, doi: 10.1023/a:1013388814894. 
+[17] P. Udmale, Y. Ichikawa, S. Manandhar, H. Ishidaira, and A. S. Kiem, 
+“Farmers׳ perception of drought impacts, local adaptation and 
+administrative mitigation measures in Maharashtra State, India,” 
+International Journal of Disaster Risk Reduction, vol. 10, pp. 250–
+269, 2014, doi: 10.1016/j.ijdrr.2014.09.011. 
+[18] D. Swami and D. Parthasarathy, “Dynamics of exposure, sensitivity, 
+adaptive capacity and agricultural vulnerability at district scale for 
+Maharashtra, India,” Ecological Indicators, vol. 121, pp. 107206, 
+2021, doi: 10.1016/j.ecolind.2020.107206. 
+[19] A. Chakraborty and P. K. Joshi, “Mapping disaster vulnerability in 
+India using analytical hierarchy process,” Geomatics, Natural Hazards 
+and Risk, vol. 7, no. 1, pp. 308–325, 2016, doi: 
+10.1080/19475705.2014.897656. 
+[20] S. Saha et al., “Spatial assessment of drought vulnerability using 
+fuzzy-analytical hierarchical process: a case study at the Indian state 
+of Odisha,” Geomatics, Natural Hazards and Risk, vol. 12, no. 1, pp. 
+123–153, 2021, doi: 10.1080/19475705.2020.1861114. 
+[21] G. Balaganesh et al., “Development of composite vulnerability index 
+and district level mapping of climate change induced drought in 
+Tamil Nadu, India,” Ecological Indicators, vol. 113, pp. 106197, 
+2020, doi: 10.1016/j.ecolind.2020.106197. 
+[22] C. S. Murthy, B. Laxman, and M. V. R. Sesha Sai, “Geospatial 
+analysis of agricultural drought vulnerability using a composite index 
+based on exposure, sensitivity and adaptive capacity,” International 
+Journal of Disaster Risk Reduction, vol. 12, pp. 163–171, 2015, doi: 
+10.1016/j.ijdrr.2015.01.004. 
+[23] J. Sharma and N. H. Ravindranath, “Applying IPCC 2014 framework 
+for hazard-specific vulnerability assessment under climate change,” 
+Environmental Research Communications, vol. 1, no. 5, pp. 051004, 
+2019, doi: 10.1088/2515-7620/ab24ed. 
+[24] S. C. Nair and A. Mirajkar, “Drought vulnerability assessment across 
+Vidarbha region, Maharashtra, India,” Arabian Journal of 
+Geosciences, vol. 15, no. 4, Art. no. 355, 2022, doi: 10.1007/s12517-
+022-09623-0. 
+[25] S. L. Cutter, B. J. Boruff, and W. L. Shirley, “Social Vulnerability to 
+Environmental Hazards                     ,” Social Science Quarterly, vol. 
+84, no. 2, pp. 242–261, 2003, doi: 10.1111/1540-6237.8402002. 
+[26] W. N. Adger, “Vulnerability,” Global Environmental Change, vol. 16, 
+no. 3, pp. 268–281, 2006, doi: 10.1016/j.gloenvcha.2006.02.006. 
+[27] H. M. Füssel, “Vulnerability: A generally applicable conceptual 
+framework for climate change research,” Global Environmental 
+Change, vol. 17, no. 2, pp. 155–167, 2007, doi: 
+10.1016/j.gloenvcha.2006.05.002. 
+[28] D. J. Abson, A. J. Dougill, and L. C. Stringer, “Using Principal 
+Component Analysis for information-rich socio-ecological 
+vulnerability mapping in Southern Africa,” Applied Geography, vol. 
+35, no. 1-2, pp. 515–524, 2012, doi: 10.1016/j.apgeog.2012.08.004. 
+[29] I. T. Jolliffe and J. Cadima, “Principal component analysis: a review 
+and recent developments,” Philosophical Transactions of the Royal 
+Society A: Mathematical, Physical and Engineering Sciences, vol. 
+374, no. 2065, pp. 20150202, 2016, doi: 10.1098/rsta.2015.0202. 
+[30] OECD and European Commission, Handbook on Constructing 
+Composite Indicators: Methodology and User Guide. OECD 
+Publishing, 2008. doi: 10.1787/9789264043466-en. 
+[31] K. Liakos, P. Busato, D. Moshou, S. Pearson, and D. Bochtis, 
+“Machine Learning in Agriculture: A Review,” Sensors, vol. 18, no. 
+8, pp. 2674, 2018, doi: 10.3390/s18082674. 
+[32] T. van Klompenburg, A. Kassahun, and C. Catal, “Crop yield 
+prediction using machine learning: A systematic literature review,” 
+Computers and Electronics in Agriculture, vol. 177, pp. 105709, 
+2020, doi: 10.1016/j.compag.2020.105709. 
+[33] L. Breiman, “Random Forests,” Machine Learning, vol. 45, no. 1, pp. 
+5–32, 2001, doi: 10.1023/a:1010933404324. 
+[34] P. Geurts, D. Ernst, and L. Wehenkel, “Extremely randomized trees,” 
+Machine Learning, vol. 63, no. 1, pp. 3–42, 2006, doi: 
+10.1007/s10994-006-6226-1. 
+[35] J. H. Friedman, “Greedy function approximation: A gradient boosting 
+machine,” The Annals of Statistics, vol. 29, no. 5, 2001, doi: 
+10.1214/aos/1013203451. 
+[36] T. Chen and C. Guestrin, “XGBoost: A scalable tree boosting 
+system,” Proceedings of the 22nd ACM SIGKDD International 
+Conference on Knowledge Discovery and Data Mining, pp. 785–794, 
+2016, doi: 10.1145/2939672.2939785. 
+[37] C. Bergmeir and J. M. Benítez, “On the use of cross-validation for 
+time series predictor evaluation,” Information Sciences, vol. 191, pp. 
+192–213, 2012, doi: 10.1016/j.ins.2011.12.028. 
+[38] D. R. Roberts et al., “Cross‐validation strategies for data with 
+temporal, spatial, hierarchical, or phylogenetic structure,” Ecography, 
+vol. 40, no. 8, pp. 913–929, 2017, doi: 10.1111/ecog.02881. 
+[39] S. Varma and R. Simon, “Bias in error estimation when using cross-
+validation for model selection,” BMC Bioinformatics, vol. 7, no. 1, 
+Art. no. 91, 2006, doi: 10.1186/1471-2105-7-91. 
+[40] D. S. Pai, M. Rajeevan, O. P. Sreejith, B. Mukhopadhyay, and N. S. 
+Satbha, “Development of a new high spatial resolution (0.25° × 
+0.25°) long period  (1901-2010) daily gridded rainfall data set over 
+India and its  comparison with existing data sets over the region,” 
+MAUSAM, vol. 65, no. 1, pp. 1–18, 2014, doi: 
+10.54302/mausam.v65i1.851. 
+[41] A. K. Srivastava, M. Rajeevan, and S. R. Kshirsagar, “Development 
+of a high resolution daily gridded temperature data set (1969–2005) 
+for the Indian region,” Atmospheric Science Letters, vol. 10, no. 4, 
+pp. 249–254, 2009, doi: 10.1002/asl.232. 
+[42] C. Willmott and K. Matsuura, “Advantages of the mean absolute error 
+(MAE) over the root mean square error (RMSE) in assessing average 
+model performance,” Climate Research, vol. 30, pp. 79–82, 2005, 
+doi: 10.3354/cr030079. 
+[43] T. Chai and R. R. Draxler, “Root mean square error (RMSE) or mean 
+absolute error (MAE)? – Arguments against avoiding RMSE in the 
+literature,” Geoscientific Model Development, vol. 7, no. 3, pp. 
+1247–1250, 2014, doi: 10.5194/gmd-7-1247-2014. 
+[44] R. J. Hyndman and A. B. Koehler, “Another look at measures of 
+forecast accuracy,” International Journal of Forecasting, vol. 22, no. 
+4, pp. 679–688, 2006, doi: 10.1016/j.ijforecast.2006.03.001. 
+[45] C. Strobl, A. L. Boulesteix, A. Zeileis, and T. Hothorn, “Bias in 
+random forest variable importance measures: Illustrations, sources 

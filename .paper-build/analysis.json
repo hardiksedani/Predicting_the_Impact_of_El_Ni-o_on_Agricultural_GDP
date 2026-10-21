@@ -1,0 +1,556 @@
+{
+  "metrics": {
+    "run_id": "run_20261001_192910_2ff9dde9",
+    "trained_at": "2026-10-01T19:29:12.853593Z",
+    "train_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "test_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "panel_rows": 385,
+    "training_states": [
+      "Andhra Pradesh",
+      "Arunachal Pradesh",
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Goa",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Sikkim",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "feature_columns": [
+      "rainfall_mm",
+      "avg_temperature_c",
+      "oni_index",
+      "state__andhra_pradesh",
+      "state__arunachal_pradesh",
+      "state__assam",
+      "state__bihar",
+      "state__chhattisgarh",
+      "state__goa",
+      "state__gujarat",
+      "state__haryana",
+      "state__himachal_pradesh",
+      "state__jharkhand",
+      "state__karnataka",
+      "state__kerala",
+      "state__madhya_pradesh",
+      "state__maharashtra",
+      "state__manipur",
+      "state__meghalaya",
+      "state__mizoram",
+      "state__nagaland",
+      "state__odisha",
+      "state__punjab",
+      "state__rajasthan",
+      "state__sikkim",
+      "state__tamil_nadu",
+      "state__telangana",
+      "state__tripura",
+      "state__uttar_pradesh",
+      "state__uttarakhand",
+      "state__west_bengal"
+    ],
+    "data_source": "rbi_2011_12",
+    "climate_method": "nearest_representative_grid_point_fy_apr_mar",
+    "panel_sha256": "ef7e899dfe5f1b2a5301ae41d82e5f67d212c22386edf4ab906a7151716f4d3a",
+    "artifact_sha256": {
+      "linear_regression": "39de99ca00f945dfb7849208c8f8bbcded1451fbad80ca9e43ede4e9fe29be37",
+      "random_forest": "9a92fbb3c8691573f6e45862c633cc37c98bce44c35322961ee740d4443dd833",
+      "gradient_boosting": "fcfdfaa949d66f75dcd0bd0caaeda8f747845d7e21c9836bacdb7166424ece71",
+      "xgboost": "9c8014691c070e28f2f3798360959ec09783aff39a87c123e0a8474e7c1c2b69",
+      "extra_trees": "f9e119ec1024e399abbd58adb464905f69160924f9edf3e5e57474a7563950f2"
+    },
+    "train_rows": 280,
+    "test_rows": 105,
+    "models": {
+      "linear_regression": {
+        "mae": 10049.97,
+        "rmse": 17410.41,
+        "r2": 0.8783,
+        "mape": 33.51,
+        "training_time_sec": 0.066,
+        "hyperparameters": {
+          "copy_X": true,
+          "fit_intercept": true,
+          "positive": false,
+          "tol": 1e-06
+        },
+        "feature_importance": {
+          "rainfall_mm": 0.0,
+          "avg_temperature_c": 0.001,
+          "oni_index": 0.0015,
+          "state_identity": 0.9974
+        }
+      },
+      "random_forest": {
+        "mae": 12556.09,
+        "rmse": 21343.4,
+        "r2": 0.8172,
+        "mape": 60.82,
+        "training_time_sec": 0.24,
+        "hyperparameters": {
+          "bootstrap": true,
+          "ccp_alpha": 0.0,
+          "criterion": "squared_error",
+          "max_depth": 10,
+          "max_features": 1.0,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 2,
+          "min_samples_split": 3,
+          "min_weight_fraction_leaf": 0.0,
+          "n_estimators": 150,
+          "oob_score": false,
+          "random_state": 42,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "feature_importance": {
+          "rainfall_mm": 0.1547,
+          "avg_temperature_c": 0.3592,
+          "oni_index": 0.005,
+          "state_identity": 0.4812
+        }
+      },
+      "gradient_boosting": {
+        "mae": 11023.36,
+        "rmse": 18086.89,
+        "r2": 0.8687,
+        "mape": 62.83,
+        "training_time_sec": 0.178,
+        "hyperparameters": {
+          "alpha": 0.9,
+          "ccp_alpha": 0.0,
+          "criterion": "deprecated",
+          "learning_rate": 0.08,
+          "loss": "squared_error",
+          "max_depth": 4,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 1,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "n_estimators": 150,
+          "random_state": 42,
+          "subsample": 0.85,
+          "tol": 0.0001,
+          "validation_fraction": 0.1,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "feature_importance": {
+          "rainfall_mm": 0.1509,
+          "avg_temperature_c": 0.2957,
+          "oni_index": 0.0071,
+          "state_identity": 0.5462
+        }
+      },
+      "xgboost": {
+        "mae": 11267.99,
+        "rmse": 18752.05,
+        "r2": 0.8589,
+        "mape": 70.74,
+        "training_time_sec": 1.757,
+        "hyperparameters": {
+          "objective": "reg:squarederror",
+          "colsample_bytree": 0.85,
+          "enable_categorical": true,
+          "learning_rate": 0.08,
+          "max_depth": 4,
+          "missing": null,
+          "n_estimators": 150,
+          "random_state": 42,
+          "subsample": 0.85
+        },
+        "feature_importance": {
+          "rainfall_mm": 0.0219,
+          "avg_temperature_c": 0.057,
+          "oni_index": 0.002,
+          "state_identity": 0.9191
+        }
+      },
+      "extra_trees": {
+        "mae": 12105.21,
+        "rmse": 18388.83,
+        "r2": 0.8643,
+        "mape": 71.66,
+        "training_time_sec": 0.207,
+        "hyperparameters": {
+          "bootstrap": false,
+          "ccp_alpha": 0.0,
+          "criterion": "squared_error",
+          "max_depth": 10,
+          "max_features": 1.0,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 2,
+          "min_samples_split": 3,
+          "min_weight_fraction_leaf": 0.0,
+          "n_estimators": 150,
+          "oob_score": false,
+          "random_state": 42,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "feature_importance": {
+          "rainfall_mm": 0.0814,
+          "avg_temperature_c": 0.1596,
+          "oni_index": 0.0019,
+          "state_identity": 0.7572
+        }
+      }
+    },
+    "best_model": "linear_regression",
+    "selection_metric": "rmse",
+    "target_variable": "RBI/NSO GSVA Agriculture (crops), constant 2011-12 prices (INR crore)"
+  },
+  "baselines": {
+    "state_mean": {
+      "n": 105,
+      "mae": 9911.986657142856,
+      "rmse": 17552.792420795,
+      "r2": 0.8763351763153193,
+      "mape": 16.561668737269386
+    },
+    "state_last": {
+      "n": 105,
+      "mae": 5343.189523809525,
+      "rmse": 10890.725955389402,
+      "r2": 0.95239337336858,
+      "mape": 9.932692638479812
+    }
+  },
+  "annual": {
+    "2021": {
+      "n": 28,
+      "mae": 7034.357793776847,
+      "rmse": 13072.530258081631,
+      "r2": 0.923728740837717,
+      "mape": 29.39441964316554
+    },
+    "2022": {
+      "n": 28,
+      "mae": 9439.795636017994,
+      "rmse": 15284.483330773613,
+      "r2": 0.9021840703868426,
+      "mape": 40.91540880463676
+    },
+    "2023": {
+      "n": 27,
+      "mae": 10863.909202542962,
+      "rmse": 17953.268818134045,
+      "r2": 0.8685622998496172,
+      "mape": 40.487862946704965
+    },
+    "2024": {
+      "n": 22,
+      "mae": 13665.68381593818,
+      "rmse": 23158.586658699867,
+      "r2": 0.8129511317961025,
+      "mape": 20.77067305087681
+    }
+  },
+  "states": {
+    "Andhra Pradesh": {
+      "n": 4,
+      "mae": 16252.62397613815,
+      "rmse": 16497.55045356215,
+      "r2": -24.9027283692743,
+      "mape": 19.910134697059615
+    },
+    "Arunachal Pradesh": {
+      "n": 4,
+      "mae": 1220.9788422629904,
+      "rmse": 1477.304115318752,
+      "r2": -119.1151287095274,
+      "mape": 63.317833010366
+    },
+    "Assam": {
+      "n": 4,
+      "mae": 12236.331177705759,
+      "rmse": 14221.763067988832,
+      "r2": -3.6380990135764977,
+      "mape": 29.678161996932207
+    },
+    "Bihar": {
+      "n": 4,
+      "mae": 4582.980194984246,
+      "rmse": 5517.698413613436,
+      "r2": -4.588081395887972,
+      "mape": 9.973858850158393
+    },
+    "Chhattisgarh": {
+      "n": 4,
+      "mae": 6372.389594323817,
+      "rmse": 6604.734282019837,
+      "r2": -17.029419153436912,
+      "mape": 22.578600499905544
+    },
+    "Goa": {
+      "n": 3,
+      "mae": 1001.5165957257941,
+      "rmse": 1176.7263721789502,
+      "r2": -1705.8672648183003,
+      "mape": 100.04345151538504
+    },
+    "Gujarat": {
+      "n": 2,
+      "mae": 16420.417122832354,
+      "rmse": 16639.869198844848,
+      "r2": -30.548179442739045,
+      "mape": 16.289487691484776
+    },
+    "Haryana": {
+      "n": 4,
+      "mae": 2866.4867638012583,
+      "rmse": 3390.634058685498,
+      "r2": -1.808319560918576,
+      "mape": 6.7252200163465865
+    },
+    "Himachal Pradesh": {
+      "n": 4,
+      "mae": 1244.737470389005,
+      "rmse": 1311.6471887719545,
+      "r2": -16.094586584492333,
+      "mape": 15.742763623301942
+    },
+    "Jharkhand": {
+      "n": 4,
+      "mae": 910.1133948605284,
+      "rmse": 1356.925754002172,
+      "r2": 0.161813740895153,
+      "mape": 6.8155831949148205
+    },
+    "Karnataka": {
+      "n": 4,
+      "mae": 11653.934463497353,
+      "rmse": 12406.865711193435,
+      "r2": -5.104077461770294,
+      "mape": 16.443317515711893
+    },
+    "Kerala": {
+      "n": 4,
+      "mae": 1086.0594060225048,
+      "rmse": 1460.8998458794365,
+      "r2": -5.092983943803427,
+      "mape": 4.551195357383411
+    },
+    "Madhya Pradesh": {
+      "n": 4,
+      "mae": 43012.0258366005,
+      "rmse": 43269.678849594995,
+      "r2": -88.5576297580969,
+      "mape": 28.944586851394423
+    },
+    "Maharashtra": {
+      "n": 4,
+      "mae": 27432.855677207135,
+      "rmse": 28246.366439989095,
+      "r2": -16.88649847114743,
+      "mape": 20.254759049989886
+    },
+    "Manipur": {
+      "n": 3,
+      "mae": 1147.4086345225192,
+      "rmse": 1442.4993288928254,
+      "r2": -37.28763926962675,
+      "mape": 48.87381914305474
+    },
+    "Meghalaya": {
+      "n": 4,
+      "mae": 1946.0416646891842,
+      "rmse": 2281.1390869732786,
+      "r2": -5407.746201308508,
+      "mape": 87.94874441508723
+    },
+    "Mizoram": {
+      "n": 3,
+      "mae": 1129.763890281728,
+      "rmse": 1267.3260052717385,
+      "r2": -2700.8858409958057,
+      "mape": 120.01569990770584
+    },
+    "Nagaland": {
+      "n": 3,
+      "mae": 1467.8525573276481,
+      "rmse": 1509.5506222707388,
+      "r2": -16.16818883397298,
+      "mape": 63.208909937378266
+    },
+    "Odisha": {
+      "n": 4,
+      "mae": 8347.646812139514,
+      "rmse": 8958.263922973476,
+      "r2": -10.125324180455738,
+      "mape": 21.56486555854525
+    },
+    "Punjab": {
+      "n": 4,
+      "mae": 2615.3599264248605,
+      "rmse": 3639.598160953152,
+      "r2": -5.550664863082437,
+      "mape": 4.7439960923229565
+    },
+    "Rajasthan": {
+      "n": 4,
+      "mae": 14082.48054817845,
+      "rmse": 15043.61428043575,
+      "r2": -7.8312844001134945,
+      "mape": 14.91036130868419
+    },
+    "Sikkim": {
+      "n": 3,
+      "mae": 1821.5234905533605,
+      "rmse": 1979.384104648387,
+      "r2": -42244.147551108406,
+      "mape": 149.4224118530983
+    },
+    "Tamil Nadu": {
+      "n": 4,
+      "mae": 11585.561561957713,
+      "rmse": 11763.418111951516,
+      "r2": -72.0715675238601,
+      "mape": 19.375315066197686
+    },
+    "Telangana": {
+      "n": 4,
+      "mae": 15271.273476869963,
+      "rmse": 15724.782105028782,
+      "r2": -20.021768512075358,
+      "mape": 30.660088106139526
+    },
+    "Tripura": {
+      "n": 4,
+      "mae": 1259.7554354794968,
+      "rmse": 1625.9519434049491,
+      "r2": -78.74352800957293,
+      "mape": 22.336056327693022
+    },
+    "Uttar Pradesh": {
+      "n": 4,
+      "mae": 59135.75185794709,
+      "rmse": 60547.15625232086,
+      "r2": -21.65509276139673,
+      "mape": 30.215970189503416
+    },
+    "Uttarakhand": {
+      "n": 4,
+      "mae": 1848.4661350838605,
+      "rmse": 1994.7489311613067,
+      "r2": -17.952799990891513,
+      "mape": 27.092501897819687
+    },
+    "West Bengal": {
+      "n": 4,
+      "mae": 5711.61045910103,
+      "rmse": 5908.465878311347,
+      "r2": -93.02687070999058,
+      "mape": 6.598699066030372
+    }
+  },
+  "permutation": {
+    "baseline_rmse_cr": 17410.41,
+    "rmse_change_cr": {
+      "rainfall_mm": 2.07,
+      "avg_temperature_c": 14.52,
+      "oni_index": -13.5
+    },
+    "repeats": 20,
+    "test_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "method": "within_state_weather_and_shared_year_oni_permutation"
+  },
+  "counts": {
+    "2011": 28,
+    "2012": 28,
+    "2013": 28,
+    "2014": 28,
+    "2015": 28,
+    "2016": 28,
+    "2017": 28,
+    "2018": 28,
+    "2019": 28,
+    "2020": 28,
+    "2021": 28,
+    "2022": 28,
+    "2023": 27,
+    "2024": 22
+  },
+  "summary": {
+    "rainfall_mm": {
+      "count": 385.0,
+      "mean": 1345.3727532467535,
+      "std": 821.6441878218712,
+      "min": 188.53,
+      "25%": 776.87,
+      "50%": 1146.66,
+      "75%": 1721.48,
+      "max": 4301.28
+    },
+    "avg_temperature_c": {
+      "count": 385.0,
+      "mean": 25.10382857142857,
+      "std": 2.278008937764669,
+      "min": 19.182,
+      "25%": 23.659,
+      "50%": 25.219,
+      "75%": 26.576,
+      "max": 29.854
+    },
+    "oni_index": {
+      "count": 385.0,
+      "mean": 0.10962597402597403,
+      "std": 0.7775061128850327,
+      "min": -0.72,
+      "25%": -0.611,
+      "50%": -0.166,
+      "75%": 0.554,
+      "max": 1.945
+    },
+    "agricultural_gdp_cr": {
+      "count": 385.0,
+      "mean": 40970.16096103896,
+      "std": 41661.615559701924,
+      "min": 729.65,
+      "25%": 3681.33,
+      "50%": 28692.63,
+      "75%": 63818.31,
+      "max": 214070.82
+    }
+  }
+}

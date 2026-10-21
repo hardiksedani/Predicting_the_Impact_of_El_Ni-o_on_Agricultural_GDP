@@ -1,0 +1,19 @@
+{
+  "references": 48,
+  "body_words": 4969,
+  "changed_parts": [
+    "docProps/core.xml",
+    "word/document.xml",
+    "word/media/image2.png",
+    "word/media/image3.png",
+    "word/media/image1.png",
+    "word/media/image5.png",
+    "word/media/image4.png",
+    "word/media/image6.png"
+  ],
+  "preserved_parts": 18,
+  "sections": 4,
+  "figures": 6,
+  "tables": 6,
+  "output": "C:\\Users\\hardi\\Coding All Programs\\pbl agriculture project\\Machine_Learning_Assessment_IEEE_Full_Report.docx"
+}

@@ -1,0 +1,66 @@
+{
+  "[Content_Types].xml": {
+    "size": 1965,
+    "sha256": "361d2eef254116025c4c9dd46e923afbce13a991cc56e7169d31b70a06f90773"
+  },
+  "_rels/.rels": {
+    "size": 590,
+    "sha256": "e19238d7a71fa7a2490776252686f70e2de6238c87cd509b5e3a3cc07c2ea4df"
+  },
+  "word/document.xml": {
+    "size": 237897,
+    "sha256": "95e25dbeff78a619311e61713251fa347f824cb87fdb91f0e08872e8157db514"
+  },
+  "word/_rels/document.xml.rels": {
+    "size": 1988,
+    "sha256": "8f6bc2e985427961137f798459c6de82ddd8373ddfe095791d55a418e76f09df"
+  },
+  "word/footnotes.xml": {
+    "size": 3018,
+    "sha256": "73f5a19b7b4132c5b0adab52f1c56fa32db4a34423438a4ba965050039884ed5"
+  },
+  "word/endnotes.xml": {
+    "size": 3012,
+    "sha256": "6923625d5a7c61eb126e420d7d31509fa78be8dbe2d623783a81d8ee28fec48d"
+  },
+  "word/header1.xml": {
+    "size": 2945,
+    "sha256": "90893ae6e4551dbc7ccaa615350fb9821e2ae1b31659bbec8582d19176ea3528"
+  },
+  "word/footer1.xml": {
+    "size": 3259,
+    "sha256": "16bbd72acf245db6599c1ecbcace41971a91863a8d869bedf8aee095ed638cff"
+  },
+  "word/theme/theme1.xml": {
+    "size": 8115,
+    "sha256": "938ef462261cb6bdbfc3255d222c3de5bda8632043244a14fb986871990b4e8b"
+  },
+  "word/settings.xml": {
+    "size": 3394,
+    "sha256": "212ff2b9ae2ad3d16ff85526be8a53bac9941109a9e3919e05951c7cabd203fd"
+  },
+  "word/numbering.xml": {
+    "size": 4826,
+    "sha256": "70d55f0d48b800e430ca092f42d9c509de7405e3b5fbbb097015117a3f0ed48a"
+  },
+  "word/styles.xml": {
+    "size": 33447,
+    "sha256": "b95dad943aa7a9c1ddd3c231b7b190f7f7fd2ed4e17ad1c65a8abf80179ce014"
+  },
+  "word/webSettings.xml": {
+    "size": 1018,
+    "sha256": "3346314c93078070b454a95d0485bf9721dade13d89cfaa579cc32645fa7edef"
+  },
+  "word/fontTable.xml": {
+    "size": 2372,
+    "sha256": "2f00c6738959a3b9e5efd7bcd3f78af4ff917820cabfaeb777a03ab7b5f998b6"
+  },
+  "docProps/core.xml": {
+    "size": 641,
+    "sha256": "48722820d059a405a8a81acdca0693fa84583e4a0823b9053f0946ab08b586c5"
+  },
+  "docProps/app.xml": {
+    "size": 718,
+    "sha256": "588dcc3949ecda3c2294a02b82971ce47b6d9b0716f860e726fb6b2a978846de"
+  }
+}

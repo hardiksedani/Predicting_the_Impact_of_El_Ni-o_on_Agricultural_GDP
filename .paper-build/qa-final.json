@@ -1,0 +1,13 @@
+{
+  "pages": 8,
+  "word_count_word": 6990,
+  "references": 48,
+  "cited_references": 48,
+  "figures": 6,
+  "tables": 6,
+  "sources_unchanged": true,
+  "template_sections_unchanged": true,
+  "preserved_package_parts": 18,
+  "renderer": "Microsoft Word PDF export + pypdfium2",
+  "output_sha256": "6560458ae8004f1475684c4536e8febfcfeee824d814641fd8d9a43e3752b8a5"
+}

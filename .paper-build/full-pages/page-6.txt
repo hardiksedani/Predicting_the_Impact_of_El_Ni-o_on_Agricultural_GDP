@@ -1,0 +1,104 @@
+ 
+ 
+Fig. 5. Annual RMSE for OLS and fixed persistence on the same available 
+observations. 
+The pooled R² remains above 0.8 in each test year, even 
+as absolute errors grow. This combination is possible because 
+the model still separates higher - and lower -GSVA states 
+reasonably well. It should not be interpreted as evidence that 
+most annual economic changes are explained by climate. The 
+distinction between level prediction and change prediction is 
+central to deciding whether the model can support 
+monitoring, forecasting, or an assessment of exposure to 
+ENSO. 
+D. Dependence on Climate Inputs 
+The permutation diagnostic gives RMSE changes of 
++2.07 crore for rainfall, +14.52 crore for mean temperature, 
+and −13.50 crore for ONI. These values are small compared 
+with the unpermuted RMSE of INR 17,410.41 crore. Table 
+VI and Fig. 6 summarize the calculation. In the present linear 
+specification, the retained climate variables provide limited 
+additional predictive information on the held -out 
+observations once state identity is fixed. 
+TABLE VI 
+LINEAR-MODEL CLIMATE PERMUTATION DIAGNOSTIC 
+Permuted input Mean ΔRMSE¹ Procedure 
+Rainfall +2.07 Within state 
+Temperature +14.52 Within state 
+ONI −13.50 Shared test year 
+Fig. 4. ¹ INR crore; 20 repeats; baseline RMSE = 17,410.41. 
+ 
+Fig. 6. Mean change in linear -model RMSE after separate climate permutations. 
+Small magnitudes limit substantive interpretation. 
+The negative ONI value does not show that El Niño 
+benefits agriculture. It shows that one particular perturbation 
+procedure slightly improves one fitted model's prediction 
+error on a short test window. Conversely, a small positive 
+temperature value does no t quantify the economic damage 
+caused by heat. The result concerns the sensitivity of the 
+model's performance to its inputs. Aggregation, correlated 
+predictors, shared annual variation, and a short record all 
+constrain the interpretation. 
+The diagnostic also discourages interpreting normalized 
+absolute linear coefficients as percentage contributions to the 
+economy. Those coefficients combine millimeters, degrees 
+Celsius, and binary indicators, so their relative magnitudes 
+depend on units. Tree importances describe the fitted splitting 
+rules and face different limitations. Permutation is useful here 
+because it assesses prediction error on held -out rows, but it 
+still cannot replace a causal design or recover information 
+removed by annual aggregation. 
+VI. LIMITATIONS 
+The first limitation is spatial representation. A single 
+nearest grid point cannot characterize the full distribution of 
+weather across a large state. Area -weighted climate 
+extraction over administrative boundaries, preferably 
+weighted by cultivated area o r crop distribution where 
+justified, would provide a closer match to the state -level 
+economic target. The current approach is computationally 
+simple and auditable, but it should not be described as a state-
+wide rainfall measurement. 
+The second limitation is temporal resolution. Financial -
+year rainfall and temperature averages can obscure monsoon 
+breaks, planting dates, flowering -stage heat, and crop -
+specific exposure. The same annual total can arise from 
+different rainfall sequences. ONI is also shared across states, 
+yielding only 14 distinct annual values before the split and 
+only four in the test period. Hundreds of state -year rows 
+therefore do not supply hundreds of independent ENSO 
+histories. 
+The third limitation concerns model inputs and validation. 
+The feature set omits lagged GSVA, irrigation, crop area, 
+crop composition, soil conditions, policy, and technology. 
+The strong persistence benchmark makes lagged economic 
+information a priority fo r future assessment. The current 
+single chronological holdout does not measure stability 
+across alternative cutoffs, and the reported model ranking has 
+not been validated on a second untouched period. Repeatedly 
+redesigning the system around the present te st results would 
+weaken their status as an independent evaluation. 
+Finally, the outcome is an aggregate economic measure at 
+a constant price base. It cannot directly establish household 
+welfare, crop -specific yield loss, or district drought 
+vulnerability. Scenario outputs inherit the model's limitations 
+and may involve im plausible combinations of inputs. 
+Transparent models and clearly stated decision boundaries 
+are particularly valuable when predictions could influence 
+consequential choices [48]. At its present stage, the 
+application supports exploratory analysis and repro ducible 
+comparison, with predictive uncertainty and economic 
+attribution remaining open research problems. 
+VII. CONCLUSION AND FUTURE WORK 
+The project integrates IMD weather observations, 
+historical ONI, and RBI/NSO crop GSVA into a 385 -row 
+state-year panel and a working analytical application. Under 
+a chronological split, ordinary least squares achieves the 
+lowest RMSE among five fitted regressors. However, a fixed 
+last-observed-value benchmark performs substantially better, 
+and climate permutation produces only small changes in 
+linear-model error. The evidence supports a useful baseline 
+for further research rather than a validated estimate of ENSO-
+induced economic loss. 
+The next evaluation should add lagged target information, 
+distinguish economic levels from annual growth, and test 
+seasonal or crop -stage weather features. Spatial aggregation 
